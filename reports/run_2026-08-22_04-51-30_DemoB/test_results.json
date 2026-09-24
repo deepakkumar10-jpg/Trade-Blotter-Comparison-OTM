@@ -1,0 +1,2107 @@
+[
+  {
+    "id": "Scenario_1_1",
+    "name": "Scenario 1.1: Trade ID Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.1",
+      "FieldLabel": "Trade ID",
+      "SearchValue": "TAUTO42132676_1",
+      "ContainsMode": "false",
+      "VerifyColumn": "Trade ID",
+      "ExpectedValue": "TAUTO42132676_1"
+    },
+    "status": "FAIL",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "Scenario_1_1_gwt_criteria.png",
+    "newUiScreenshot": "Scenario_1_1_new_ui_criteria.png",
+    "gwtResultsScreenshot": "Scenario_1_1_gwt_results.png",
+    "newUiResultsScreenshot": "Scenario_1_1_new_ui_results.png",
+    "mismatchesCount": 1,
+    "mismatches": {
+      "Execution Error": {
+        "old": "N/A (Steps Interrupted)",
+        "new": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://mtmb2.demo.markit.partners/EQT/eauth/elogin.jsp"
+      }
+    },
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_2",
+    "name": "Scenario 1.2: Trade ID Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.2",
+      "FieldLabel": "Trade ID",
+      "SearchValue": "TAUTO42132",
+      "ContainsMode": "true",
+      "VerifyColumn": "Trade ID",
+      "ExpectedValue": "TAUTO42132"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_3",
+    "name": "Scenario 1.3: Deal ID Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.3",
+      "FieldLabel": "Deal ID",
+      "SearchValue": "S42132676_1",
+      "ContainsMode": "false",
+      "VerifyColumn": "Deal ID",
+      "ExpectedValue": "S42132676_1"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_4",
+    "name": "Scenario 1.4: Deal ID Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.4",
+      "FieldLabel": "Deal ID",
+      "SearchValue": "S421326",
+      "ContainsMode": "true",
+      "VerifyColumn": "Deal ID",
+      "ExpectedValue": "S42132676_1"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_5",
+    "name": "Scenario 1.5: Counterparty Trade ID Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.5",
+      "FieldLabel": "Counterparty Trade ID",
+      "SearchValue": "42132676_1",
+      "ContainsMode": "false",
+      "VerifyColumn": "Cpty Trade Id",
+      "ExpectedValue": "42132676_1"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_6",
+    "name": "Scenario 1.6: Counterparty Deal ID Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.6",
+      "FieldLabel": "Counterparty Deal ID",
+      "SearchValue": "42132676",
+      "ContainsMode": "false",
+      "VerifyColumn": "Cpty Ref ID",
+      "ExpectedValue": "42132676"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_7",
+    "name": "Scenario 1.7: Bunched Order Block MW ID Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.7",
+      "FieldLabel": "Bunched Order Block MW ID",
+      "SearchValue": "42137019",
+      "ContainsMode": "false",
+      "VerifyColumn": "Bunched Order Block MW ID",
+      "ExpectedValue": "42137019"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_8",
+    "name": "Scenario 1.8: Counterparty Trade ID Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.8",
+      "FieldLabel": "Counterparty Trade ID",
+      "SearchValue": "42137113",
+      "ContainsMode": "true",
+      "VerifyColumn": "Counterparty Trade ID",
+      "ExpectedValue": "42137113"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_9",
+    "name": "Scenario 1.9: Counterparty Deal ID Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.9",
+      "FieldLabel": "Counterparty Deal ID",
+      "SearchValue": "42137113",
+      "ContainsMode": "true",
+      "VerifyColumn": "Counterparty Deal ID",
+      "ExpectedValue": "42137113"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_10",
+    "name": "Scenario 1.10: Counterparty Allocation Deal ID Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.10",
+      "FieldLabel": "Counterparty Allocation Deal ID",
+      "SearchValue": "42137113",
+      "ContainsMode": "false",
+      "VerifyColumn": "Counterparty Allocation Deal ID",
+      "ExpectedValue": "42137113"
+    },
+    "status": "FAIL",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "Scenario_1_10_gwt_criteria.png",
+    "newUiScreenshot": "Scenario_1_10_new_ui_criteria.png",
+    "gwtResultsScreenshot": "Scenario_1_10_gwt_results.png",
+    "newUiResultsScreenshot": "Scenario_1_10_new_ui_results.png",
+    "mismatchesCount": 1,
+    "mismatches": {
+      "Execution Error": {
+        "old": "N/A (Steps Interrupted)",
+        "new": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://mtmb2.demo.markit.partners/EQT/eauth/elogin.jsp"
+      }
+    },
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_11",
+    "name": "Scenario 1.11: Selective Netting ID Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.11",
+      "FieldLabel": "Selective Netting ID",
+      "SearchValue": "NET_9082",
+      "ContainsMode": "false",
+      "VerifyColumn": "Selective Netting ID",
+      "ExpectedValue": "NET_9082"
+    },
+    "status": "FAIL",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "Scenario_1_11_gwt_criteria.png",
+    "newUiScreenshot": "Scenario_1_11_new_ui_criteria.png",
+    "gwtResultsScreenshot": "Scenario_1_11_gwt_results.png",
+    "newUiResultsScreenshot": "Scenario_1_11_new_ui_results.png",
+    "mismatchesCount": 1,
+    "mismatches": {
+      "Execution Error": {
+        "old": "N/A (Steps Interrupted)",
+        "new": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://mtmb2.demo.markit.partners/EQT/eauth/elogin.jsp"
+      }
+    },
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_12",
+    "name": "Scenario 1.12: Netting String Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.12",
+      "FieldLabel": "Netting String",
+      "SearchValue": "NET_STR_ABC",
+      "ContainsMode": "false",
+      "VerifyColumn": "Netting String",
+      "ExpectedValue": "NET_STR_ABC"
+    },
+    "status": "FAIL",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "Scenario_1_12_gwt_criteria.png",
+    "newUiScreenshot": "Scenario_1_12_new_ui_criteria.png",
+    "gwtResultsScreenshot": "Scenario_1_12_gwt_results.png",
+    "newUiResultsScreenshot": "Scenario_1_12_new_ui_results.png",
+    "mismatchesCount": 1,
+    "mismatches": {
+      "Execution Error": {
+        "old": "N/A (Steps Interrupted)",
+        "new": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://mtmb2.demo.markit.partners/EQT/eauth/elogin.jsp"
+      }
+    },
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_13",
+    "name": "Scenario 1.13: Clearing House Trade ID Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.13",
+      "FieldLabel": "Clearing House Trade ID",
+      "SearchValue": "42138048",
+      "ContainsMode": "true",
+      "VerifyColumn": "Clearing House Trade ID",
+      "ExpectedValue": "42138048"
+    },
+    "status": "FAIL",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "Scenario_1_13_gwt_criteria.png",
+    "newUiScreenshot": "Scenario_1_13_new_ui_criteria.png",
+    "gwtResultsScreenshot": "Scenario_1_13_gwt_results.png",
+    "newUiResultsScreenshot": "Scenario_1_13_new_ui_results.png",
+    "mismatchesCount": 1,
+    "mismatches": {
+      "Execution Error": {
+        "old": "N/A (Steps Interrupted)",
+        "new": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://mtmb2.demo.markit.partners/EQT/eauth/elogin.jsp"
+      }
+    },
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_14",
+    "name": "Scenario 1.14: USI Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.14",
+      "FieldLabel": "USI",
+      "SearchValue": "USI_10029834",
+      "ContainsMode": "false",
+      "VerifyColumn": "USI",
+      "ExpectedValue": "USI_10029834"
+    },
+    "status": "FAIL",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "Scenario_1_14_gwt_criteria.png",
+    "newUiScreenshot": "Scenario_1_14_new_ui_criteria.png",
+    "gwtResultsScreenshot": "Scenario_1_14_gwt_results.png",
+    "newUiResultsScreenshot": "Scenario_1_14_new_ui_results.png",
+    "mismatchesCount": 1,
+    "mismatches": {
+      "Execution Error": {
+        "old": "N/A (Steps Interrupted)",
+        "new": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://mtmb2.demo.markit.partners/EQT/eauth/elogin.jsp"
+      }
+    },
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_15",
+    "name": "Scenario 1.15: USI Issuer Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.15",
+      "FieldLabel": "USI Issuer",
+      "SearchValue": "549300FSLUWD8ETI2P24",
+      "ContainsMode": "false",
+      "VerifyColumn": "USI Issuer",
+      "ExpectedValue": "549300FSLUWD8ETI2P24"
+    },
+    "status": "FAIL",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "Scenario_1_15_gwt_criteria.png",
+    "newUiScreenshot": "Scenario_1_15_new_ui_criteria.png",
+    "gwtResultsScreenshot": "Scenario_1_15_gwt_results.png",
+    "newUiResultsScreenshot": "Scenario_1_15_new_ui_results.png",
+    "mismatchesCount": 1,
+    "mismatches": {
+      "Execution Error": {
+        "old": "N/A (Steps Interrupted)",
+        "new": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://mtmb2.demo.markit.partners/EQT/eauth/elogin.jsp"
+      }
+    },
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_16",
+    "name": "Scenario 1.16: Cleared Trade USI Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.16",
+      "FieldLabel": "Cleared Trade USI",
+      "SearchValue": "549300FSLUWD8ETI2P24",
+      "ContainsMode": "false",
+      "VerifyColumn": "Cleared Trade USI",
+      "ExpectedValue": "CL_USI_9082"
+    },
+    "status": "FAIL",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "Scenario_1_16_gwt_criteria.png",
+    "newUiScreenshot": "Scenario_1_16_new_ui_criteria.png",
+    "gwtResultsScreenshot": "Scenario_1_16_gwt_results.png",
+    "newUiResultsScreenshot": "Scenario_1_16_new_ui_results.png",
+    "mismatchesCount": 1,
+    "mismatches": {
+      "Execution Error": {
+        "old": "N/A (Steps Interrupted)",
+        "new": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://mtmb2.demo.markit.partners/EQT/eauth/elogin.jsp"
+      }
+    },
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_17",
+    "name": "Scenario 1.17: Cleared Trade USI Issuer Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.17",
+      "FieldLabel": "Cleared Trade USI Issuer",
+      "SearchValue": "CME_ISSUER",
+      "ContainsMode": "false",
+      "VerifyColumn": "Cleared Trade USI Issuer",
+      "ExpectedValue": "CME_ISSUER"
+    },
+    "status": "FAIL",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "Scenario_1_17_gwt_criteria.png",
+    "newUiScreenshot": "Scenario_1_17_new_ui_criteria.png",
+    "gwtResultsScreenshot": "Scenario_1_17_gwt_results.png",
+    "newUiResultsScreenshot": "Scenario_1_17_new_ui_results.png",
+    "mismatchesCount": 1,
+    "mismatches": {
+      "Execution Error": {
+        "old": "N/A (Steps Interrupted)",
+        "new": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://mtmb2.demo.markit.partners/EQT/eauth/elogin.jsp"
+      }
+    },
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_18",
+    "name": "Scenario 1.18: DTCC Warehouse TRI Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.18",
+      "FieldLabel": "DTCC Warehouse TRI",
+      "SearchValue": "DTCC_TRI_011",
+      "ContainsMode": "false",
+      "VerifyColumn": "DTCC Warehouse TRI",
+      "ExpectedValue": "DTCC_TRI_011"
+    },
+    "status": "FAIL",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "Scenario_1_18_gwt_criteria.png",
+    "newUiScreenshot": "Scenario_1_18_new_ui_criteria.png",
+    "gwtResultsScreenshot": "Scenario_1_18_gwt_results.png",
+    "newUiResultsScreenshot": "Scenario_1_18_new_ui_results.png",
+    "mismatchesCount": 1,
+    "mismatches": {
+      "Execution Error": {
+        "old": "N/A (Steps Interrupted)",
+        "new": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://mtmb2.demo.markit.partners/EQT/eauth/elogin.jsp"
+      }
+    },
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_19",
+    "name": "Scenario 1.19: Associated Trade Id Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.19",
+      "FieldLabel": "Associated Trade Id",
+      "SearchValue": "ASSOC_TX_12",
+      "ContainsMode": "false",
+      "VerifyColumn": "Associated Trade Id",
+      "ExpectedValue": "ASSOC_TX_12"
+    },
+    "status": "FAIL",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "Scenario_1_19_gwt_criteria.png",
+    "newUiScreenshot": "Scenario_1_19_new_ui_criteria.png",
+    "gwtResultsScreenshot": "Scenario_1_19_gwt_results.png",
+    "newUiResultsScreenshot": "Scenario_1_19_new_ui_results.png",
+    "mismatchesCount": 1,
+    "mismatches": {
+      "Execution Error": {
+        "old": "N/A (Steps Interrupted)",
+        "new": "Error: page.goto: net::ERR_NAME_NOT_RESOLVED at https://mtmb2.demo.markit.partners/EQT/eauth/elogin.jsp"
+      }
+    },
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_20",
+    "name": "Scenario 1.20: Block SEF Trade ID Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.20",
+      "FieldLabel": "Block SEF Trade ID",
+      "SearchValue": "568200580",
+      "ContainsMode": "false",
+      "VerifyColumn": "Block SEF Trade ID",
+      "ExpectedValue": "568200580"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_21",
+    "name": "Scenario 1.21: Block USI Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.21",
+      "FieldLabel": "Block USI",
+      "SearchValue": "MARKITWIRE42137922",
+      "ContainsMode": "false",
+      "VerifyColumn": "Block USI",
+      "ExpectedValue": "MARKITWIRE42137922"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_22",
+    "name": "Scenario 1.22: Block USI Issuer Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.22",
+      "FieldLabel": "Block USI Issuer",
+      "SearchValue": "549300FSLUWD8ETI2P24",
+      "ContainsMode": "false",
+      "VerifyColumn": "Block USI Issuer",
+      "ExpectedValue": "549300FSLUWD8ETI2P24"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_23",
+    "name": "Scenario 1.23: Block UTI Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.23",
+      "FieldLabel": "Block UTI",
+      "SearchValue": "MARKITWIRE42137019",
+      "ContainsMode": "false",
+      "VerifyColumn": "Block UTI",
+      "ExpectedValue": "MARKITWIRE42137019"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_24",
+    "name": "Scenario 1.24: Block UTI Issuer Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.24",
+      "FieldLabel": "Block UTI Issuer",
+      "SearchValue": "549300FSLUWD8ETI2P24",
+      "ContainsMode": "false",
+      "VerifyColumn": "Block UTI Issuer",
+      "ExpectedValue": "549300FSLUWD8ETI2P24"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_25",
+    "name": "Scenario 1.25: SEF Trade ID Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.25",
+      "FieldLabel": "SEF Trade ID",
+      "SearchValue": "568200580",
+      "ContainsMode": "false",
+      "VerifyColumn": "SEF Trade ID",
+      "ExpectedValue": "568200580"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_26",
+    "name": "Scenario 1.26: Post Clearing Batch ID Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.30",
+      "FieldLabel": "Post Clearing Batch ID",
+      "SearchValue": "POST_CLR_992",
+      "ContainsMode": "false",
+      "VerifyColumn": "Post Clearing Batch ID",
+      "ExpectedValue": "POST_CLR_992"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_27",
+    "name": "Scenario 1.27: Post Clearing Activity Type Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.31",
+      "FieldLabel": "Post Clearing Activity Type",
+      "SearchValue": "NOVATION_POST",
+      "ContainsMode": "false",
+      "VerifyColumn": "Post Clearing Activity Type",
+      "ExpectedValue": "NOVATION_POST"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_28",
+    "name": "Scenario 1.28: Post Clearing Sub-Category Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.32",
+      "FieldLabel": "Post Clearing Sub-Category",
+      "SearchValue": "CL_SUB_901",
+      "ContainsMode": "false",
+      "VerifyColumn": "Post Clearing Sub-Category",
+      "ExpectedValue": "CL_SUB_901"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_29",
+    "name": "Scenario 1.29: Deal ID(PDF Digitized) Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.33",
+      "FieldLabel": "Deal ID(PDF Digitized)",
+      "SearchValue": "S42122750",
+      "ContainsMode": "true",
+      "VerifyColumn": "Deal ID(PDF Digitized)",
+      "ExpectedValue": "S42122750"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_30",
+    "name": "Scenario 1.30: Trade ID(PDF Digitized) Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.34",
+      "FieldLabel": "Trade ID(PDF Digitized)",
+      "SearchValue": "S42122750",
+      "ContainsMode": "true",
+      "VerifyColumn": "Trade ID(PDF Digitized)",
+      "ExpectedValue": "S42122750"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_31",
+    "name": "Scenario 1.31: UPI Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.37",
+      "FieldLabel": "UPI",
+      "SearchValue": "QZPB5VSBGRCD",
+      "ContainsMode": "false",
+      "VerifyColumn": "UPI",
+      "ExpectedValue": "QZPB5VSBGRCD"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_32",
+    "name": "Scenario 1.32: Clearing House Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.38",
+      "FieldLabel": "Clearing House",
+      "SearchValue": "LCH_EUR",
+      "ContainsMode": "false",
+      "VerifyColumn": "Clearing Status",
+      "ExpectedValue": "CLR-LCH_EUR"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_1_33",
+    "name": "Scenario 1.33: Execution Venue Comparative Parity Run",
+    "gherkin": "Scenario Outline: Exact and Contains Alphanumeric Search Parity on <FieldLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<FieldLabel>\"\n  And inputs the search value \"<SearchValue>\"\n  And sets the Contains checkbox matching to \"<ContainsMode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and ag-Grid must retrieve identical records",
+    "bddData": {
+      "Scenario ID": "Scenario 1.39",
+      "FieldLabel": "Execution Venue",
+      "SearchValue": "SEF",
+      "ContainsMode": "false",
+      "VerifyColumn": "Trade ID",
+      "ExpectedValue": "TAUTO"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_2_1",
+    "name": "Scenario 2.1: Trade Date Comparative Parity Run",
+    "gherkin": "Scenario Outline: Date Range and Offset Formula Parity on <DateField>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the date field \"<DateField>\"\n  And inputs the From Boundary Date as \"<FromValue>\"\n  And inputs the To Boundary Date as \"<ToValue>\"\n  And clicks the \"Apply\" filter button\n  Then the system must extract matched records on both GWT and ag-Grid\n  And every retrieved trade date must strictly fall within \"<ExpectedStartDate>\" and \"<ExpectedEndDate>\"",
+    "bddData": {
+      "Scenario ID": "Scenario 2.1",
+      "DateField": "Trade Date",
+      "FromValue": "t-2",
+      "ToValue": "t-1",
+      "ExpectedStartDate": "t-2",
+      "ExpectedEndDate": "t-1"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_2_2",
+    "name": "Scenario 2.2: Settle Date Comparative Parity Run",
+    "gherkin": "Scenario Outline: Date Range and Offset Formula Parity on <DateField>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the date field \"<DateField>\"\n  And inputs the From Boundary Date as \"<FromValue>\"\n  And inputs the To Boundary Date as \"<ToValue>\"\n  And clicks the \"Apply\" filter button\n  Then the system must extract matched records on both GWT and ag-Grid\n  And every retrieved trade date must strictly fall within \"<ExpectedStartDate>\" and \"<ExpectedEndDate>\"",
+    "bddData": {
+      "Scenario ID": "Scenario 2.2",
+      "DateField": "Settle Date",
+      "FromValue": "t-2",
+      "ToValue": "t-1",
+      "ExpectedStartDate": "t-2",
+      "ExpectedEndDate": "t-1"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_2_3",
+    "name": "Scenario 2.3: Maturity Date Comparative Parity Run",
+    "gherkin": "Scenario Outline: Date Range and Offset Formula Parity on <DateField>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the date field \"<DateField>\"\n  And inputs the From Boundary Date as \"<FromValue>\"\n  And inputs the To Boundary Date as \"<ToValue>\"\n  And clicks the \"Apply\" filter button\n  Then the system must extract matched records on both GWT and ag-Grid\n  And every retrieved trade date must strictly fall within \"<ExpectedStartDate>\" and \"<ExpectedEndDate>\"",
+    "bddData": {
+      "Scenario ID": "Scenario 2.3",
+      "DateField": "Maturity Date",
+      "FromValue": "t-2",
+      "ToValue": "t-1",
+      "ExpectedStartDate": "t-2",
+      "ExpectedEndDate": "t-1"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_2_4",
+    "name": "Scenario 2.4: Last Activity Date Comparative Parity Run",
+    "gherkin": "Scenario Outline: Date Range and Offset Formula Parity on <DateField>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the date field \"<DateField>\"\n  And inputs the From Boundary Date as \"<FromValue>\"\n  And inputs the To Boundary Date as \"<ToValue>\"\n  And clicks the \"Apply\" filter button\n  Then the system must extract matched records on both GWT and ag-Grid\n  And every retrieved trade date must strictly fall within \"<ExpectedStartDate>\" and \"<ExpectedEndDate>\"",
+    "bddData": {
+      "Scenario ID": "Scenario 2.4",
+      "DateField": "Last Activity Date",
+      "FromValue": "t-2",
+      "ToValue": "t-1",
+      "ExpectedStartDate": "t-2",
+      "ExpectedEndDate": "t-1"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_2_5",
+    "name": "Scenario 2.5: Creation Date Comparative Parity Run",
+    "gherkin": "Scenario Outline: Date Range and Offset Formula Parity on <DateField>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the date field \"<DateField>\"\n  And inputs the From Boundary Date as \"<FromValue>\"\n  And inputs the To Boundary Date as \"<ToValue>\"\n  And clicks the \"Apply\" filter button\n  Then the system must extract matched records on both GWT and ag-Grid\n  And every retrieved trade date must strictly fall within \"<ExpectedStartDate>\" and \"<ExpectedEndDate>\"",
+    "bddData": {
+      "Scenario ID": "Scenario 2.5",
+      "DateField": "Creation Date",
+      "FromValue": "t-2",
+      "ToValue": "t-1",
+      "ExpectedStartDate": "t-2",
+      "ExpectedEndDate": "t-1"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_2_6",
+    "name": "Scenario 2.6: Execution Date Comparative Parity Run",
+    "gherkin": "Scenario Outline: Date Range and Offset Formula Parity on <DateField>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the date field \"<DateField>\"\n  And inputs the From Boundary Date as \"<FromValue>\"\n  And inputs the To Boundary Date as \"<ToValue>\"\n  And clicks the \"Apply\" filter button\n  Then the system must extract matched records on both GWT and ag-Grid\n  And every retrieved trade date must strictly fall within \"<ExpectedStartDate>\" and \"<ExpectedEndDate>\"",
+    "bddData": {
+      "Scenario ID": "Scenario 2.6",
+      "DateField": "Execution Date",
+      "FromValue": "t-2",
+      "ToValue": "t-1",
+      "ExpectedStartDate": "t-2",
+      "ExpectedEndDate": "t-1"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_2_7",
+    "name": "Scenario 2.7: Expiry Date Comparative Parity Run",
+    "gherkin": "Scenario Outline: Date Range and Offset Formula Parity on <DateField>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the date field \"<DateField>\"\n  And inputs the From Boundary Date as \"<FromValue>\"\n  And inputs the To Boundary Date as \"<ToValue>\"\n  And clicks the \"Apply\" filter button\n  Then the system must extract matched records on both GWT and ag-Grid\n  And every retrieved trade date must strictly fall within \"<ExpectedStartDate>\" and \"<ExpectedEndDate>\"",
+    "bddData": {
+      "Scenario ID": "Scenario 2.7",
+      "DateField": "Expiry Date",
+      "FromValue": "t-2",
+      "ToValue": "t-1",
+      "ExpectedStartDate": "t-2",
+      "ExpectedEndDate": "t-1"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_2_8",
+    "name": "Scenario 2.8: Strike Date Comparative Parity Run",
+    "gherkin": "Scenario Outline: Date Range and Offset Formula Parity on <DateField>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the date field \"<DateField>\"\n  And inputs the From Boundary Date as \"<FromValue>\"\n  And inputs the To Boundary Date as \"<ToValue>\"\n  And clicks the \"Apply\" filter button\n  Then the system must extract matched records on both GWT and ag-Grid\n  And every retrieved trade date must strictly fall within \"<ExpectedStartDate>\" and \"<ExpectedEndDate>\"",
+    "bddData": {
+      "Scenario ID": "Scenario 2.8",
+      "DateField": "Strike Date",
+      "FromValue": "t-2",
+      "ToValue": "t-1",
+      "ExpectedStartDate": "t-2",
+      "ExpectedEndDate": "t-1"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_3_1",
+    "name": "Scenario 3.1: Workflow Comparative Parity Run",
+    "gherkin": "Scenario Outline: Multi-Select Category Dropdown Value Parity on <FilterLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the dropdown selector \"<FilterLabel>\"\n  And selects the dropdown option value \"<SelectedValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must render identical trade records\n  And the column \"<VerifyColumn>\" must read \"<ExpectedValue>\" in all matched rows",
+    "bddData": {
+      "Scenario ID": "Scenario 3.1",
+      "FilterLabel": "Workflow",
+      "SelectedValue": "Confirmations",
+      "VerifyColumn": "Workflow",
+      "ExpectedValue": "Confirmations"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_3_2",
+    "name": "Scenario 3.2: Workflow Comparative Parity Run",
+    "gherkin": "Scenario Outline: Multi-Select Category Dropdown Value Parity on <FilterLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the dropdown selector \"<FilterLabel>\"\n  And selects the dropdown option value \"<SelectedValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must render identical trade records\n  And the column \"<VerifyColumn>\" must read \"<ExpectedValue>\" in all matched rows",
+    "bddData": {
+      "Scenario ID": "Scenario 3.2",
+      "FilterLabel": "Workflow",
+      "SelectedValue": "Novations",
+      "VerifyColumn": "Workflow",
+      "ExpectedValue": "Novations"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_3_3",
+    "name": "Scenario 3.3: Clearing Status Comparative Parity Run",
+    "gherkin": "Scenario Outline: Multi-Select Category Dropdown Value Parity on <FilterLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the dropdown selector \"<FilterLabel>\"\n  And selects the dropdown option value \"<SelectedValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must render identical trade records\n  And the column \"<VerifyColumn>\" must read \"<ExpectedValue>\" in all matched rows",
+    "bddData": {
+      "Scenario ID": "Scenario 3.3",
+      "FilterLabel": "Clearing Status",
+      "SelectedValue": "Cleared",
+      "VerifyColumn": "Clearing Status",
+      "ExpectedValue": "Cleared"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_3_4",
+    "name": "Scenario 3.4: Clearing Status Comparative Parity Run",
+    "gherkin": "Scenario Outline: Multi-Select Category Dropdown Value Parity on <FilterLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the dropdown selector \"<FilterLabel>\"\n  And selects the dropdown option value \"<SelectedValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must render identical trade records\n  And the column \"<VerifyColumn>\" must read \"<ExpectedValue>\" in all matched rows",
+    "bddData": {
+      "Scenario ID": "Scenario 3.4",
+      "FilterLabel": "Clearing Status",
+      "SelectedValue": "Clearing Pending",
+      "VerifyColumn": "Clearing Status",
+      "ExpectedValue": "Clearing Pending"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_3_5",
+    "name": "Scenario 3.5: Reconciliation State Comparative Parity Run",
+    "gherkin": "Scenario Outline: Multi-Select Category Dropdown Value Parity on <FilterLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the dropdown selector \"<FilterLabel>\"\n  And selects the dropdown option value \"<SelectedValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must render identical trade records\n  And the column \"<VerifyColumn>\" must read \"<ExpectedValue>\" in all matched rows",
+    "bddData": {
+      "Scenario ID": "Scenario 3.5",
+      "FilterLabel": "Reconciliation State",
+      "SelectedValue": "Reconciled",
+      "VerifyColumn": "Reconciliation State",
+      "ExpectedValue": "Reconciled"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_3_6",
+    "name": "Scenario 3.6: Reconciliation State Comparative Parity Run",
+    "gherkin": "Scenario Outline: Multi-Select Category Dropdown Value Parity on <FilterLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the dropdown selector \"<FilterLabel>\"\n  And selects the dropdown option value \"<SelectedValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must render identical trade records\n  And the column \"<VerifyColumn>\" must read \"<ExpectedValue>\" in all matched rows",
+    "bddData": {
+      "Scenario ID": "Scenario 3.6",
+      "FilterLabel": "Reconciliation State",
+      "SelectedValue": "Unreconciled",
+      "VerifyColumn": "Reconciliation State",
+      "ExpectedValue": "Unreconciled"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_3_7",
+    "name": "Scenario 3.7: Intended for Clearing Comparative Parity Run",
+    "gherkin": "Scenario Outline: Multi-Select Category Dropdown Value Parity on <FilterLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the dropdown selector \"<FilterLabel>\"\n  And selects the dropdown option value \"<SelectedValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must render identical trade records\n  And the column \"<VerifyColumn>\" must read \"<ExpectedValue>\" in all matched rows",
+    "bddData": {
+      "Scenario ID": "Scenario 3.7",
+      "FilterLabel": "Intended for Clearing",
+      "SelectedValue": "Yes",
+      "VerifyColumn": "Intended for Clearing",
+      "ExpectedValue": "Yes"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_3_8",
+    "name": "Scenario 3.8: Intended for Clearing Comparative Parity Run",
+    "gherkin": "Scenario Outline: Multi-Select Category Dropdown Value Parity on <FilterLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the dropdown selector \"<FilterLabel>\"\n  And selects the dropdown option value \"<SelectedValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must render identical trade records\n  And the column \"<VerifyColumn>\" must read \"<ExpectedValue>\" in all matched rows",
+    "bddData": {
+      "Scenario ID": "Scenario 3.8",
+      "FilterLabel": "Intended for Clearing",
+      "SelectedValue": "No",
+      "VerifyColumn": "Intended for Clearing",
+      "ExpectedValue": "No"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_3_9",
+    "name": "Scenario 3.9: Document Status Comparative Parity Run",
+    "gherkin": "Scenario Outline: Multi-Select Category Dropdown Value Parity on <FilterLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the dropdown selector \"<FilterLabel>\"\n  And selects the dropdown option value \"<SelectedValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must render identical trade records\n  And the column \"<VerifyColumn>\" must read \"<ExpectedValue>\" in all matched rows",
+    "bddData": {
+      "Scenario ID": "Scenario 3.9",
+      "FilterLabel": "Document Status",
+      "SelectedValue": "Disputed",
+      "VerifyColumn": "Doc Status",
+      "ExpectedValue": "Disputed"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_3_10",
+    "name": "Scenario 3.10: Source Comparative Parity Run",
+    "gherkin": "Scenario Outline: Multi-Select Category Dropdown Value Parity on <FilterLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the dropdown selector \"<FilterLabel>\"\n  And selects the dropdown option value \"<SelectedValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must render identical trade records\n  And the column \"<VerifyColumn>\" must read \"<ExpectedValue>\" in all matched rows",
+    "bddData": {
+      "Scenario ID": "Scenario 3.10",
+      "FilterLabel": "Source",
+      "SelectedValue": "Markit",
+      "VerifyColumn": "Source",
+      "ExpectedValue": "Markit"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_3_11",
+    "name": "Scenario 3.11: Novation Status Comparative Parity Run",
+    "gherkin": "Scenario Outline: Multi-Select Category Dropdown Value Parity on <FilterLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the dropdown selector \"<FilterLabel>\"\n  And selects the dropdown option value \"<SelectedValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must render identical trade records\n  And the column \"<VerifyColumn>\" must read \"<ExpectedValue>\" in all matched rows",
+    "bddData": {
+      "Scenario ID": "Scenario 3.12",
+      "FilterLabel": "Novation Status",
+      "SelectedValue": "Complete: STP",
+      "VerifyColumn": "Novation Status",
+      "ExpectedValue": "Complete: STP"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_3_12",
+    "name": "Scenario 3.12: Transaction Acceptance Status Comparative Parity Run",
+    "gherkin": "Scenario Outline: Multi-Select Category Dropdown Value Parity on <FilterLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the dropdown selector \"<FilterLabel>\"\n  And selects the dropdown option value \"<SelectedValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must render identical trade records\n  And the column \"<VerifyColumn>\" must read \"<ExpectedValue>\" in all matched rows",
+    "bddData": {
+      "Scenario ID": "Scenario 3.13",
+      "FilterLabel": "Transaction Acceptance Status",
+      "SelectedValue": "Accepted",
+      "VerifyColumn": "Transaction Acceptance Status",
+      "ExpectedValue": "Accepted"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_3_13",
+    "name": "Scenario 3.13: Sent? Comparative Parity Run",
+    "gherkin": "Scenario Outline: Multi-Select Category Dropdown Value Parity on <FilterLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the dropdown selector \"<FilterLabel>\"\n  And selects the dropdown option value \"<SelectedValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must render identical trade records\n  And the column \"<VerifyColumn>\" must read \"<ExpectedValue>\" in all matched rows",
+    "bddData": {
+      "Scenario ID": "Scenario 3.14",
+      "FilterLabel": "Sent?",
+      "SelectedValue": "Y",
+      "VerifyColumn": "Sent?",
+      "ExpectedValue": "Y"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_3_14",
+    "name": "Scenario 3.14: Settlement Agency Status Comparative Parity Run",
+    "gherkin": "Scenario Outline: Multi-Select Category Dropdown Value Parity on <FilterLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the dropdown selector \"<FilterLabel>\"\n  And selects the dropdown option value \"<SelectedValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must render identical trade records\n  And the column \"<VerifyColumn>\" must read \"<ExpectedValue>\" in all matched rows",
+    "bddData": {
+      "Scenario ID": "Scenario 3.15",
+      "FilterLabel": "Settlement Agency Status",
+      "SelectedValue": "SA Accepted",
+      "VerifyColumn": "Settlement Agency Status",
+      "ExpectedValue": "SA Accepted"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_3_15",
+    "name": "Scenario 3.15: Is Package Trade Comparative Parity Run",
+    "gherkin": "Scenario Outline: Multi-Select Category Dropdown Value Parity on <FilterLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the dropdown selector \"<FilterLabel>\"\n  And selects the dropdown option value \"<SelectedValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must render identical trade records\n  And the column \"<VerifyColumn>\" must read \"<ExpectedValue>\" in all matched rows",
+    "bddData": {
+      "Scenario ID": "Scenario 3.17",
+      "FilterLabel": "Is Package Trade",
+      "SelectedValue": "Yes",
+      "VerifyColumn": "Is Package Trade",
+      "ExpectedValue": "Yes"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_3_16",
+    "name": "Scenario 3.16: Broker Submitted Novation Comparative Parity Run",
+    "gherkin": "Scenario Outline: Multi-Select Category Dropdown Value Parity on <FilterLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the dropdown selector \"<FilterLabel>\"\n  And selects the dropdown option value \"<SelectedValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must render identical trade records\n  And the column \"<VerifyColumn>\" must read \"<ExpectedValue>\" in all matched rows",
+    "bddData": {
+      "Scenario ID": "Scenario 3.19",
+      "FilterLabel": "Broker Submitted Novation",
+      "SelectedValue": "Yes",
+      "VerifyColumn": "Broker Submitted Novation",
+      "ExpectedValue": "Yes"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_3_17",
+    "name": "Scenario 3.17: Status Comparative Parity Run",
+    "gherkin": "Scenario Outline: Multi-Select Category Dropdown Value Parity on <FilterLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the dropdown selector \"<FilterLabel>\"\n  And selects the dropdown option value \"<SelectedValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must render identical trade records\n  And the column \"<VerifyColumn>\" must read \"<ExpectedValue>\" in all matched rows",
+    "bddData": {
+      "Scenario ID": "Scenario 3.21",
+      "FilterLabel": "Status",
+      "SelectedValue": "CLEARED",
+      "VerifyColumn": "Status",
+      "ExpectedValue": "CLEARED"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_3_18",
+    "name": "Scenario 3.18: Status Comparative Parity Run",
+    "gherkin": "Scenario Outline: Multi-Select Category Dropdown Value Parity on <FilterLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the dropdown selector \"<FilterLabel>\"\n  And selects the dropdown option value \"<SelectedValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must render identical trade records\n  And the column \"<VerifyColumn>\" must read \"<ExpectedValue>\" in all matched rows",
+    "bddData": {
+      "Scenario ID": "Scenario 3.22",
+      "FilterLabel": "Status",
+      "SelectedValue": "DISPUTED",
+      "VerifyColumn": "Status",
+      "ExpectedValue": "DISPUTED"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_4_1",
+    "name": "Scenario 4.1: Counterparty Comparative Parity Run",
+    "gherkin": "Scenario Outline: Entity and Legal Identifier Filter Parity on <FilterLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the dropdown selector \"<FilterLabel>\"\n  And selects the dropdown option value \"<EntityValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must render identical trade records\n  And the column \"<VerifyColumn>\" must read \"<ExpectedValue>\" in all matched rows",
+    "bddData": {
+      "Scenario ID": "Scenario 4.1",
+      "FilterLabel": "Counterparty",
+      "EntityValue": "MarkitWire Demo Bank",
+      "VerifyColumn": "Cpty(s)",
+      "ExpectedValue": "MarkitWire Demo Bank"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_4_2",
+    "name": "Scenario 4.2: Account Number Comparative Parity Run",
+    "gherkin": "Scenario Outline: Entity and Legal Identifier Filter Parity on <FilterLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the dropdown selector \"<FilterLabel>\"\n  And selects the dropdown option value \"<EntityValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must render identical trade records\n  And the column \"<VerifyColumn>\" must read \"<ExpectedValue>\" in all matched rows",
+    "bddData": {
+      "Scenario ID": "Scenario 4.2",
+      "FilterLabel": "Account Number",
+      "EntityValue": "M.BANK",
+      "VerifyColumn": "Account",
+      "ExpectedValue": "1683"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_4_3",
+    "name": "Scenario 4.3: Counterparty Company Comparative Parity Run",
+    "gherkin": "Scenario Outline: Entity and Legal Identifier Filter Parity on <FilterLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the dropdown selector \"<FilterLabel>\"\n  And selects the dropdown option value \"<EntityValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must render identical trade records\n  And the column \"<VerifyColumn>\" must read \"<ExpectedValue>\" in all matched rows",
+    "bddData": {
+      "Scenario ID": "Scenario 4.3",
+      "FilterLabel": "Counterparty Company",
+      "EntityValue": "Non Disclosed Participant",
+      "VerifyColumn": "Cpty(s)",
+      "ExpectedValue": "Non Disclosed Participant"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_4_4",
+    "name": "Scenario 4.4: Counterparty Legal Entity Comparative Parity Run",
+    "gherkin": "Scenario Outline: Entity and Legal Identifier Filter Parity on <FilterLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the dropdown selector \"<FilterLabel>\"\n  And selects the dropdown option value \"<EntityValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must render identical trade records\n  And the column \"<VerifyColumn>\" must read \"<ExpectedValue>\" in all matched rows",
+    "bddData": {
+      "Scenario ID": "Scenario 4.4",
+      "FilterLabel": "Counterparty Legal Entity",
+      "EntityValue": "Asset Mgr/BR.AM",
+      "VerifyColumn": "Cpty(s)",
+      "ExpectedValue": "Asset Mgr/BR.AM"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_4_5",
+    "name": "Scenario 4.5: Broker ID Comparative Parity Run",
+    "gherkin": "Scenario Outline: Entity and Legal Identifier Filter Parity on <FilterLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the dropdown selector \"<FilterLabel>\"\n  And selects the dropdown option value \"<EntityValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must render identical trade records\n  And the column \"<VerifyColumn>\" must read \"<ExpectedValue>\" in all matched rows",
+    "bddData": {
+      "Scenario ID": "Scenario 4.5",
+      "FilterLabel": "Broker ID",
+      "EntityValue": "1684",
+      "VerifyColumn": "Broker ID",
+      "ExpectedValue": "TAUTO"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_4_6",
+    "name": "Scenario 4.6: Executing Broker Comparative Parity Run",
+    "gherkin": "Scenario Outline: Entity and Legal Identifier Filter Parity on <FilterLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the dropdown selector \"<FilterLabel>\"\n  And selects the dropdown option value \"<EntityValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must render identical trade records\n  And the column \"<VerifyColumn>\" must read \"<ExpectedValue>\" in all matched rows",
+    "bddData": {
+      "Scenario ID": "Scenario 4.6",
+      "FilterLabel": "Executing Broker",
+      "EntityValue": "M.Bank",
+      "VerifyColumn": "Trade ID",
+      "ExpectedValue": "TAUTO"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_4_7",
+    "name": "Scenario 4.7: Intermediating Broker Comparative Parity Run",
+    "gherkin": "Scenario Outline: Entity and Legal Identifier Filter Parity on <FilterLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the dropdown selector \"<FilterLabel>\"\n  And selects the dropdown option value \"<EntityValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must render identical trade records\n  And the column \"<VerifyColumn>\" must read \"<ExpectedValue>\" in all matched rows",
+    "bddData": {
+      "Scenario ID": "Scenario 4.7",
+      "FilterLabel": "Intermediating Broker",
+      "EntityValue": "A.Bank",
+      "VerifyColumn": "Trade ID",
+      "ExpectedValue": "TAUTO"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_4_8",
+    "name": "Scenario 4.8: Transferor Comparative Parity Run",
+    "gherkin": "Scenario Outline: Entity and Legal Identifier Filter Parity on <FilterLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the dropdown selector \"<FilterLabel>\"\n  And selects the dropdown option value \"<EntityValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must render identical trade records\n  And the column \"<VerifyColumn>\" must read \"<ExpectedValue>\" in all matched rows",
+    "bddData": {
+      "Scenario ID": "Scenario 4.8",
+      "FilterLabel": "Transferor",
+      "EntityValue": "M.Bank",
+      "VerifyColumn": "Trade ID",
+      "ExpectedValue": "TAUTO"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_4_9",
+    "name": "Scenario 4.9: Transferee Comparative Parity Run",
+    "gherkin": "Scenario Outline: Entity and Legal Identifier Filter Parity on <FilterLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the dropdown selector \"<FilterLabel>\"\n  And selects the dropdown option value \"<EntityValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must render identical trade records\n  And the column \"<VerifyColumn>\" must read \"<ExpectedValue>\" in all matched rows",
+    "bddData": {
+      "Scenario ID": "Scenario 4.9",
+      "FilterLabel": "Transferee",
+      "EntityValue": "M.Bank",
+      "VerifyColumn": "Trade ID",
+      "ExpectedValue": "TAUTO"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_4_10",
+    "name": "Scenario 4.10: Remaining Party Comparative Parity Run",
+    "gherkin": "Scenario Outline: Entity and Legal Identifier Filter Parity on <FilterLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the dropdown selector \"<FilterLabel>\"\n  And selects the dropdown option value \"<EntityValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must render identical trade records\n  And the column \"<VerifyColumn>\" must read \"<ExpectedValue>\" in all matched rows",
+    "bddData": {
+      "Scenario ID": "Scenario 4.10",
+      "FilterLabel": "Remaining Party",
+      "EntityValue": "A.Bank",
+      "VerifyColumn": "Trade ID",
+      "ExpectedValue": "TAUTO"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_5_1",
+    "name": "Scenario 5.1: EQO Comparative Parity Run",
+    "gherkin": "Scenario Outline: Product Tree Node Selection Parity on <FilterLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the dropdown selector \"Product\"\n  And selects the dropdown option value \"<ProductNode>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must render identical trade records\n  And the column \"Product\" must read \"<ExpectedValue>\" in all matched rows",
+    "bddData": {
+      "Scenario ID": "Scenario 5.1",
+      "ProductNode": "EQO",
+      "ExpectedValue": "EQO"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_6_1",
+    "name": "Scenario 6.1: Notional Range Comparative Parity Run",
+    "gherkin": "Scenario Outline: Numeric Economics Range Boundaries on <EconomicField>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<EconomicField>\"\n  And inputs the From Boundary Date as \"<FromValue>\"\n  And inputs the To Boundary Date as \"<ToValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must retrieve the identical transaction records",
+    "bddData": {
+      "Scenario ID": "Scenario 6.1",
+      "EconomicField": "Notional",
+      "FromValue": "400000",
+      "ToValue": "12000000"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_6_2",
+    "name": "Scenario 6.2: Fixed Rate (1st Leg Rate) Range Comparative Parity Run",
+    "gherkin": "Scenario Outline: Numeric Economics Range Boundaries on <EconomicField>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<EconomicField>\"\n  And inputs the From Boundary Date as \"<FromValue>\"\n  And inputs the To Boundary Date as \"<ToValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must retrieve the identical transaction records",
+    "bddData": {
+      "Scenario ID": "Scenario 6.2",
+      "EconomicField": "Fixed Rate (1st Leg Rate)",
+      "FromValue": "7",
+      "ToValue": "17"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_6_3",
+    "name": "Scenario 6.3: Account Number Comparative Parity Run",
+    "gherkin": "Scenario Outline: Financial Attributes Search Parity on <CriteriaLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<CriteriaLabel>\"\n  And inputs the search value \"<Value>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must retrieve the identical transaction records",
+    "bddData": {
+      "Scenario ID": "Scenario 6.3",
+      "CriteriaLabel": "Account Number",
+      "Value": "1684"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_6_4",
+    "name": "Scenario 6.4: Cancellable Option Comparative Parity Run",
+    "gherkin": "Scenario Outline: Financial Attributes Search Parity on <CriteriaLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<CriteriaLabel>\"\n  And inputs the search value \"<Value>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must retrieve the identical transaction records",
+    "bddData": {
+      "Scenario ID": "Scenario 6.4",
+      "CriteriaLabel": "Cancellable Option",
+      "Value": "YES"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_6_5",
+    "name": "Scenario 6.5: Currency Comparative Parity Run",
+    "gherkin": "Scenario Outline: Financial Attributes Search Parity on <CriteriaLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<CriteriaLabel>\"\n  And inputs the search value \"<Value>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must retrieve the identical transaction records",
+    "bddData": {
+      "Scenario ID": "Scenario 6.5",
+      "CriteriaLabel": "Currency",
+      "Value": "AUD"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_6_6",
+    "name": "Scenario 6.6: Direction Comparative Parity Run",
+    "gherkin": "Scenario Outline: Financial Attributes Search Parity on <CriteriaLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<CriteriaLabel>\"\n  And inputs the search value \"<Value>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must retrieve the identical transaction records",
+    "bddData": {
+      "Scenario ID": "Scenario 6.6",
+      "CriteriaLabel": "Direction",
+      "Value": "Pay"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_6_7",
+    "name": "Scenario 6.7: Primary Asset Class Comparative Parity Run",
+    "gherkin": "Scenario Outline: Financial Attributes Search Parity on <CriteriaLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<CriteriaLabel>\"\n  And inputs the search value \"<Value>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must retrieve the identical transaction records",
+    "bddData": {
+      "Scenario ID": "Scenario 6.7",
+      "CriteriaLabel": "Primary Asset Class",
+      "Value": "Equity"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_6_8",
+    "name": "Scenario 6.8: Put/Call Comparative Parity Run",
+    "gherkin": "Scenario Outline: Financial Attributes Search Parity on <CriteriaLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<CriteriaLabel>\"\n  And inputs the search value \"<Value>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must retrieve the identical transaction records",
+    "bddData": {
+      "Scenario ID": "Scenario 6.8",
+      "CriteriaLabel": "Put/Call",
+      "Value": "Put"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_6_9",
+    "name": "Scenario 6.9: Transaction Type Comparative Parity Run",
+    "gherkin": "Scenario Outline: Financial Attributes Search Parity on <CriteriaLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<CriteriaLabel>\"\n  And inputs the search value \"<Value>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must retrieve the identical transaction records",
+    "bddData": {
+      "Scenario ID": "Scenario 6.9",
+      "CriteriaLabel": "Transaction Type",
+      "Value": "New"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_6_10",
+    "name": "Scenario 6.10: 2nd leg (call) currency Comparative Parity Run",
+    "gherkin": "Scenario Outline: Financial Attributes Search Parity on <CriteriaLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<CriteriaLabel>\"\n  And inputs the search value \"<Value>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must retrieve the identical transaction records",
+    "bddData": {
+      "Scenario ID": "Scenario 6.10",
+      "CriteriaLabel": "2nd leg (call) currency",
+      "Value": "AUD"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_6_11",
+    "name": "Scenario 6.11: Product Sub-Type Comparative Parity Run",
+    "gherkin": "Scenario Outline: Financial Attributes Search Parity on <CriteriaLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<CriteriaLabel>\"\n  And inputs the search value \"<Value>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must retrieve the identical transaction records",
+    "bddData": {
+      "Scenario ID": "Scenario 6.11",
+      "CriteriaLabel": "Product Sub-Type",
+      "Value": "NDF"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_6_12",
+    "name": "Scenario 6.12: Fee/Premium Direction Comparative Parity Run",
+    "gherkin": "Scenario Outline: Financial Attributes Search Parity on <CriteriaLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<CriteriaLabel>\"\n  And inputs the search value \"<Value>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must retrieve the identical transaction records",
+    "bddData": {
+      "Scenario ID": "Scenario 6.12",
+      "CriteriaLabel": "Fee/Premium Direction",
+      "Value": "Buy/Pay"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_6_13",
+    "name": "Scenario 6.13: Straddle Comparative Parity Run",
+    "gherkin": "Scenario Outline: Financial Attributes Search Parity on <CriteriaLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<CriteriaLabel>\"\n  And inputs the search value \"<Value>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must retrieve the identical transaction records",
+    "bddData": {
+      "Scenario ID": "Scenario 6.13",
+      "CriteriaLabel": "Straddle",
+      "Value": "Yes"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_6_14",
+    "name": "Scenario 6.14: Settlement Currency Comparative Parity Run",
+    "gherkin": "Scenario Outline: Financial Attributes Search Parity on <CriteriaLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<CriteriaLabel>\"\n  And inputs the search value \"<Value>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must retrieve the identical transaction records",
+    "bddData": {
+      "Scenario ID": "Scenario 6.14",
+      "CriteriaLabel": "Settlement Currency",
+      "Value": "CAD"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_6_15",
+    "name": "Scenario 6.15: Transaction Sub-Type / Amendment Type Comparative Parity Run",
+    "gherkin": "Scenario Outline: Financial Attributes Search Parity on <CriteriaLabel>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<CriteriaLabel>\"\n  And inputs the search value \"<Value>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must retrieve the identical transaction records",
+    "bddData": {
+      "Scenario ID": "Scenario 6.15",
+      "CriteriaLabel": "Transaction Sub-Type / Amendment Type",
+      "Value": "Increase"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_6_16",
+    "name": "Scenario 6.16: Fee Range Comparative Parity Run",
+    "gherkin": "Scenario Outline: Numeric Economics Range Boundaries on <EconomicField>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<EconomicField>\"\n  And inputs the From Boundary Date as \"<FromValue>\"\n  And inputs the To Boundary Date as \"<ToValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must retrieve the identical transaction records",
+    "bddData": {
+      "Scenario ID": "Scenario 6.16",
+      "EconomicField": "Fee",
+      "FromValue": "200",
+      "ToValue": "900"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_6_17",
+    "name": "Scenario 6.17: Fixed Rate Range Comparative Parity Run",
+    "gherkin": "Scenario Outline: Numeric Economics Range Boundaries on <EconomicField>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<EconomicField>\"\n  And inputs the From Boundary Date as \"<FromValue>\"\n  And inputs the To Boundary Date as \"<ToValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must retrieve the identical transaction records",
+    "bddData": {
+      "Scenario ID": "Scenario 6.17",
+      "EconomicField": "Fixed Rate",
+      "FromValue": "20",
+      "ToValue": "20"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_6_18",
+    "name": "Scenario 6.18: Independent Amount Range Comparative Parity Run",
+    "gherkin": "Scenario Outline: Numeric Economics Range Boundaries on <EconomicField>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<EconomicField>\"\n  And inputs the From Boundary Date as \"<FromValue>\"\n  And inputs the To Boundary Date as \"<ToValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must retrieve the identical transaction records",
+    "bddData": {
+      "Scenario ID": "Scenario 6.18",
+      "EconomicField": "Independent Amount",
+      "FromValue": "14500",
+      "ToValue": "24500"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_6_19",
+    "name": "Scenario 6.19: Initial Price Range Comparative Parity Run",
+    "gherkin": "Scenario Outline: Numeric Economics Range Boundaries on <EconomicField>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<EconomicField>\"\n  And inputs the From Boundary Date as \"<FromValue>\"\n  And inputs the To Boundary Date as \"<ToValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must retrieve the identical transaction records",
+    "bddData": {
+      "Scenario ID": "Scenario 6.19",
+      "EconomicField": "Initial Price",
+      "FromValue": "50",
+      "ToValue": "1200"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_6_20",
+    "name": "Scenario 6.20: Notional Range Comparative Parity Run",
+    "gherkin": "Scenario Outline: Numeric Economics Range Boundaries on <EconomicField>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<EconomicField>\"\n  And inputs the From Boundary Date as \"<FromValue>\"\n  And inputs the To Boundary Date as \"<ToValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must retrieve the identical transaction records",
+    "bddData": {
+      "Scenario ID": "Scenario 6.20",
+      "EconomicField": "Notional",
+      "FromValue": "1540000",
+      "ToValue": "2540000"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_6_21",
+    "name": "Scenario 6.21: # of Shares/Options Range Comparative Parity Run",
+    "gherkin": "Scenario Outline: Numeric Economics Range Boundaries on <EconomicField>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<EconomicField>\"\n  And inputs the From Boundary Date as \"<FromValue>\"\n  And inputs the To Boundary Date as \"<ToValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must retrieve the identical transaction records",
+    "bddData": {
+      "Scenario ID": "Scenario 6.21",
+      "EconomicField": "# of Shares/Options",
+      "FromValue": "100",
+      "ToValue": "200"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_6_22",
+    "name": "Scenario 6.22: Strike Price Range Comparative Parity Run",
+    "gherkin": "Scenario Outline: Numeric Economics Range Boundaries on <EconomicField>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<EconomicField>\"\n  And inputs the From Boundary Date as \"<FromValue>\"\n  And inputs the To Boundary Date as \"<ToValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must retrieve the identical transaction records",
+    "bddData": {
+      "Scenario ID": "Scenario 6.22",
+      "EconomicField": "Strike Price",
+      "FromValue": "120",
+      "ToValue": "120"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_6_23",
+    "name": "Scenario 6.23: 2nd leg (call) notional Range Comparative Parity Run",
+    "gherkin": "Scenario Outline: Numeric Economics Range Boundaries on <EconomicField>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<EconomicField>\"\n  And inputs the From Boundary Date as \"<FromValue>\"\n  And inputs the To Boundary Date as \"<ToValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must retrieve the identical transaction records",
+    "bddData": {
+      "Scenario ID": "Scenario 6.23",
+      "EconomicField": "2nd leg (call) notional",
+      "FromValue": "120",
+      "ToValue": "189"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_6_24",
+    "name": "Scenario 6.24: Purchase Price Range Comparative Parity Run",
+    "gherkin": "Scenario Outline: Numeric Economics Range Boundaries on <EconomicField>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<EconomicField>\"\n  And inputs the From Boundary Date as \"<FromValue>\"\n  And inputs the To Boundary Date as \"<ToValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must retrieve the identical transaction records",
+    "bddData": {
+      "Scenario ID": "Scenario 6.24",
+      "EconomicField": "Purchase Price",
+      "FromValue": "700",
+      "ToValue": "1820"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_6_25",
+    "name": "Scenario 6.25: Repurchase Price Range Comparative Parity Run",
+    "gherkin": "Scenario Outline: Numeric Economics Range Boundaries on <EconomicField>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<EconomicField>\"\n  And inputs the From Boundary Date as \"<FromValue>\"\n  And inputs the To Boundary Date as \"<ToValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must retrieve the identical transaction records",
+    "bddData": {
+      "Scenario ID": "Scenario 6.25",
+      "EconomicField": "Repurchase Price",
+      "FromValue": "200",
+      "ToValue": "1430"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_6_26",
+    "name": "Scenario 6.26: Purchase Security Nominal Range Comparative Parity Run",
+    "gherkin": "Scenario Outline: Numeric Economics Range Boundaries on <EconomicField>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<EconomicField>\"\n  And inputs the From Boundary Date as \"<FromValue>\"\n  And inputs the To Boundary Date as \"<ToValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must retrieve the identical transaction records",
+    "bddData": {
+      "Scenario ID": "Scenario 6.26",
+      "EconomicField": "Purchase Security Nominal",
+      "FromValue": "300",
+      "ToValue": "892"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_6_27",
+    "name": "Scenario 6.27: Purchase Security Quantity Range Comparative Parity Run",
+    "gherkin": "Scenario Outline: Numeric Economics Range Boundaries on <EconomicField>\n  Given the user has authenticated and loaded the OSTTRA Trade Blotter\n  And ensure all search criteria are completely reset and empty\n  When the user targets the criteria field \"<EconomicField>\"\n  And inputs the From Boundary Date as \"<FromValue>\"\n  And inputs the To Boundary Date as \"<ToValue>\"\n  And clicks the \"Apply\" filter button\n  Then both legacy GWT and modern ag-Grid must retrieve the identical transaction records",
+    "bddData": {
+      "Scenario ID": "Scenario 6.27",
+      "EconomicField": "Purchase Security Quantity",
+      "FromValue": "10",
+      "ToValue": "90"
+    },
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  },
+  {
+    "id": "Scenario_5",
+    "name": "Scenario 5: Search Panel Visual Layout & Spelling Audit",
+    "gherkin": "GIVEN: The user has logged into the OSTTRA Trade Blotter platform\nWHEN: The user compares the search criteria input fields on the GWT and ag-Grid panels\nTHEN: Both systems must render corresponding input fields with correct labels and spellings\nAND: All ag-Grid input fields must have adequate widths with zero layout distortion.",
+    "status": "NOT EXECUTED",
+    "notExecutedReason": "Bypassed in this targeted review run. Only focused on executing selected fields.",
+    "gwtScreenshot": "",
+    "newUiScreenshot": "",
+    "gwtResultsScreenshot": "",
+    "newUiResultsScreenshot": "",
+    "mismatchesCount": 0,
+    "mismatches": {},
+    "matches": {}
+  }
+]

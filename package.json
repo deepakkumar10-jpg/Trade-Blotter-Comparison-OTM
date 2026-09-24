@@ -1,0 +1,17 @@
+{
+  "name": "trade-blotter-automation",
+  "version": "1.0.0",
+  "description": "Automation script for Trade Blotter",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.19.2",
+    "playwright": "^1.49.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "compare": "node compare_blotters.js"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.1"
+  }
+}

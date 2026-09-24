@@ -1,0 +1,250 @@
+[
+  {
+    "fieldName": "Workflow",
+    "tagName": "p-treeselect",
+    "type": "",
+    "placeholder": "",
+    "className": "full-width-dropdown p-component p-inputwrapper p-treeselect p-treeselect-clearable ng-untouched ng-pristine ng-valid p-inputwrapper-filled",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Workflow\")]]//*[local-name()=\"p-treeselect\" or contains(@class, \"p-treeselect\")][1]"
+  },
+  {
+    "fieldName": "Workflow",
+    "tagName": "input",
+    "type": "text",
+    "placeholder": "",
+    "className": "",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Workflow\")]]//input[2]"
+  },
+  {
+    "fieldName": "Trade Date",
+    "tagName": "p-datepicker",
+    "type": "",
+    "placeholder": "",
+    "className": "p-component p-datepicker p-inputwrapper ng-untouched ng-pristine ng-valid p-inputwrapper-filled",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Trade Date\")]]//*[local-name()=\"p-datepicker\" or contains(@class, \"p-datepicker\")][1]"
+  },
+  {
+    "fieldName": "Trade Date",
+    "tagName": "input",
+    "type": "text",
+    "placeholder": "",
+    "className": "p-datepicker-input p-component p-inputtext p-filled",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Trade Date\")]]//input[2]"
+  },
+  {
+    "fieldName": "Trade Date",
+    "tagName": "p-datepicker",
+    "type": "",
+    "placeholder": "",
+    "className": "p-component p-datepicker p-inputwrapper ng-untouched ng-pristine ng-valid p-inputwrapper-filled",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Trade Date\")]]//*[local-name()=\"p-datepicker\" or contains(@class, \"p-datepicker\")][3]"
+  },
+  {
+    "fieldName": "Trade Date",
+    "tagName": "input",
+    "type": "text",
+    "placeholder": "",
+    "className": "p-datepicker-input p-component p-inputtext p-filled",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Trade Date\")]]//input[4]"
+  },
+  {
+    "fieldName": "Trade Date",
+    "tagName": "input",
+    "type": "text",
+    "placeholder": "e.g. t-3",
+    "className": "mtp-t-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Trade Date\")]]//input[5]"
+  },
+  {
+    "fieldName": "Trade Date",
+    "tagName": "input",
+    "type": "text",
+    "placeholder": "e.g. t+1",
+    "className": "mtp-t-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Trade Date\")]]//input[6]"
+  },
+  {
+    "fieldName": "Folder",
+    "tagName": "p-multiselect",
+    "type": "",
+    "placeholder": "",
+    "className": "full-width-dropdown p-component p-inputwrapper p-multiselect ng-untouched ng-pristine ng-valid",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Folder\")]]//*[local-name()=\"p-multiselect\" or contains(@class, \"p-multiselect\")][1]"
+  },
+  {
+    "fieldName": "Folder",
+    "tagName": "input",
+    "type": "",
+    "placeholder": "",
+    "className": "",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Folder\")]]//input[2]"
+  },
+  {
+    "fieldName": "Deal ID",
+    "tagName": "input",
+    "type": "checkbox",
+    "placeholder": "",
+    "className": "p-checkbox-input",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Deal ID\")]]//input[1]"
+  },
+  {
+    "fieldName": "Deal ID",
+    "tagName": "input",
+    "type": "text",
+    "placeholder": "",
+    "className": "text-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Deal ID\")]]//input[2]"
+  },
+  {
+    "fieldName": "Transaction Type",
+    "tagName": "p-treeselect",
+    "type": "",
+    "placeholder": "",
+    "className": "full-width-dropdown p-component p-inputwrapper p-treeselect p-treeselect-clearable ng-untouched ng-pristine ng-valid",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Transaction Type\")]]//*[local-name()=\"p-treeselect\" or contains(@class, \"p-treeselect\")][1]"
+  },
+  {
+    "fieldName": "Transaction Type",
+    "tagName": "input",
+    "type": "text",
+    "placeholder": "",
+    "className": "",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Transaction Type\")]]//input[2]"
+  },
+  {
+    "fieldName": "Notional",
+    "tagName": "input",
+    "type": "text",
+    "placeholder": "",
+    "className": "range-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Notional\")]]//input[1]"
+  },
+  {
+    "fieldName": "Notional",
+    "tagName": "input",
+    "type": "text",
+    "placeholder": "",
+    "className": "range-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Notional\")]]//input[2]"
+  },
+  {
+    "fieldName": "Account Number",
+    "tagName": "input",
+    "type": "text",
+    "placeholder": "",
+    "className": "text-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Account Number\")]]//input[1]"
+  },
+  {
+    "fieldName": "Counterparty Deal ID",
+    "tagName": "input",
+    "type": "checkbox",
+    "placeholder": "",
+    "className": "p-checkbox-input",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Counterparty Deal ID\")]]//input[1]"
+  },
+  {
+    "fieldName": "Counterparty Deal ID",
+    "tagName": "input",
+    "type": "text",
+    "placeholder": "",
+    "className": "text-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Counterparty Deal ID\")]]//input[2]"
+  },
+  {
+    "fieldName": "Counterparty Trade ID",
+    "tagName": "input",
+    "type": "checkbox",
+    "placeholder": "",
+    "className": "p-checkbox-input",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Counterparty Trade ID\")]]//input[1]"
+  },
+  {
+    "fieldName": "Counterparty Trade ID",
+    "tagName": "input",
+    "type": "text",
+    "placeholder": "",
+    "className": "text-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Counterparty Trade ID\")]]//input[2]"
+  },
+  {
+    "fieldName": "Clearing Status",
+    "tagName": "p-multiselect",
+    "type": "",
+    "placeholder": "",
+    "className": "full-width-dropdown p-component p-inputwrapper p-multiselect ng-untouched ng-pristine ng-valid",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Clearing Status\")]]//*[local-name()=\"p-multiselect\" or contains(@class, \"p-multiselect\")][1]"
+  },
+  {
+    "fieldName": "Clearing Status",
+    "tagName": "input",
+    "type": "",
+    "placeholder": "",
+    "className": "",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Clearing Status\")]]//input[2]"
+  },
+  {
+    "fieldName": "Product",
+    "tagName": "p-treeselect",
+    "type": "",
+    "placeholder": "",
+    "className": "full-width-dropdown p-component p-inputwrapper p-treeselect p-treeselect-clearable ng-untouched ng-pristine ng-valid",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Product\")]]//*[local-name()=\"p-treeselect\" or contains(@class, \"p-treeselect\")][1]"
+  },
+  {
+    "fieldName": "Product",
+    "tagName": "input",
+    "type": "text",
+    "placeholder": "",
+    "className": "",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Product\")]]//input[2]"
+  },
+  {
+    "fieldName": "Trade ID",
+    "tagName": "input",
+    "type": "checkbox",
+    "placeholder": "",
+    "className": "p-checkbox-input",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Trade ID\")]]//input[1]"
+  },
+  {
+    "fieldName": "Trade ID",
+    "tagName": "input",
+    "type": "text",
+    "placeholder": "",
+    "className": "text-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Trade ID\")]]//input[2]"
+  },
+  {
+    "fieldName": "Last Activity Date",
+    "tagName": "p-datepicker",
+    "type": "",
+    "placeholder": "",
+    "className": "p-component p-datepicker p-inputwrapper ng-untouched ng-pristine ng-valid",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Last Activity Date\")]]//*[local-name()=\"p-datepicker\" or contains(@class, \"p-datepicker\")][1]"
+  },
+  {
+    "fieldName": "Last Activity Date",
+    "tagName": "input",
+    "type": "text",
+    "placeholder": "",
+    "className": "p-datepicker-input p-component p-inputtext",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Last Activity Date\")]]//input[2]"
+  },
+  {
+    "fieldName": "Last Activity Date",
+    "tagName": "p-datepicker",
+    "type": "",
+    "placeholder": "",
+    "className": "p-component p-datepicker p-inputwrapper ng-untouched ng-pristine ng-valid",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Last Activity Date\")]]//*[local-name()=\"p-datepicker\" or contains(@class, \"p-datepicker\")][3]"
+  },
+  {
+    "fieldName": "Last Activity Date",
+    "tagName": "input",
+    "type": "text",
+    "placeholder": "",
+    "className": "p-datepicker-input p-component p-inputtext",
+    "relativeXPath": "//div[contains(@class, \"filter-card\")][.//label[contains(normalize-space(text()), \"Last Activity Date\")]]//input[4]"
+  }
+]

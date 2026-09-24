@@ -1,0 +1,106 @@
+{
+  "harvestedAt": "2026-08-14T14:07:11.123Z",
+  "environment": "mtmb2.demo.markit.partners",
+  "totalSourceRows": 355,
+  "cptyTradeId": "42132676_1",
+  "cptyDealId": "42132676",
+  "additionalTradeId": "C-MWIRE",
+  "tradeIds": [
+    "TAUTO42132676_1",
+    "TAUTOBO_42131782_1",
+    "TAUTO42131782_1",
+    "TAUTOBO_42131770_1",
+    "TAUTO42131770_1",
+    "TAUTOBO_42131757_1",
+    "TAUTO42131757_1",
+    "TAUTOBO_42131745_1",
+    "TAUTO42131745_1",
+    "TAUTO42131733_1",
+    "TAUTO42131723_1",
+    "TAUTOBO_42131713_1",
+    "TAUTO42131713_1",
+    "TAUTOBO_42131703_1",
+    "TAUTO42131703_1"
+  ],
+  "dealIds": [
+    "S42132676_1",
+    "SBO42131782_1",
+    "S42131782_1",
+    "SBO42131770_1",
+    "S42131770_1",
+    "SBO42131757_1",
+    "S42131757_1",
+    "SBO42131745_1",
+    "S42131745_1",
+    "SBO42131733_1",
+    "S42131733_1",
+    "SBO42131723_1",
+    "S42131723_1",
+    "SBO42131713_1",
+    "S42131713_1"
+  ],
+  "products": [
+    "IRS",
+    "OIS",
+    "BSWP",
+    "IFS",
+    "FRA",
+    "CDI"
+  ],
+  "directions": [
+    "Pay Fixed",
+    "Recv Fixed",
+    "Pay",
+    "Buy",
+    "Sell"
+  ],
+  "statuses": [
+    "CLEARED"
+  ],
+  "docStatuses": [
+    "Doc(s) Req'd"
+  ],
+  "currencies": [
+    "AUD",
+    "USD",
+    "EUR",
+    "INR"
+  ],
+  "productTypeIds": [
+    "IRSW",
+    "OIS",
+    "BSWP",
+    "IFS",
+    "FRA",
+    "CDI"
+  ],
+  "counterparties": [
+    "M.BANK/ABANK",
+    "Asset Mgr/ABANK",
+    "NDPC/ABANK",
+    "M.BANK/1683"
+  ],
+  "accounts": [
+    "1683",
+    "Block"
+  ],
+  "tradeDates": [
+    "14-Aug-2026",
+    "11-Aug-2026",
+    "10-Aug-2026",
+    "08-Aug-2026",
+    "07-Aug-2026"
+  ],
+  "lastActivityDates": [
+    "14-Aug-2026",
+    "11-Aug-2026",
+    "10-Aug-2026",
+    "07-Aug-2026",
+    "06-Aug-2026"
+  ],
+  "notionalRange": {
+    "min": 100430810,
+    "max": 999888830,
+    "mid": 550159820
+  }
+}

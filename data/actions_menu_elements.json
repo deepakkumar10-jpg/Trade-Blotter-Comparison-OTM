@@ -1,0 +1,194 @@
+{
+  "options": [
+    {
+      "tagName": "table",
+      "className": "topMenu-menuBarWrapper",
+      "id": "",
+      "text": "DEMO MDMarkitwire DemoMWDEMOBSHelp",
+      "outerHTML": "<table cellspacing=\"0\" cellpadding=\"0\" class=\"topMenu-menuBarWrapper\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><div class=\"topMenu-headerWrapper\"><div class=\"exp-wrapper\"><button type=\"button\" class=\"exp-btn open\" id=\"item-HIDE_BUTTON\"><div class=\"ic\"></div></button></div><div class=\"banner-text banner-space\">DEMO </div><div class=\"topMenu-logoBackGround\"></div><div class=\"topMenu-logo"
+    },
+    {
+      "tagName": "div",
+      "className": "topMenu-headerWrapper",
+      "id": "",
+      "text": "DEMO MDMarkitwire DemoMWDEMOBSHelp",
+      "outerHTML": "<div class=\"topMenu-headerWrapper\"><div class=\"exp-wrapper\"><button type=\"button\" class=\"exp-btn open\" id=\"item-HIDE_BUTTON\"><div class=\"ic\"></div></button></div><div class=\"banner-text banner-space\">DEMO </div><div class=\"topMenu-logoBackGround\"></div><div class=\"topMenu-logo banner-space\"></div><div class=\"topMenu-userinfo-LinksWraper\"><div class=\"fundAdminAction fa-dd\"></div><div class=\"fundAdminAction udd dd\" id=\"item-USER\"><div><div><div class=\"outeractionFieldDrop\"><div class=\"outerboxPane"
+    },
+    {
+      "tagName": "div",
+      "className": "topMenu-logoBackGround",
+      "id": "",
+      "text": "",
+      "outerHTML": "<div class=\"topMenu-logoBackGround\"></div>"
+    },
+    {
+      "tagName": "div",
+      "className": "topMenu-logo banner-space",
+      "id": "",
+      "text": "",
+      "outerHTML": "<div class=\"topMenu-logo banner-space\"></div>"
+    },
+    {
+      "tagName": "div",
+      "className": "topMenu-userinfo-LinksWraper",
+      "id": "",
+      "text": "MDMarkitwire DemoMWDEMOBSHelp",
+      "outerHTML": "<div class=\"topMenu-userinfo-LinksWraper\"><div class=\"fundAdminAction fa-dd\"></div><div class=\"fundAdminAction udd dd\" id=\"item-USER\"><div><div><div class=\"outeractionFieldDrop\"><div class=\"outerboxPanelDrop\"><div class=\"dropdown-Header\"><div class=\"centre\"><div class=\"left\"><span>MD</span></div><div class=\"right\"><div class=\"upper\"><span>Markitwire Demo</span></div><div class=\"lower\"><span>MWDEMOBS</span></div></div></div><div class=\"dd-ic\"></div></div></div><div class=\"inneractionBoxField\"><di"
+    },
+    {
+      "tagName": "div",
+      "className": "dots-menu",
+      "id": "",
+      "text": "",
+      "outerHTML": "<div class=\"dots-menu\"><div class=\"gwt-HTML\"><div class=\"dots-ic\"></div></div></div>"
+    },
+    {
+      "tagName": "table",
+      "className": "side-menu-bar",
+      "id": "",
+      "text": "DashboardClearingConfirmationsNovationsPaperTrade BlotterNewly Received ConfirmsMy Operations WorkspaceMy Signatory WorkspaceAt CounterpartyMain Trade BlotterCustomize ColumnsReportsAddress BookSearchAdminGeneralTrade ManagerTrade File Upload & Status© 2026 OSTTRAProprietary and Confidential",
+      "outerHTML": "<table cellspacing=\"0\" cellpadding=\"0\" class=\"side-menu-bar\" style=\"width: 150px; height: 600px;\"><tbody><tr><td class=\"gwt-StackPanelItem gwt-StackPanelItem-first gwt-StackPanelItem-selected\" height=\"1px\"><table cellspacing=\"0\" cellpadding=\"0\" style=\"width: 100%;\"><tbody><tr class=\"stackItemTop\"><td class=\"stackItemTopLeft\"><div class=\"stackItemTopLeftInner\"></div></td><td class=\"stackItemTopCenter\"><div class=\"stackItemTopCenterInner\"></div></td><td class=\"stackItemTopRight\"><div class=\"stackI"
+    },
+    {
+      "tagName": "table",
+      "className": "side-menu-panel",
+      "id": "",
+      "text": "DashboardClearingConfirmationsNovationsPaperTrade BlotterNewly Received ConfirmsMy Operations WorkspaceMy Signatory WorkspaceAt CounterpartyMain Trade BlotterCustomize ColumnsReportsAddress BookSearchAdminGeneralTrade ManagerTrade File Upload & Status",
+      "outerHTML": "<table cellspacing=\"0\" cellpadding=\"0\" class=\"side-menu-panel\"><tbody><tr class=\"top\"><td class=\"topLeft\"><div class=\"topLeftInner\"></div></td><td class=\"topCenter\"><div class=\"topCenterInner\"></div></td><td class=\"topRight\"><div class=\"topRightInner\"></div></td></tr><tr class=\"middle\"><td class=\"middleLeft\"><div class=\"middleLeftInner\"></div></td><td class=\"middleCenter\"><div class=\"middleCenterInner\"><table class=\"side-menu-layout\" style=\"width: 150px;\"><colgroup><col></colgroup><tbody><tr><td"
+    },
+    {
+      "tagName": "table",
+      "className": "side-menu-layout",
+      "id": "",
+      "text": "DashboardClearingConfirmationsNovationsPaperTrade BlotterNewly Received ConfirmsMy Operations WorkspaceMy Signatory WorkspaceAt CounterpartyMain Trade BlotterCustomize ColumnsReportsAddress BookSearchAdminGeneralTrade ManagerTrade File Upload & Status",
+      "outerHTML": "<table class=\"side-menu-layout\" style=\"width: 150px;\"><colgroup><col></colgroup><tbody><tr><td align=\"center\" height=\"30px\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"side-menu-item db-menu\" id=\"item-DASHBOARD\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><a href=\"javascript:void(0);\" class=\"header\" style=\"display: block;\"><table><tbody><tr><td align=\"center\" style=\"width: 16px;\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAfklEQVR42mNgoDZITk4Wos"
+    },
+    {
+      "tagName": "table",
+      "className": "side-menu-item db-menu",
+      "id": "item-DASHBOARD",
+      "text": "DashboardClearingConfirmationsNovationsPaper",
+      "outerHTML": "<table cellspacing=\"0\" cellpadding=\"0\" class=\"side-menu-item db-menu\" id=\"item-DASHBOARD\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><a href=\"javascript:void(0);\" class=\"header\" style=\"display: block;\"><table><tbody><tr><td align=\"center\" style=\"width: 16px;\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAfklEQVR42mNgoDZITk4WosiAtLS0M6mpqb1Amp9cAy4B8X8gfpWenp5MiQEwfB6IbSgxAIaXArEcJQaA8Ddg+NQVFhZykmsADG8MDQ1lJseA5wQDFocBP0FRm5WVxUNOGGwEJi4VcmLhKtC5Hu"
+    },
+    {
+      "tagName": "a",
+      "className": "sub-menu-items link-item",
+      "id": "",
+      "text": "Clearing",
+      "outerHTML": "<a class=\"sub-menu-items link-item\" href=\"https://mtmb2.demo.markit.partners/mtp-ui/#/app/dashboard/clearing\">Clearing</a>"
+    },
+    {
+      "tagName": "a",
+      "className": "sub-menu-items link-item",
+      "id": "",
+      "text": "Confirmations",
+      "outerHTML": "<a class=\"sub-menu-items link-item\" href=\"https://mtmb2.demo.markit.partners/mtp-ui/#/app/dashboard/confirmations\">Confirmations</a>"
+    },
+    {
+      "tagName": "a",
+      "className": "sub-menu-items link-item",
+      "id": "",
+      "text": "Novations",
+      "outerHTML": "<a class=\"sub-menu-items link-item\" href=\"https://mtmb2.demo.markit.partners/mtp-ui/#/app/dashboard/novations\">Novations</a>"
+    },
+    {
+      "tagName": "a",
+      "className": "sub-menu-items link-item",
+      "id": "",
+      "text": "Paper",
+      "outerHTML": "<a class=\"sub-menu-items link-item\" href=\"https://mtmb2.demo.markit.partners/mtp-ui/#/app/dashboard/paper\">Paper</a>"
+    },
+    {
+      "tagName": "table",
+      "className": "side-menu-item-active",
+      "id": "item-TRADE_BLOTTER",
+      "text": "Trade BlotterNewly Received ConfirmsMy Operations WorkspaceMy Signatory WorkspaceAt CounterpartyMain Trade BlotterCustomize Columns",
+      "outerHTML": "<table cellspacing=\"0\" cellpadding=\"0\" class=\"side-menu-item-active\" id=\"item-TRADE_BLOTTER\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><a href=\"javascript:void(0);\" class=\"header\" style=\"display: block;\"><table><tbody><tr><td align=\"center\" style=\"width: 16px;\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAfklEQVR42mNgoDZITk4WosiAtLS0M6mpqb1Amp9cAy4B8X8gfpWenp5MiQEwfB6IbSgxAIaXArEcJQaA8Ddg+NQVFhZykmsADG8MDQ1lJseA5wQDFocBP0FRm5WVxUNOGGwEJi4VcmLhKtC"
+    },
+    {
+      "tagName": "div",
+      "className": "sub-menu-items",
+      "id": "",
+      "text": "Newly Received Confirms",
+      "outerHTML": "<div class=\"sub-menu-items\">Newly Received Confirms</div>"
+    },
+    {
+      "tagName": "div",
+      "className": "sub-menu-items",
+      "id": "item-MY_OPERATIONS_WORKSPACE",
+      "text": "My Operations Workspace",
+      "outerHTML": "<div class=\"sub-menu-items\" id=\"item-MY_OPERATIONS_WORKSPACE\">My Operations Workspace</div>"
+    },
+    {
+      "tagName": "div",
+      "className": "sub-menu-items",
+      "id": "item-MY_SIGNATORY_WORKSPACE",
+      "text": "My Signatory Workspace",
+      "outerHTML": "<div class=\"sub-menu-items\" id=\"item-MY_SIGNATORY_WORKSPACE\">My Signatory Workspace</div>"
+    },
+    {
+      "tagName": "div",
+      "className": "sub-menu-items",
+      "id": "item-AT_COUNTERPARTY",
+      "text": "At Counterparty",
+      "outerHTML": "<div class=\"sub-menu-items\" id=\"item-AT_COUNTERPARTY\">At Counterparty</div>"
+    },
+    {
+      "tagName": "div",
+      "className": "sub-menu-items",
+      "id": "item-MAIN_TRADE_BLOTTER",
+      "text": "Main Trade Blotter",
+      "outerHTML": "<div class=\"sub-menu-items\" id=\"item-MAIN_TRADE_BLOTTER\"><a href=\"#TradeBlotter:\">Main Trade Blotter</a></div>"
+    },
+    {
+      "tagName": "div",
+      "className": "sub-menu-items",
+      "id": "item-CUSTOMIZE_COLUMNS",
+      "text": "Customize Columns",
+      "outerHTML": "<div class=\"sub-menu-items\" id=\"item-CUSTOMIZE_COLUMNS\">Customize Columns</div>"
+    },
+    {
+      "tagName": "div",
+      "className": "side-menu-item report-menu",
+      "id": "item-REPORTS",
+      "text": "Reports",
+      "outerHTML": "<div class=\"side-menu-item report-menu\" id=\"item-REPORTS\"><a href=\"#Legacy:/EQT/ui/confirms_buyside/ISDAPerformanceReport.jsp\">Reports</a></div>"
+    },
+    {
+      "tagName": "div",
+      "className": "side-menu-item add-menu",
+      "id": "item-ADDRESS_BOOK",
+      "text": "Address Book",
+      "outerHTML": "<div class=\"side-menu-item add-menu\" id=\"item-ADDRESS_BOOK\"><a href=\"#Legacy:/EQT/ui/confirms_buyside/ISDAAddressBook.jsp\">Address Book</a></div>"
+    },
+    {
+      "tagName": "a",
+      "className": "side-menu-item src-menu",
+      "id": "item-SEARCH",
+      "text": "Search",
+      "outerHTML": "<a class=\"side-menu-item src-menu\" href=\"https://mtmb2.demo.markit.partners/EQT/ui/start.jsp#TradeBlotter:Search\" target=\"_blank\" id=\"item-SEARCH\">Search</a>"
+    },
+    {
+      "tagName": "table",
+      "className": "side-menu-item adm-menu",
+      "id": "item-ADMIN",
+      "text": "AdminGeneralTrade ManagerTrade File Upload & Status",
+      "outerHTML": "<table cellspacing=\"0\" cellpadding=\"0\" class=\"side-menu-item adm-menu\" id=\"item-ADMIN\" style=\"\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><a href=\"javascript:void(0);\" class=\"header\" style=\"display: block;\"><table><tbody><tr><td align=\"center\" style=\"width: 16px;\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAfklEQVR42mNgoDZITk4WosiAtLS0M6mpqb1Amp9cAy4B8X8gfpWenp5MiQEwfB6IbSgxAIaXArEcJQaA8Ddg+NQVFhZykmsADG8MDQ1lJseA5wQDFocBP0FRm5WVxUNOGGwEJi4VcmLh"
+    },
+    {
+      "tagName": "div",
+      "className": "side-menu-logo",
+      "id": "",
+      "text": "© 2026 OSTTRAProprietary and Confidential",
+      "outerHTML": "<div class=\"side-menu-logo\"><div class=\"logo-ic\"></div><div class=\"dis-con\"><div class=\"dis-1\">© 2026 OSTTRA</div><div class=\"dis-2\">Proprietary and Confidential</div></div></div>"
+    },
+    {
+      "tagName": "div",
+      "className": "scrollbar-sidemenu",
+      "id": "",
+      "text": "All Workflows and All Statuses:6,256 TradesMain Trade Blotter|Trade Date: All dates|Last Activity Date: 20-May-26 to 19-Jun-26Saved FiltersEditMy Filters    All_Rates    New Filter 1    New Filter 10    New Filter 11    New Filter 12    New Filter 2    New Filter 5    New Filter 6    New Filter 7    New Filter 8    New Filter 9    tid_4209Shared Filters    New Filter 3    New Filter 4    PrabhatActions ...50 of 6256 displayed( 0 selected )Show Criteria  Show All Criteria                            SELECTED CRITERIAHideResetAdd CriteriaApplySaved FiltersLast Activity DateFrom\tToTransaction TypeSelected(0)EditResetNewAssignment   Part. Asgm   Full AsgmAmendmentTermination   Part. Term   Full TermExercise   Part. Exercise   Full ExerciseCancelExpiryExitExtensionRerateSubstitutionIncreaseCounterparty Trade IDContainsCounterparty Deal IDContainsFolderSelected(0)EditResetProductSelected(0)EditResetALL Rates   ASWP: Asset Swap   BSWP: Basis Swap   BOPT: Bond Option   CCBSWP: Cross Currency Basis Swap   CCIRS: Cross Currency Interest Rates Swap   FIXED: Fixed Fixed Swap   FRA: Forward Rate Agreements   IFS: Inflation Swap   OIS: Overnight Index Swap   CPFL: Rate Cap/Floor   CAP: Rates Caps   FLR: Rates Floors   IRS: Rates Interest Rate Swaps   SWO: Swaptions   TRS: Total Return SwapsALL Credit   BTRN: Bespoke Tranches   CDOS: CDO Squared   TRN: Credit CDS Index Tranche   CDI: Credit CDS Index   CMBS: Credit CMBS   CDS: Credit Default Swaps   CDISW: Credit Index Swaptions   CDSSW: Credit Swaptions   CRSWO: Credit SwaptionALL Equities   DISP: Dispersion Variance Swap   DIV: Dividend Swap   EQTRS: Equities Total Return Swap   EQT: Equity (RETIRED)   EQACC: Equity Accumulator   EQO-CLIQUET: Equity Cliquet   EQDEC: Equity Decumulator   EQO: Equity Option   EQS: Equity Swap   EQVS: Equity Variance Swap   VOL: Equity Volatility SwapALL FX   CCY: Cross-Currency Swap   FXNDO: FX Non Deliverable Option   FXO: Foreign Exchange Option   NDF: Non-Deliverable ForwardALL Commodities   COM: Commodities   COMOTH: Commodity Other   COMSP: Commodity Spread   COMSW: Commodity SwapALL Generic Template   GT-RT: GT-RatesALL Repo   BYSE: BuySellback   REPU: RepurchaseTrade IDContainsClearing StatusSelected(0)EditResetIntended for ClearingReady For ClearingClearing PendingClearedClearing RejectedProduct Sub-TypeContainsAccount NumberDeal IDContainsWorkflowSelected(0)EditResetClearing   SEF Auto Process   Client Clearing   Bunched Order   Post Clearing EventConfirmationsSettlement AgencyNovationsPaperStatusEditResetAll Open    Alleged    Disputed    Refused    Pending Action    Error    At Cpty        Affirmed        Allocations Uploaded        Allocations Delivered        Awaiting Approval            Awaiting EE/RP            EE Approved            RP Consented        Awaiting EB        Awaiting Clearing        Consented    Overdue    MatchedCpty AllegedExecuted    Confirmed    ClearedOne Way TradesMy OpenTrade DateFrom\tToFrom (T)\tTo (T)      StatusClrDoc StatusPriCmt.Leg 2 SpreadProductDirectionDeal IDTrade DateTrade IDTypeLeg 1 SpreadCpty Deal IDLast ActivityDISPUTEDN/ADoc(s) Req'd1.CPTY ALLEGEDN/ADoc(s) Req'd .CPTY ALLEGEDN/ADoc(s) Req'd .ERRORIFC-LCH_EURDoc(s) Req'd2.ERRORIFC-LCH_EURDoc(s) Req'd2.CPTY ALLEGEDN/ADoc(s) Req'd1.CPTY ALLEGEDN/ADoc(s) Req'd .DISPUTEDN/ADoc(s) Req'd2.CPTY ALLEGEDN/ADoc(s) Req'd .CPTY ALLEGEDN/ADoc(s) Req'd .CPTY ALLEGEDN/ADoc(s) Req'd .CPTY ALLEGEDN/ADoc(s) Req'd .CPTY ALLEGEDN/ADoc(s) Req'd .CPTY ALLEGEDN/ADoc(s) Req'd .CPTY ALLEGEDN/ADoc(s) Req'd .DISPUTEDN/ADoc(s) Req'd2.ALLEGEDN/ADoc(s) Req'd .CONFIRMEDN/AExecuted1.CONFIRMEDN/AExecuted1.CONFIRMEDN/AExecuted1.CONFIRMEDN/AExecuted1.CPTY ALLEGEDN/ADoc(s) Req'd1.DISPUTEDN/ADoc(s) Req'd1.CONFIRMEDN/AExecuted3.CONFIRMEDN/AExecuted3.CONFIRMEDN/AExecuted3.CONFIRMEDN/AExecuted3.CONFIRMEDN/AExecuted1.CONFIRMEDN/AExecuted1.CONFIRMEDN/AExecuted1.CONFIRMEDN/AExecuted1.CONFIRMEDN/AExecuted3.CONFIRMEDN/AExecuted1.ALLEGEDN/ADoc(s) Req'd .CONFIRMEDN/AExecuted1.CPTY ALLEGEDN/ADoc(s) Req'd1.CONFIRMEDN/AExecuted1.CONFIRMEDN/AExecuted1.ERRORN/ADoc(s) Req'd2.CONFIRMEDN/AExecuted1.CONFIRMEDN/AExecuted .CONFIRMEDN/AExecuted .CONFIRMEDN/AExecuted .CONFIRMEDN/AExecuted .CPTY ALLEGEDN/ADoc(s) Req'd .CONFIRMEDN/AExecuted .CONFIRMEDN/AExecuted2.CONFIRMEDN/AExecuted1.AFFIRMEDN/ADoc(s) Req'd2.CPTY ALLEGEDN/ADoc(s) Req'd1.REPURepo_SC01_1906202619-Jun-2026Repo_SC01_19062026New4210154119-Jun-2026 11:33:53 AMBYSE19-Jun-2026New4210155919-Jun-2026 11:25:44 AMREPU19-Jun-2026New4210155819-Jun-2026 11:23:27 AM0.01IRSRecv FixedS42063420_120-Apr-2026TAUTO42063420_1Amend4206342019-Jun-2026 10:14:39 AM0.01IRSRecv FixedS42085050_125-May-2026TAUTO42085050_1Amend4208505019-Jun-2026 10:13:19 AM0EQSRec Equit...19-Jun-2026New4210155519-Jun-2026 08:55:51 AMREPU19-Jun-2026New4210154719-Jun-2026 08:35:10 AM0EQSRec Equit...DK_EIS_CAP_1906_T0219-Jun-2026DK_EIS_CAP_1906_T02New4210154319-Jun-2026 07:49:48 AM0EQSPay Equit...19-Jun-2026New4210153619-Jun-2026 07:30:25 AM0EQSPay Equit...19-Jun-2026New4210153519-Jun-2026 07:30:21 AMREPU19-Jun-2026New4210154219-Jun-2026 06:38:31 AM0EQSRec Equit...19-Jun-2026New4210153419-Jun-2026 04:39:32 AMEQOBuy19-Jun-2026A42101505_1_2_061...F.Exer4210150519-Jun-2026 04:30:58 AMEQOBuy19-Jun-2026A42101502_1_2_061...Cancel4210150219-Jun-2026 04:30:54 AM0EQSPay Equit...19-Jun-2026New4210153219-Jun-2026 04:06:12 AM0EQSPay Equit...DK_ESS_Autocall_1906_T0119-Jun-2026DK_ESS_Autocall_1...New4210150619-Jun-2026 03:55:25 AM0EQSPay Equit...DK_ESS_Autocall_1906_T0119-Jun-2026DK_ESS_Autocall_1...New19-Jun-2026 03:54:59 AM0EQSPay Equit...4210153019-Jun-2026TAUTO42101530_1Cancel4210152919-Jun-2026 03:22:15 AM0EQSRec Equit...4210152919-Jun-2026TAUTO42101529_1New4210152919-Jun-2026 03:18:59 AMEQOSellS42101527_219-Jun-2026TAUTO42101527_2F.Term4210152719-Jun-2026 03:16:41 AMEQOSellS42101527_119-Jun-2026TAUTO42101527_1New4210152719-Jun-2026 03:15:55 AM0EQSRec Equit...19-Jun-2026New4210152819-Jun-2026 03:15:38 AM0EQSRec Equit...DK_EIS_ACA_1906_T0119-Jun-2026DK_EIS_ACA_1906_T01New4210150819-Jun-2026 03:04:02 AMEQOSellS42101523_119-Jun-2026TAUTO42101523_1New4210152319-Jun-2026 03:01:20 AMEQOSellS42101522_119-Jun-2026TAUTO42101522_1New4210152219-Jun-2026 03:00:11 AMEQOSellS42101521_119-Jun-2026TAUTO42101521_1New4210152119-Jun-2026 02:58:40 AMEQOSellS42101520_119-Jun-2026TAUTO42101520_1New4210152019-Jun-2026 02:57:31 AMEQOSellS42101511_219-Jun-2026TAUTO42101511_2New4210151119-Jun-2026 02:37:03 AMEQOSellS42101511_119-Jun-2026TAUTO42101511_1New4210151119-Jun-2026 02:30:27 AMEQOSellS42101510_219-Jun-2026TAUTO42101510_2New4210151019-Jun-2026 02:29:33 AMEQOSellS42101510_119-Jun-2026TAUTO42101510_1New4210151019-Jun-2026 02:24:22 AMEQOSellS42101509_219-Jun-2026TAUTO42101509_2New4210150919-Jun-2026 02:23:24 AMEQOSellS42101509_119-Jun-2026TAUTO42101509_1New4210150919-Jun-2026 02:22:18 AMEQOSellS42101505_2TAUTO42101505_2Exer19-Jun-2026 02:09:01 AMEQOSellS42101505_119-Jun-2026TAUTO42101505_1New4210150519-Jun-2026 02:08:19 AM0EQSRec Equit...19-Jun-2026New4210150419-Jun-2026 02:07:41 AMDIVPay Fixed...S42101503_219-Jun-2026TAUTO42101503_2Cancel4210150319-Jun-2026 02:07:15 AMDIVPay Fixed...S42101503_119-Jun-2026TAUTO42101503_1New4210150319-Jun-2026 02:06:31 AMEQOSellS42101502_219-Jun-2026TAUTO42101502_2Cancel4208878319-Jun-2026 01:59:55 AMEQOSellS42101502_119-Jun-2026TAUTO42101502_1New4210150219-Jun-2026 01:58:42 AMFIXEDRecv Fixed19-Jun-2026A42101482_1_2_061...New4210148218-Jun-2026 04:46:02 PMFIXEDPay Fixed19-Jun-2026A42101481_1_2_061...New4210148118-Jun-2026 04:38:50 PMIFSPay Fixed19-Jun-2026A42101477_1_2_061...New4210147718-Jun-2026 04:11:50 PMSWOPay Fixed19-Jun-2026A42101476_1_2_061...New4210147618-Jun-2026 04:05:13 PMREPU18-Jun-2026New4210143018-Jun-2026 11:06:26 AMREPU18-Jun-2026New4210142818-Jun-2026 11:02:24 AMREPURepo_SC01_1806202718-Jun-2026Repo_SC01_18062027New4210142318-Jun-2026 07:57:06 AMREPU18-Jun-2026New4210141018-Jun-2026 07:52:45 AMREPURepo_SC01_1806202618-Jun-2026Repo_SC01_18062026New4210141518-Jun-2026 07:52:37 AMIRSRecv Fixed18-Jun-2026New4210141318-Jun-2026 07:37:18 AMNo Records Found.All",
+      "outerHTML": "<div class=\"scrollbar-sidemenu\" style=\"overflow: auto; position: relative; zoom: 1; height: 600px;\"><div style=\"position: relative; zoom: 1;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"tradeBlotter-mainPanel fullWidth\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"tradeBlotter-topPanel fullWidth\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\"><tbody><tr><td align=\"left\" style=\"vertical-al"
+    }
+  ],
+  "matches": []
+}

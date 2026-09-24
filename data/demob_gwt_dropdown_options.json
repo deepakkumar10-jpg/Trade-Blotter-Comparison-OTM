@@ -1,0 +1,71 @@
+{
+  "Workflow": [
+    "Clearing",
+    "SEF Auto Process",
+    "Client Clearing",
+    "Bunched Order",
+    "Post Clearing Event",
+    "Confirmations",
+    "Settlement Agency",
+    "Novations",
+    "Paper"
+  ],
+  "Status": [],
+  "Clearing Status": [
+    "Intended for Clearing",
+    "Ready For Clearing",
+    "Clearing Pending",
+    "Cleared",
+    "Clearing Rejected"
+  ],
+  "Reconciliation State": [
+    "Reconciled",
+    "Unreconciled"
+  ],
+  "Intended for Clearing": [],
+  "Document Status": [
+    "All Internal",
+    "Doc(s) Recv'd",
+    "Req. Revision",
+    "Intermediate",
+    "Signatory",
+    "Approved",
+    "Addn'l Intermediate",
+    "Awaiting Add Signatory",
+    "Counterparty",
+    "Doc(s) Req'd",
+    "Add. Doc(s) Req'd",
+    "Disputed",
+    "Executed",
+    "Closed"
+  ],
+  "Folder": [],
+  "Source": [],
+  "Novation Status": [
+    "Awaiting Reply: STP",
+    "Cancelled",
+    "Complete: STP",
+    "Disputed: STP",
+    "EE Approved: STP",
+    "Error: STP",
+    "Granted: MTM Email",
+    "Granted: Offline Consent",
+    "Overdue: STP",
+    "Pending: STP",
+    "RP Consented: STP",
+    "Refused: MTM Email",
+    "Refused: Offline Consent",
+    "Refused: STP",
+    "Requested: MTM Email",
+    "Requested: STP"
+  ],
+  "Transaction Acceptance Status": [
+    "Accepted",
+    "Rejected",
+    "Pending"
+  ],
+  "Sent?": [],
+  "Settlement Agency Status": [],
+  "Is Package Trade": [],
+  "Broker Submitted Novation": []
+}

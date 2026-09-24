@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Markit EQT Trade Blotter: GWT vs ag-Grid Comparative Testing Framework Architecture</title>
+    <style>
+        body {
+            font-family: 'Calibri', 'Segoe UI', 'Arial', sans-serif;
+            color: #333333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px;
+            background-color: #f1f5f9;
+        }
+        .document-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 50px 60px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+        .word-notice {
+            background-color: #fef3c7;
+            border-left: 5px solid #d97706;
+            color: #78350f;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .header-section {
+            border-bottom: 2px solid #1e3a8a;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+        .document-title {
+            color: #1e3a8a;
+            font-size: 32px;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+            line-height: 1.2;
+        }
+        .document-subtitle {
+            color: #475569;
+            font-size: 20px;
+            font-weight: 400;
+            margin: 0;
+        }
+        .meta-info {
+            margin-top: 15px;
+            font-size: 13px;
+            color: #64748b;
+        }
+        h2 {
+            color: #1e3a8a;
+            font-size: 22px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 8px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            color: #0f172a;
+            font-size: 18px;
+            margin-top: 25px;
+            margin-bottom: 12px;
+        }
+        p, li {
+            font-size: 15px;
+            color: #334155;
+            text-align: justify;
+        }
+        ul, ol {
+            margin-top: 5px;
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight-box {
+            background-color: #f8fafc;
+            border-left: 4px solid #3b82f6;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 4px 4px 0;
+        }
+        .highlight-box.emerald {
+            border-left-color: #10b981;
+            background-color: #f0fdf4;
+        }
+        .highlight-box.purple {
+            border-left-color: #8b5cf6;
+            background-color: #faf5ff;
+        }
+        .highlight-box.amber {
+            border-left-color: #f59e0b;
+            background-color: #fffbeb;
+        }
+        .diagram-container {
+            text-align: center;
+            margin: 35px 0;
+            background-color: #f8fafc;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+        .diagram-container svg {
+            max-width: 100%;
+            height: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 14px;
+        }
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 12px 15px;
+            text-align: left;
+        }
+        th {
+            background-color: #1e3a8a;
+            color: #ffffff;
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            font-size: 11px;
+            font-weight: 600;
+            border-radius: 4px;
+            color: white;
+            text-transform: uppercase;
+        }
+        .badge-green { background-color: #10b981; }
+        .badge-blue { background-color: #3b82f6; }
+        .badge-purple { background-color: #8b5cf6; }
+        .badge-orange { background-color: #f59e0b; }
+        .badge-teal { background-color: #14b8a6; }
+        
+        .talking-points-card {
+            background-color: #faf5ff;
+            border: 1px solid #e9d5ff;
+            border-radius: 8px;
+            padding: 25px;
+            margin: 30px 0;
+        }
+        .talking-points-title {
+            color: #6b21a8;
+            font-size: 18px;
+            font-weight: 700;
+            margin-top: 0;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        .talking-point-item {
+            margin-bottom: 15px;
+            padding-left: 10px;
+            border-left: 3px solid #c084fc;
+        }
+        .talking-point-item strong {
+            color: #5b21b6;
+        }
+        .bold-lead {
+            font-weight: 600;
+            color: #0f172a;
+        }
+    </style>
+</head>
+<body>
+
+<div class="document-container">
+    
+    <!-- Word Compatibility Helper Notice -->
+    <div class="word-notice">
+        <strong>💡 How to open and save this in Microsoft Word:</strong><br>
+        1. Open Microsoft Word.<br>
+        2. Click <strong>File &gt; Open</strong> and browse to this file (<code>Architecture_Presentation.html</code> or <code>Architecture_Presentation.doc</code>).<br>
+        3. Word will open this file with pixel-perfect layouts, fonts, and the high-resolution vector flow diagram fully embedded.<br>
+        4. Go to <strong>File &gt; Save As</strong>, select the destination folder, and choose <strong>Word Document (*.docx)</strong> from the dropdown. This converts it into a native Word file instantly!
+    </div>
+
+    <!-- Cover Section -->
+    <div class="header-section">
+        <h1 class="document-title">Markit EQT Trade Blotter</h1>
+        <h2 class="document-subtitle" style="border:none; margin:0; padding:0; color:#475569; font-size:20px;">GWT vs ag-Grid Comparative Testing Framework: Architectural &amp; Technology Blueprint</h2>
+        <div class="meta-info">
+            <strong>Target Audience:</strong> Technical Leadership &amp; Stakeholders &nbsp;|&nbsp; 
+            <strong>Prepared by:</strong> QA Automation Engineering Team &nbsp;|&nbsp; 
+            <strong>Date:</strong> July 2026
+        </div>
+    </div>
+
+    <!-- Section 1: Executive Summary -->
+    <h2>1. Executive Summary &amp; Core Value Proposition</h2>
+    <p>
+        During major enterprise system migrations, such as transitioning the <strong>Markit EQT Trade Blotter</strong> from the legacy Google Web Toolkit (GWT) Old UI to the modern Angular/ag-Grid New UI, the most critical challenge is guaranteeing <strong>absolute parity</strong>. Every lookup criteria, trade detail record, date range filter, and visual component must render and compute exactly identical results across both versions.
+    </p>
+    <p>
+        To solve this, we designed and implemented a <strong>100% Free and Open-Source Enterprise Testing Framework</strong> built on Node.js and Playwright. The framework automates parallel logins, runs dynamic searches against <strong>all 112 search criteria fields</strong>, scrapes complex grids, compares data row-by-row, and captures masked layouts. This ensures rapid regression detection without incurring expensive commercial software licensing costs.
+    </p>
+
+    <!-- Section 2: Architectural Flow Diagram -->
+    <h2>2. System Architecture Flow Diagram</h2>
+    <p>
+        The framework operates on a modular, five-layered lifecycle: 
+        <strong>1. Specification (BDD Brain)</strong> &rarr; 
+        <strong>2. Orchestration (Playwright Engine)</strong> &rarr; 
+        <strong>3. Browser Automation (POM Interfaces)</strong> &rarr; 
+        <strong>4. Comparative Analytics (Parity Engine)</strong> &rarr; 
+        <strong>5. Consolidated Reporting (Dashboard Output)</strong>.
+    </p>
+
+    <div class="diagram-container">
+        <!-- Embedded SVG Flow Diagram - Crisp and Scalable -->
+        <svg width="900" height="730" viewBox="0 0 900 730" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+                    <path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#475569" />
+                </marker>
+                <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+                    <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.1" />
+                </filter>
+            </defs>
+
+            <!-- Canvas Background -->
+            <rect width="900" height="730" rx="8" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1" />
+
+            <!-- LEVEL 1: Living Specifications -->
+            <g filter="url(#shadow)">
+                <rect x="275" y="20" width="350" height="80" rx="8" fill="#ecfdf5" stroke="#10b981" stroke-width="2" />
+                <rect x="290" y="32" width="20" height="20" rx="3" fill="#10b981" />
+                <text x="300" y="46" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">✏️</text>
+                <text x="325" y="44" fill="#065f46" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="bold">1. LIVING SPECIFICATIONS (BDD)</text>
+                <text x="325" y="62" fill="#047857" font-family="Courier New, monospace" font-size="11" font-weight="bold">COMPREHENSIVE_BDD_TEST_CASES.md</text>
+                <text x="325" y="76" fill="#047857" font-family="Segoe UI, Arial, sans-serif" font-size="10">Plain English Gherkin Feature File (100% Field Coverage)</text>
+            </g>
+
+            <!-- Arrow Level 1 -> 2 -->
+            <path d="M 450,100 L 450,132" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+
+            <!-- LEVEL 2: Playwright Runner -->
+            <g filter="url(#shadow)">
+                <rect x="275" y="140" width="350" height="80" rx="8" fill="#eff6ff" stroke="#3b82f6" stroke-width="2" />
+                <rect x="290" y="152" width="20" height="20" rx="3" fill="#3b82f6" />
+                <text x="300" y="166" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">⚙️</text>
+                <text x="325" y="164" fill="#1e40af" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="bold">2. PLAYWRIGHT RUNNER &amp; PARSER</text>
+                <text x="325" y="182" fill="#1d4ed8" font-family="Courier New, monospace" font-size="11" font-weight="bold">tests/bdd_comprehensive.spec.js</text>
+                <text x="325" y="196" fill="#1d4ed8" font-family="Segoe UI, Arial, sans-serif" font-size="10">Reads BDD Markdown on-the-fly &amp; executes parallel tests</text>
+            </g>
+
+            <!-- Arrow Level 2 -> Split to Level 3 -->
+            <path d="M 450,220 L 450,245" stroke="#475569" stroke-width="2" fill="none" />
+            <path d="M 220,245 L 680,245" stroke="#475569" stroke-width="2" fill="none" />
+            <path d="M 220,245 L 220,262" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+            <path d="M 680,245 L 680,262" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+
+            <!-- LEVEL 3 LEFT: GWT Old UI Page Object -->
+            <g filter="url(#shadow)">
+                <rect x="20" y="270" width="400" height="170" rx="8" fill="#faf5ff" stroke="#8b5cf6" stroke-width="2" />
+                <rect x="35" y="282" width="20" height="20" rx="3" fill="#8b5cf6" />
+                <text x="45" y="296" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">🌐</text>
+                <text x="70" y="294" fill="#5b21b6" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold">GWT OLD UI POM (GwtBlotterPage.js)</text>
+                <text x="70" y="310" fill="#6d28d9" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="bold">Automating Legacy EQT Portal Layer</text>
+                
+                <!-- Bullet points GWT -->
+                <circle cx="45" cy="335" r="3" fill="#8b5cf6" />
+                <text x="55" y="339" fill="#4c1d95" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="bold">Resolves nested GWT iframe (frame_0)</text>
+                
+                <circle cx="45" cy="360" r="3" fill="#8b5cf6" />
+                <text x="55" y="364" fill="#4c1d95" font-family="Segoe UI, Arial, sans-serif" font-size="11">Triggers GWT Bubble: focus → input → change → blur</text>
+                
+                <circle cx="45" cy="385" r="3" fill="#8b5cf6" />
+                <text x="55" y="389" fill="#4c1d95" font-family="Segoe UI, Arial, sans-serif" font-size="11">Merges Left-Frozen columns with Floating-Right grid</text>
+                
+                <circle cx="45" cy="410" r="3" fill="#8b5cf6" />
+                <text x="55" y="414" fill="#4c1d95" font-family="Segoe UI, Arial, sans-serif" font-size="11">Aligns cells to headers dynamically via horizontal midpoints</text>
+            </g>
+
+            <!-- LEVEL 3 RIGHT: ag-Grid New UI Page Object -->
+            <g filter="url(#shadow)">
+                <rect x="480" y="270" width="400" height="170" rx="8" fill="#fdf2f8" stroke="#ec4899" stroke-width="2" />
+                <rect x="495" y="282" width="20" height="20" rx="3" fill="#ec4899" />
+                <text x="505" y="296" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">⚡</text>
+                <text x="530" y="294" fill="#9d174d" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="bold">AG-GRID NEW UI POM (AgGridBlotterPage.js)</text>
+                <text x="530" y="310" fill="#be185d" font-family="Segoe UI, Arial, sans-serif" font-size="10" font-weight="bold">Automating Modern PrimeNG/Angular Layer</text>
+                
+                <!-- Bullet points ag-grid -->
+                <circle cx="505" cy="335" r="3" fill="#ec4899" />
+                <text x="515" y="339" fill="#831843" font-family="Segoe UI, Arial, sans-serif" font-size="11" font-weight="bold">Parses ag-Grid structured DOM &amp; headers</text>
+                
+                <circle cx="505" cy="360" r="3" fill="#ec4899" />
+                <text x="515" y="364" fill="#831843" font-family="Segoe UI, Arial, sans-serif" font-size="11">Expands collapsible filter-card accordions programmatically</text>
+                
+                <circle cx="505" cy="385" r="3" fill="#ec4899" />
+                <text x="515" y="389" fill="#831843" font-family="Segoe UI, Arial, sans-serif" font-size="11">Scrolls inputs into view to prevent visual header overlaps</text>
+                
+                <circle cx="505" cy="410" r="3" fill="#ec4899" />
+                <text x="515" y="414" fill="#831843" font-family="Segoe UI, Arial, sans-serif" font-size="11">Dismisses PrimeNG calendar dropdown overlays safely</text>
+            </g>
+
+            <!-- Merge Arrows Level 3 -> Level 4 -->
+            <path d="M 220,440 L 220,465" stroke="#475569" stroke-width="2" fill="none" />
+            <path d="M 680,440 L 680,465" stroke="#475569" stroke-width="2" fill="none" />
+            <path d="M 220,465 L 680,465" stroke="#475569" stroke-width="2" fill="none" />
+            <path d="M 450,465 L 450,482" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+
+            <!-- LEVEL 4: Comparative Parity Engine -->
+            <g filter="url(#shadow)">
+                <rect x="225" y="490" width="450" height="110" rx="8" fill="#fffbeb" stroke="#f59e0b" stroke-width="2" />
+                <rect x="240" y="502" width="20" height="20" rx="3" fill="#f59e0b" />
+                <text x="250" y="516" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">⚖️</text>
+                <text x="270" y="514" fill="#78350f" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="bold">4. COMPARATIVE PARITY ENGINE</text>
+                <text x="270" y="530" fill="#b45309" font-family="Courier New, monospace" font-size="11" font-weight="bold">DataComparator.js &amp; Visual Masking Pipeline</text>
+                
+                <!-- Bullets for Comparison -->
+                <circle cx="250" cy="552" r="2.5" fill="#f59e0b" />
+                <text x="260" y="556" fill="#78350f" font-family="Segoe UI, Arial, sans-serif" font-size="11"><tspan font-weight="bold">Data Parity:</tspan> Key-by-key, row-by-row grid comparison. Normalizes formatting differences.</text>
+                
+                <circle cx="250" cy="572" r="2.5" fill="#f59e0b" />
+                <text x="260" y="576" fill="#78350f" font-family="Segoe UI, Arial, sans-serif" font-size="11"><tspan font-weight="bold">Visual Parity:</tspan> Capture screenshots with programmatic masking on highly dynamic data zones.</text>
+            </g>
+
+            <!-- Arrow Level 4 -> 5 -->
+            <path d="M 450,600 L 450,622" stroke="#475569" stroke-width="2" fill="none" marker-end="url(#arrow)" />
+
+            <!-- LEVEL 5: Reporting Compiler -->
+            <g filter="url(#shadow)">
+                <rect x="225" y="630" width="450" height="80" rx="8" fill="#f0fdfa" stroke="#14b8a6" stroke-width="2" />
+                <rect x="240" y="642" width="20" height="20" rx="3" fill="#14b8a6" />
+                <text x="250" y="656" fill="#ffffff" font-family="Arial, sans-serif" font-size="11" font-weight="bold" text-anchor="middle">📊</text>
+                <text x="270" y="654" fill="#115e59" font-family="Segoe UI, Arial, sans-serif" font-size="14" font-weight="bold">5. REPORT COMPILER (UNIFIED CHECKLIST)</text>
+                <text x="270" y="672" fill="#0f766e" font-family="Courier New, monospace" font-size="11" font-weight="bold">ReportCompiler.js (active_run.json registry lock)</text>
+                <text x="270" y="688" fill="#0f766e" font-family="Segoe UI, Arial, sans-serif" font-size="11">Survives Playwright worker re-spawns via process.ppid registry lock.</text>
+                <text x="270" y="700" fill="#0f766e" font-family="Segoe UI, Arial, sans-serif" font-size="10">Outputs interactive comparison checklist dashboard + side-by-side screenshots.</text>
+            </g>
+        </svg>
+    </div>
+
+    <!-- Section 3: Technical Component Breakdown -->
+    <h2>3. Component Technology &amp; Architecture Map</h2>
+    <p>
+        The following catalog details each core component, its technological stack, and its explicit architectural responsibility inside the comparative testing pipeline.
+    </p>
+
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 25%;">Component &amp; File Path</th>
+                <th style="width: 15%;">Layer Badge</th>
+                <th style="width: 20%;">Technologies Used</th>
+                <th style="width: 40%;">Architectural Role &amp; Core Responsibility</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="bold-lead">Living Features<br><span style="font-family: Courier New; font-size:11px;">bdd_scenarios/<br>COMPREHENSIVE_BDD_TEST_CASES.md</span></td>
+                <td><span class="badge badge-green">Specification</span></td>
+                <td>Markdown, Gherkin syntax</td>
+                <td><strong>Single Source of Truth:</strong> Houses human-readable Given-When-Then test cases. Outlines 100% of the 112 criteria fields. Easily editable by non-technical stakeholders.</td>
+            </tr>
+            <tr>
+                <td class="bold-lead">BDD Test Runner<br><span style="font-family: Courier New; font-size:11px;">tests/<br>bdd_comprehensive.spec.js</span></td>
+                <td><span class="badge badge-blue">Execution Core</span></td>
+                <td>Node.js, Playwright Test, Regex Parser</td>
+                <td><strong>Dynamic Loader:</strong> Shared parser reads the markdown features, dynamically instantiates individual Playwright test cases, runs them in parallel, and coordinates the verification sequence.</td>
+            </tr>
+            <tr>
+                <td class="bold-lead">GWT Page Object<br><span style="font-family: Courier New; font-size:11px;">src/pom/<br>GwtBlotterPage.js</span></td>
+                <td><span class="badge badge-purple">POM Layer</span></td>
+                <td>Playwright API, JavaScript Evaluator</td>
+                <td><strong>Legacy Portal Interface:</strong> Resolves nested frame elements. Dispatches GWT-specific bubble events (focus, input, change, blur) to bind fields, and scrapes coordinates.</td>
+            </tr>
+            <tr>
+                <td class="bold-lead">GWT Coordinate Helper<br><span style="font-family: Courier New; font-size:11px;">src/pom/<br>GwtUtils.js</span></td>
+                <td><span class="badge badge-purple">POM Layer</span></td>
+                <td>Vector Geometry, JavaScript Math</td>
+                <td><strong>Grid Stitching Engine:</strong> Merges separate frozen (status) and floating (economics) HTML tables row-for-row. Aligns cells with headers by matching horizontal midpoints.</td>
+            </tr>
+            <tr>
+                <td class="bold-lead">ag-Grid Page Object<br><span style="font-family: Courier New; font-size:11px;">src/pom/<br>AgGridBlotterPage.js</span></td>
+                <td><span class="badge badge-purple">POM Layer</span></td>
+                <td>Playwright DOM, Angular bindings</td>
+                <td><strong>Modern Portal Interface:</strong> Drives ag-Grid. Evaluates DOM client heights to auto-expand collapsed criteria sections. Shields screens against active calendar dropdown overlays.</td>
+            </tr>
+            <tr>
+                <td class="bold-lead">Data Comparator<br><span style="font-family: Courier New; font-size:11px;">src/pom/<br>DataComparator.js</span></td>
+                <td><span class="badge badge-orange">Parity Layer</span></td>
+                <td>JSON Diffing, Custom Normalizer</td>
+                <td><strong>Economic Validator:</strong> Normalizes cell formats (e.g., standardizing <code>.</code> vs <code>N/A</code>, space stripping). Audits tabular datasets column-by-column and alerts on mismatch.</td>
+            </tr>
+            <tr>
+                <td class="bold-lead">Report Compiler<br><span style="font-family: Courier New; font-size:11px;">src/pom/<br>ReportCompiler.js</span></td>
+                <td><span class="badge badge-teal">Reporting</span></td>
+                <td>HTML5, CSS3 Grid, Tailwind, active_run.json</td>
+                <td><strong>Registry Guardian &amp; Builder:</strong> Generates unified dashboards. Preserves worker logs across crashes using <code>process.ppid</code> state locking. Renders row-by-row comparative charts.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Section 4: Advanced Engineering Solutions -->
+    <h2>4. Advanced Engineering Solutions (The "Wow" Factors)</h2>
+    <p>
+        The framework goes far beyond standard visual/functional automation. It incorporates professional-grade engineering workarounds designed to combat framework-specific timing, layout, and state-binding bugs:
+    </p>
+
+    <div class="highlight-box purple">
+        <strong style="color: #5b21b6;">⚡ Challenge 1: GWT Invisible Input States (Bypassing Simple Binding)</strong><br>
+        <em>Problem:</em> Simply changing an input element's <code>value</code> in GWT leaves GWT's underlying state bindings empty, leading to blank searches.<br>
+        <em>Solution:</em> We built a bubble event chain that simulates realistic mouse-and-keyboard interactions. Inside the nested iframe, we sequentially dispatch four separate events on the DOM node: <code>Focus &rarr; Input &rarr; Change &rarr; Blur</code>. This triggers GWT's internal framework handlers, syncing the programmatic entry instantly.
+    </div>
+
+    <div class="highlight-box amber">
+        <strong style="color: #b45309;">⚡ Challenge 2: Split-Pane Coordinate Grid Merging</strong><br>
+        <em>Problem:</em> GWT displays grid records split across a left-frozen table container (containing status icons) and a floating right table container (containing trade economics). Because these are independent HTML tables, cell elements do not align under a single columns tag.<br>
+        <em>Solution:</em> We designed a coordinate-based merging algorithm. The tool matches table rows 1-to-1 by index, and maps cell values to grid headers dynamically by computing the absolute horizontal midpoint distance:
+        <div style="text-align: center; font-weight: bold; margin: 10px 0; color: #78350f;">
+            midpoint = (rect.left + rect.right) / 2
+        </div>
+        It dynamically pairs the cell to the closest header if it lies within a <strong>100px tolerance proximity threshold</strong>.
+    </div>
+
+    <div class="highlight-box">
+        <strong style="color: #1e3a8a;">⚡ Challenge 3: Playwright Worker-Respawn Registry Wipe (The Session Lock)</strong><br>
+        <em>Problem:</em> Playwright Test runs test cases in parallel using isolated workers. If a test fails, Playwright tears down that worker and spawns a brand new one to prevent side-effects. This fresh worker re-runs <code>beforeAll</code> hooks, which originally wiped the central reporting database, dividing a single test run into disjointed, incomplete reports.<br>
+        <em>Solution:</em> We engineered a persistent registry lock using the <strong>Parent Process ID (process.ppid)</strong>. All worker processes share the exact same parent process ID. We store the parent PID inside a lightweight lockfile (<code>active_run.json</code>). When a new worker spawns, it reads the file. If the parent PID matches, it bypasses database initialization, preserves completed test results, and appends the new status, compiling all cases into a single, unified HTML report.
+    </div>
+
+    <div class="highlight-box emerald">
+        <strong style="color: #065f46;">⚡ Challenge 4: Overlapping Overlays (Unblocking Screenshots)</strong><br>
+        <em>Problem:</em> When date ranges or dropdown filters are set inside PrimeNG inputs, calendar overlays remain expanded. Capturing screenshots at this instant records a huge floating date-picker box blocking the input labels and neighboring checkboxes, ruining the visual comparison layout reports.<br>
+        <em>Solution:</em> We created a custom <code>AgGridBlotterPage.dismissOverlays()</code> method. Before any screenshot is initiated, this method programmatically clicks a safe blank sector of the workspace and forces a stable 1000ms delay to allow CSS fade-out animations to settle, capturing pristine, unblocked criteria views.
+    </div>
+
+    <!-- Section 5: Presentation Talking Points -->
+    <div class="talking-points-card">
+        <h3 class="talking-points-title">💬 Presentation Guide: Your "Cheat Sheet" for Technical Leadership</h3>
+        <p style="margin-top: 0; color: #5b21b6; font-size: 14px;">
+            Use these structured talking points to explain the diagram and architecture to your manager or technical leads with high authority:
+        </p>
+        
+        <div class="talking-point-item">
+            <strong>"The Single Source of Truth" (Layer 1):</strong><br>
+            "We have aligned our testing entirely around a single Gherkin Markdown document (<code>COMPREHENSIVE_BDD_TEST_CASES.md</code>). Since this is written in plain English, business analysts and non-technical stakeholders can read, write, and audit our test scenarios. Our framework parses this file on-the-fly, meaning a simple edit in plain English instantly alters the automated tests. No code changes are required to add test cases."
+        </div>
+
+        <div class="talking-point-item">
+            <strong>"Robust Browser Modeling" (Layers 2 &amp; 3):</strong><br>
+            "Legacy systems are notoriously unstable during automation because they lack modern DOM bindings. We avoided fragile hardcoded timeouts or raw coordinate clicks. Instead, we developed fully isolated Page Object Models (POM). Our old-UI POM resolves nested GWT iframes, dispatches native bubble event-chains to bind inputs, and stitches coordinate-based split grids. Our new-UI POM auto-expands collapsing search cards and dismisses active calendar overlays."
+        </div>
+
+        <div class="talking-point-item">
+            <strong>"High-Fidelity Comparative Engine" (Layer 4):</strong><br>
+            "We run a two-fold comparison. First, we perform <strong>Data Parity Audits</strong> by scraping raw values from both systems, normalising inconsistencies (such as <code>.</code> vs <code>N/A</code>, dates, and whitespace), and matching them cell-by-cell. Second, we perform <strong>Visual Parity Audits</strong> using Playwright's native screenshot engine with <strong>Custom Masking</strong>. We black out dynamic grid rows to verify the container borders, card headers, and button layouts, completely preventing false pixel-diff failures due to live data changes."
+        </div>
+
+        <div class="talking-point-item">
+            <strong>"Resilient Session Management" (Layer 5):</strong><br>
+            "Playwright runs tests in parallel. To survive worker process crashes and restarts, we implemented a custom registry state-lock utilizing the Parent Process ID (PPID). This ensures that even if a worker crashes, the central test compiler does not wipe the active run's database. It compiles all parallel scenarios, audits, and diagnostic screenshots into a single, interactive, high-end HTML presentation checklist."
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

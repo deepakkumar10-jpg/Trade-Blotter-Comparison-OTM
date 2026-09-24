@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OSTTRA Trade Blotter Master Parity Checklist</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      color: white;
+      padding: 25px 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+    .container {
+      max-width: 950px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .checklist-table {
+      width: 100%;
+      background: white;
+      border-collapse: collapse;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .checklist-table th, .checklist-table td {
+      padding: 20px 25px;
+      text-align: left;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .checklist-table th {
+      background-color: #edf2f7;
+      font-weight: 600;
+      color: #4a5568;
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+    }
+    .scenario-link {
+      font-size: 16px;
+      font-weight: 600;
+      color: #2b6cb0;
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .scenario-link:hover {
+      color: #1a365d;
+      text-decoration: underline;
+    }
+    .status-badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      text-align: center;
+      min-width: 100px;
+    }
+    .status-badge.pass { background-color: #e6fcf5; color: #0ca678; }
+    .status-badge.fail { background-color: #fff5f5; color: #f03e3e; }
+    .status-badge.not_executed { background-color: #f1f3f5; color: #495057; }
+    
+    .skip-reason {
+      margin-top: 5px;
+      font-size: 12px;
+      color: #718096;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>OSTTRA Trade Blotter Master Parity Checklist</h1>
+    <p>Last Compiled: 8/22/2026, 12:59:35 PM | Folder: run_2026-08-22_05-04-01_DemoB</p>
+  </div>
+
+  <div class="container">
+    <table class="checklist-table">
+      <thead>
+        <tr>
+          <th style="width: 15%;">Scenario ID</th>
+          <th style="width: 60%;">Gherkin Scenario Title</th>
+          <th style="width: 25%;">Execution Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Scenario_1_1</strong></td>
+          <td><a href="Scenario_1_1_detail.html" class="scenario-link">Scenario 1.1: Trade ID Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_1_2</strong></td>
+          <td><a href="Scenario_1_2_detail.html" class="scenario-link">Scenario 1.2: Trade ID Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_1_3</strong></td>
+          <td><a href="Scenario_1_3_detail.html" class="scenario-link">Scenario 1.3: Deal ID Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_1_4</strong></td>
+          <td><a href="Scenario_1_4_detail.html" class="scenario-link">Scenario 1.4: Deal ID Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_1_5</strong></td>
+          <td><a href="Scenario_1_5_detail.html" class="scenario-link">Scenario 1.5: Counterparty Trade ID Comparative Parity Run</a></td>
+          <td><span class="status-badge fail">FAIL</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_1_6</strong></td>
+          <td><a href="Scenario_1_6_detail.html" class="scenario-link">Scenario 1.6: Counterparty Deal ID Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_1_7</strong></td>
+          <td><a href="Scenario_1_7_detail.html" class="scenario-link">Scenario 1.7: Bunched Order Block MW ID Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_1_8</strong></td>
+          <td><a href="Scenario_1_8_detail.html" class="scenario-link">Scenario 1.8: Counterparty Trade ID Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_1_9</strong></td>
+          <td><a href="Scenario_1_9_detail.html" class="scenario-link">Scenario 1.9: Counterparty Deal ID Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_1_10</strong></td>
+          <td><a href="Scenario_1_10_detail.html" class="scenario-link">Scenario 1.10: Counterparty Allocation Deal ID Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_1_11</strong></td>
+          <td><a href="Scenario_1_11_detail.html" class="scenario-link">Scenario 1.11: Selective Netting ID Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_1_12</strong></td>
+          <td><a href="Scenario_1_12_detail.html" class="scenario-link">Scenario 1.12: Netting String Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_1_13</strong></td>
+          <td><a href="Scenario_1_13_detail.html" class="scenario-link">Scenario 1.13: Clearing House Trade ID Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_1_14</strong></td>
+          <td><a href="Scenario_1_14_detail.html" class="scenario-link">Scenario 1.14: USI Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_1_15</strong></td>
+          <td><a href="Scenario_1_15_detail.html" class="scenario-link">Scenario 1.15: USI Issuer Comparative Parity Run</a></td>
+          <td><span class="status-badge fail">FAIL</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_1_16</strong></td>
+          <td><a href="Scenario_1_16_detail.html" class="scenario-link">Scenario 1.16: Cleared Trade USI Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_1_17</strong></td>
+          <td><a href="Scenario_1_17_detail.html" class="scenario-link">Scenario 1.17: Cleared Trade USI Issuer Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_1_18</strong></td>
+          <td><a href="Scenario_1_18_detail.html" class="scenario-link">Scenario 1.18: DTCC Warehouse TRI Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_1_19</strong></td>
+          <td><a href="Scenario_1_19_detail.html" class="scenario-link">Scenario 1.19: Associated Trade Id Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_1_20</strong></td>
+          <td><a href="Scenario_1_20_detail.html" class="scenario-link">Scenario 1.20: Block SEF Trade ID Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_1_21</strong></td>
+          <td><a href="Scenario_1_21_detail.html" class="scenario-link">Scenario 1.21: Block USI Comparative Parity Run</a></td>
+          <td><span class="status-badge fail">FAIL</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_1_22</strong></td>
+          <td><a href="Scenario_1_22_detail.html" class="scenario-link">Scenario 1.22: Block USI Issuer Comparative Parity Run</a></td>
+          <td><span class="status-badge fail">FAIL</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_1_23</strong></td>
+          <td><a href="Scenario_1_23_detail.html" class="scenario-link">Scenario 1.23: Block UTI Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_1_24</strong></td>
+          <td><a href="Scenario_1_24_detail.html" class="scenario-link">Scenario 1.24: Block UTI Issuer Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_1_25</strong></td>
+          <td><a href="Scenario_1_25_detail.html" class="scenario-link">Scenario 1.25: SEF Trade ID Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_1_30</strong></td>
+          <td><a href="Scenario_1_30_detail.html" class="scenario-link">Scenario 1.30: Trade ID(PDF Digitized) Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_1_31</strong></td>
+          <td><a href="Scenario_1_31_detail.html" class="scenario-link">Scenario 1.31: UPI Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_1_32</strong></td>
+          <td><a href="Scenario_1_32_detail.html" class="scenario-link">Scenario 1.32: Clearing House Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_1_33</strong></td>
+          <td><a href="Scenario_1_33_detail.html" class="scenario-link">Scenario 1.33: Execution Venue Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_2_1</strong></td>
+          <td><a href="Scenario_2_1_detail.html" class="scenario-link">Scenario 2.1: Trade Date Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_2_2</strong></td>
+          <td><a href="Scenario_2_2_detail.html" class="scenario-link">Scenario 2.2: Settle Date Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_2_3</strong></td>
+          <td><a href="Scenario_2_3_detail.html" class="scenario-link">Scenario 2.3: Maturity Date Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_2_4</strong></td>
+          <td><a href="Scenario_2_4_detail.html" class="scenario-link">Scenario 2.4: Last Activity Date Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_2_5</strong></td>
+          <td><a href="Scenario_2_5_detail.html" class="scenario-link">Scenario 2.5: Creation Date Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_2_6</strong></td>
+          <td><a href="Scenario_2_6_detail.html" class="scenario-link">Scenario 2.6: Execution Date Comparative Parity Run</a></td>
+          <td><span class="status-badge fail">FAIL</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_2_7</strong></td>
+          <td><a href="Scenario_2_7_detail.html" class="scenario-link">Scenario 2.7: Expiry Date Comparative Parity Run</a></td>
+          <td><span class="status-badge fail">FAIL</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_2_8</strong></td>
+          <td><a href="Scenario_2_8_detail.html" class="scenario-link">Scenario 2.8: Strike Date Comparative Parity Run</a></td>
+          <td><span class="status-badge fail">FAIL</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_3_1</strong></td>
+          <td><a href="Scenario_3_1_detail.html" class="scenario-link">Scenario 3.1: Workflow Comparative Parity Run</a></td>
+          <td><span class="status-badge fail">FAIL</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_3_2</strong></td>
+          <td><a href="Scenario_3_2_detail.html" class="scenario-link">Scenario 3.2: Workflow Comparative Parity Run</a></td>
+          <td><span class="status-badge fail">FAIL</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_3_3</strong></td>
+          <td><a href="Scenario_3_3_detail.html" class="scenario-link">Scenario 3.3: Clearing Status Comparative Parity Run</a></td>
+          <td><span class="status-badge fail">FAIL</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_3_4</strong></td>
+          <td><a href="Scenario_3_4_detail.html" class="scenario-link">Scenario 3.4: Clearing Status Comparative Parity Run</a></td>
+          <td><span class="status-badge fail">FAIL</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_3_5</strong></td>
+          <td><a href="Scenario_3_5_detail.html" class="scenario-link">Scenario 3.5: Reconciliation State Comparative Parity Run</a></td>
+          <td><span class="status-badge fail">FAIL</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_3_6</strong></td>
+          <td><a href="Scenario_3_6_detail.html" class="scenario-link">Scenario 3.6: Reconciliation State Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_3_7</strong></td>
+          <td><a href="Scenario_3_7_detail.html" class="scenario-link">Scenario 3.7: Intended for Clearing Comparative Parity Run</a></td>
+          <td><span class="status-badge fail">FAIL</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_3_8</strong></td>
+          <td><a href="Scenario_3_8_detail.html" class="scenario-link">Scenario 3.8: Intended for Clearing Comparative Parity Run</a></td>
+          <td><span class="status-badge fail">FAIL</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_3_9</strong></td>
+          <td><a href="Scenario_3_9_detail.html" class="scenario-link">Scenario 3.9: Document Status Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_3_10</strong></td>
+          <td><a href="Scenario_3_10_detail.html" class="scenario-link">Scenario 3.10: Source Comparative Parity Run</a></td>
+          <td><span class="status-badge fail">FAIL</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_3_12</strong></td>
+          <td><a href="Scenario_3_12_detail.html" class="scenario-link">Scenario 3.12: Transaction Acceptance Status Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_3_13</strong></td>
+          <td><a href="Scenario_3_13_detail.html" class="scenario-link">Scenario 3.13: Sent? Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_3_14</strong></td>
+          <td><a href="Scenario_3_14_detail.html" class="scenario-link">Scenario 3.14: Settlement Agency Status Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_3_15</strong></td>
+          <td><a href="Scenario_3_15_detail.html" class="scenario-link">Scenario 3.15: Is Package Trade Comparative Parity Run</a></td>
+          <td><span class="status-badge fail">FAIL</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_3_17</strong></td>
+          <td><a href="Scenario_3_17_detail.html" class="scenario-link">Scenario 3.17: Status Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_4_1</strong></td>
+          <td><a href="Scenario_4_1_detail.html" class="scenario-link">Scenario 4.1: Counterparty Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_4_2</strong></td>
+          <td><a href="Scenario_4_2_detail.html" class="scenario-link">Scenario 4.2: Account Number Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_4_3</strong></td>
+          <td><a href="Scenario_4_3_detail.html" class="scenario-link">Scenario 4.3: Counterparty Company Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_4_4</strong></td>
+          <td><a href="Scenario_4_4_detail.html" class="scenario-link">Scenario 4.4: Counterparty Legal Entity Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_4_5</strong></td>
+          <td><a href="Scenario_4_5_detail.html" class="scenario-link">Scenario 4.5: Broker ID Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_4_6</strong></td>
+          <td><a href="Scenario_4_6_detail.html" class="scenario-link">Scenario 4.6: Executing Broker Comparative Parity Run</a></td>
+          <td><span class="status-badge fail">FAIL</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_4_7</strong></td>
+          <td><a href="Scenario_4_7_detail.html" class="scenario-link">Scenario 4.7: Intermediating Broker Comparative Parity Run</a></td>
+          <td><span class="status-badge fail">FAIL</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_4_8</strong></td>
+          <td><a href="Scenario_4_8_detail.html" class="scenario-link">Scenario 4.8: Transferor Comparative Parity Run</a></td>
+          <td><span class="status-badge fail">FAIL</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_4_9</strong></td>
+          <td><a href="Scenario_4_9_detail.html" class="scenario-link">Scenario 4.9: Transferee Comparative Parity Run</a></td>
+          <td><span class="status-badge fail">FAIL</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_4_10</strong></td>
+          <td><a href="Scenario_4_10_detail.html" class="scenario-link">Scenario 4.10: Remaining Party Comparative Parity Run</a></td>
+          <td><span class="status-badge fail">FAIL</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_5_1</strong></td>
+          <td><a href="Scenario_5_1_detail.html" class="scenario-link">Scenario 5.1: EQO Comparative Parity Run</a></td>
+          <td><span class="status-badge fail">FAIL</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_6_1</strong></td>
+          <td><a href="Scenario_6_1_detail.html" class="scenario-link">Scenario 6.1: Notional Range Comparative Parity Run</a></td>
+          <td><span class="status-badge fail">FAIL</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_6_2</strong></td>
+          <td><a href="Scenario_6_2_detail.html" class="scenario-link">Scenario 6.2: Fixed Rate (1st Leg Rate) Range Comparative Parity Run</a></td>
+          <td><span class="status-badge fail">FAIL</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_6_3</strong></td>
+          <td><a href="Scenario_6_3_detail.html" class="scenario-link">Scenario 6.3: Account Number Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_6_4</strong></td>
+          <td><a href="Scenario_6_4_detail.html" class="scenario-link">Scenario 6.4: Cancellable Option Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_6_5</strong></td>
+          <td><a href="Scenario_6_5_detail.html" class="scenario-link">Scenario 6.5: Currency Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_6_6</strong></td>
+          <td><a href="Scenario_6_6_detail.html" class="scenario-link">Scenario 6.6: Direction Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_6_7</strong></td>
+          <td><a href="Scenario_6_7_detail.html" class="scenario-link">Scenario 6.7: Primary Asset Class Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_6_8</strong></td>
+          <td><a href="Scenario_6_8_detail.html" class="scenario-link">Scenario 6.8: Put/Call Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_6_9</strong></td>
+          <td><a href="Scenario_6_9_detail.html" class="scenario-link">Scenario 6.9: Transaction Type Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_6_10</strong></td>
+          <td><a href="Scenario_6_10_detail.html" class="scenario-link">Scenario 6.10: 2nd leg (call) currency Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_6_11</strong></td>
+          <td><a href="Scenario_6_11_detail.html" class="scenario-link">Scenario 6.11: Product Sub-Type Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_6_12</strong></td>
+          <td><a href="Scenario_6_12_detail.html" class="scenario-link">Scenario 6.12: Fee/Premium Direction Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_6_13</strong></td>
+          <td><a href="Scenario_6_13_detail.html" class="scenario-link">Scenario 6.13: Straddle Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_6_14</strong></td>
+          <td><a href="Scenario_6_14_detail.html" class="scenario-link">Scenario 6.14: Settlement Currency Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_6_15</strong></td>
+          <td><a href="Scenario_6_15_detail.html" class="scenario-link">Scenario 6.15: Transaction Sub-Type / Amendment Type Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_6_16</strong></td>
+          <td><a href="Scenario_6_16_detail.html" class="scenario-link">Scenario 6.16: Fee Range Comparative Parity Run</a></td>
+          <td><span class="status-badge fail">FAIL</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_6_17</strong></td>
+          <td><a href="Scenario_6_17_detail.html" class="scenario-link">Scenario 6.17: Fixed Rate Range Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_6_18</strong></td>
+          <td><a href="Scenario_6_18_detail.html" class="scenario-link">Scenario 6.18: Independent Amount Range Comparative Parity Run</a></td>
+          <td><span class="status-badge fail">FAIL</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_6_19</strong></td>
+          <td><a href="Scenario_6_19_detail.html" class="scenario-link">Scenario 6.19: Initial Price Range Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_6_20</strong></td>
+          <td><a href="Scenario_6_20_detail.html" class="scenario-link">Scenario 6.20: Notional Range Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_6_21</strong></td>
+          <td><a href="Scenario_6_21_detail.html" class="scenario-link">Scenario 6.21: # of Shares/Options Range Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_6_22</strong></td>
+          <td><a href="Scenario_6_22_detail.html" class="scenario-link">Scenario 6.22: Strike Price Range Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_6_23</strong></td>
+          <td><a href="Scenario_6_23_detail.html" class="scenario-link">Scenario 6.23: 2nd leg (call) notional Range Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_6_24</strong></td>
+          <td><a href="Scenario_6_24_detail.html" class="scenario-link">Scenario 6.24: Purchase Price Range Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_6_25</strong></td>
+          <td><a href="Scenario_6_25_detail.html" class="scenario-link">Scenario 6.25: Repurchase Price Range Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_6_26</strong></td>
+          <td><a href="Scenario_6_26_detail.html" class="scenario-link">Scenario 6.26: Purchase Security Nominal Range Comparative Parity Run</a></td>
+          <td><span class="status-badge fail">FAIL</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_6_27</strong></td>
+          <td><a href="Scenario_6_27_detail.html" class="scenario-link">Scenario 6.27: Purchase Security Quantity Range Comparative Parity Run</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+        <tr>
+          <td><strong>Scenario_5</strong></td>
+          <td><a href="Scenario_5_detail.html" class="scenario-link">Scenario 5: Search Panel Visual Layout & Spelling Audit</a></td>
+          <td><span class="status-badge pass">PASS</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>

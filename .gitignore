@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Visual Studio / VS Code caches
+.vs/
+.vscode/
+
+# Playwright test execution results
+test-results/
+
+# Gemini CLI temporary workspace
+.gemini/tmp/
+
+# OS and log files
+Thumbs.db
+.DS_Store
+*.log

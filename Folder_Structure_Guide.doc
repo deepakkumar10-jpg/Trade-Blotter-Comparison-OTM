@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Markit EQT Trade Blotter: Folder Structure & Directory Map Guide</title>
+    <style>
+        body {
+            font-family: 'Calibri', 'Segoe UI', 'Arial', sans-serif;
+            color: #333333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px;
+            background-color: #f1f5f9;
+        }
+        .document-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 50px 60px;
+            box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+        }
+        .word-notice {
+            background-color: #e0f2fe;
+            border-left: 5px solid #0284c7;
+            color: #0369a1;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+        .header-section {
+            border-bottom: 2px solid #0f766e;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+        .document-title {
+            color: #0f766e;
+            font-size: 32px;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+            line-height: 1.2;
+        }
+        .document-subtitle {
+            color: #475569;
+            font-size: 20px;
+            font-weight: 400;
+            margin: 0;
+        }
+        .meta-info {
+            margin-top: 15px;
+            font-size: 13px;
+            color: #64748b;
+        }
+        h2 {
+            color: #0f766e;
+            font-size: 22px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 8px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        p, li {
+            font-size: 15px;
+            color: #334155;
+            text-align: justify;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 14px;
+        }
+        th, td {
+            border: 1px solid #cbd5e1;
+            padding: 12px 15px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #0f766e;
+            color: #ffffff;
+            font-weight: 600;
+        }
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        .bold-lead {
+            font-weight: 600;
+            color: #0f172a;
+        }
+        .badge {
+            display: inline-block;
+            padding: 3px 8px;
+            font-size: 11px;
+            font-weight: 600;
+            border-radius: 4px;
+            color: white;
+            text-transform: uppercase;
+        }
+        .badge-teal { background-color: #0f766e; }
+    </style>
+</head>
+<body>
+
+<div class="document-container">
+    
+    <!-- Word Compatibility Helper Notice -->
+    <div class="word-notice">
+        <strong>💡 How to open and save this in Microsoft Word:</strong><br>
+        1. Open Microsoft Word.<br>
+        2. Click <strong>File &gt; Open</strong> and browse to this file (<code>Folder_Structure_Guide.doc</code>).<br>
+        3. Word will open this file with pixel-perfect layouts, fonts, and fully structured tables.<br>
+        4. Go to <strong>File &gt; Save As</strong>, select the destination folder, and choose <strong>Word Document (*.docx)</strong> from the dropdown. This converts it into a native Word file instantly!
+    </div>
+
+    <!-- Cover Section -->
+    <div class="header-section">
+        <h1 class="document-title">OSTTRA Markit EQT Trade Blotter</h1>
+        <h2 class="document-subtitle">Project Directory Mapping, Components, &amp; Testing Roles Guide</h2>
+        <div class="meta-info">
+            <strong>Target Audience:</strong> QA Engineers, Business Analysts &amp; Stakeholders &nbsp;|&nbsp; 
+            <strong>Prepared by:</strong> Senior Automation Architect &nbsp;|&nbsp; 
+            <strong>Date:</strong> July 2026
+        </div>
+    </div>
+
+    <!-- Section 1: Overview -->
+    <h2>1. Project Directory Structure Map</h2>
+    <p>
+        The comparative regression framework is strictly organized into clean, specialized folders. The following matrix details each directory, its primary purpuse, what file types are housed in it, and its precise architectural role in our testing pipeline:
+    </p>
+
+    <!-- The requested table -->
+    <table>
+        <thead>
+            <tr>
+                <th style="width: 25%;">Folder Name</th>
+                <th style="width: 40%;">Description &amp; Respective Responisbility</th>
+                <th style="width: 15%;">File Types</th>
+                <th style="width: 20%;">Role in Testing Framework</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="bold-lead"><code>bdd_scenarios/</code></td>
+                <td><strong>The Living Documentation Layer:</strong> Hoses our Gherkin BDD test specification documents. Allows non-technical stakeholders to inspect and define search criteria.</td>
+                <td><span class="badge badge-teal">Markdown (.md)</span></td>
+                <td><strong>Single Source of Truth:</strong> Holds <code>COMPREHENSIVE_BDD_TEST_CASES.md</code> containing 100% of the 112 criteria fields. Parsed dynamically on-the-fly.</td>
+            </tr>
+            <tr>
+                <td class="bold-lead"><code>src/pom/</code></td>
+                <td><strong>Page Object Model (POM) Layer:</strong> Implements decoupled, browser-interaction classes and business logic components.</td>
+                <td><span class="badge badge-teal">JavaScript (.js)</span></td>
+                <td><strong>The Engine Room:</strong> Contains <code>GwtBlotterPage</code> (Old UI), <code>AgGridBlotterPage`</code> (New UI), <code>DataComparator</code>, and <code>ReportCompiler</code>.</td>
+            </tr>
+            <tr>
+                <td class="bold-lead"><code>src/</code></td>
+                <td><strong>Harvester &amp; Scrambling Utilities:</strong> Supports offline mappings and diagnostic utilities for page configurations.</td>
+                <td><span class="badge badge-teal">JavaScript (.js)</span></td>
+                <td><strong>The Scaffolding:</strong> Hoses scripts like <code>harvest_test_data.js</code> (captures inputs) and <code>update_bdd_examples.js</code>.</td>
+            </tr>
+            <tr>
+                <td class="bold-lead"><code>tests/</code></td>
+                <td><strong>Test Specification Suites:</strong> Houses active test scripts matching Playwright runner execution constraints.</td>
+                <td><span class="badge badge-teal">JavaScript (.js)</span></td>
+                <td><strong>The Execution Layer:</strong> Contains `bdd_comprehensive.spec.js` which dynamically loops through the Gherkin Markdown and instantiates parallel tests.</td>
+            </tr>
+            <tr>
+                <td class="bold-lead"><code>data/</code></td>
+                <td><strong>Selector Registries &amp; Test Vectors:</strong> Stores harvested JSON criteria XPaths and baseline CSV datasets.</td>
+                <td><span class="badge badge-teal">JSON (.json)<br>CSV (.csv)</span></td>
+                <td><strong>The Data Vault:</strong> Stores <code>new_ui_fields_xpaths.json</code> and GWT datasets used to fuel Offline regressions.</td>
+            </tr>
+            <tr>
+                <td class="bold-lead"><code>gwt_exports/</code></td>
+                <td><strong>Baseline Export Files:</strong> Holds native legacy GWT exported files for offline regression validations.</td>
+                <td><span class="badge badge-teal">CSV (.csv)</span></td>
+                <td><strong>The Offline Baseline:</strong> Hoses raw GWT CSV files (e.g. <code>TradeList - DEMOC.csv</code>) serving as baseline validations.</td>
+            </tr>
+            <tr>
+                <td class="bold-lead"><code>reports/</code></td>
+                <td><strong>Interactive Dashboards &amp; Screen Audits:</strong> Stores compiled HTML checklists and side-by-side run screenshots.</td>
+                <td><span class="badge badge-teal">HTML (.html)<br>PNG (.png)<br>JSON (.json)</span></td>
+                <td><strong>The Output Portal:</strong> Houses unified HTML checklists (<code>trade_comparison_report.html</code>) and visual screenshots.</td>
+            </tr>
+            <tr>
+                <td class="bold-lead"><code>test-results/</code></td>
+                <td><strong>Playwright Artifacts:</strong> Holds execution context logs, trace files, and failed test context captures.</td>
+                <td><span class="badge badge-teal">ZIP (.zip)<br>Markdown (.md)</span></td>
+                <td><strong>The Diagnostic Vault:</strong> Holds Playwright failed test trace files and detailed <code>error-context.md</code> logs.</td>
+            </tr>
+            <tr>
+                <td class="bold-lead"><code>.gemini/</code></td>
+                <td><strong>Domain Knowledge Index:</strong> Stores specialised memory records and operational rules.</td>
+                <td><span class="badge badge-teal">Markdown (.md)</span></td>
+                <td><strong>The Brain Index:</strong> Stores reference files outlining exact DOM layouts, horizontal scroll mapping algorithms, etc.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Section 2: Flow Explanation -->
+    <h2>2. Dynamic Lifecycle &amp; Component Interaction</h2>
+    <p>
+        These folders work in perfect unison during a typical test execution cycle:
+    </p>
+    <ol>
+        <li>The analyst defines/edits plain English search cases inside <code>bdd_scenarios/</code>.</li>
+        <li>The test execution layer (<code>tests/</code>) parses the markdown file on-the-fly and starts parallel Playwright workers.</li>
+        <li>For each test, <code>src/pom/</code> loads, queries selectors from <code>data/</code>, and drives both the old UI (GWT) and new UI (ag-Grid) browsers.</li>
+        <li>Scraped results are fed to <code>src/pom/DataComparator.js</code> to run deep economic, cell-by-cell audits.</li>
+        <li>Prisinte masked screenshots are captured and compiled alongside audit results by <code>src/pom/ReportCompiler.js</code>.</li>
+        <li>The results are generated as beautiful, unified HTML checklist pages inside <code>reports/</code>.</li>
+    </ol>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scenario Detail: Scenario_5_1</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .back-nav {
+      background-color: white;
+      border-bottom: 1px solid #edf2f7;
+      padding: 15px 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+    }
+    .back-link {
+      font-size: 15px;
+      font-weight: 600;
+      color: #2b6cb0;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      transition: color 0.15s;
+    }
+    .back-link:hover {
+      color: #1a365d;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      padding: 30px;
+    }
+    .header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #edf2f7;
+      padding-bottom: 20px;
+      margin-bottom: 25px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #2d3748;
+    }
+    .status-badge {
+      padding: 6px 14px;
+      border-radius: 50px;
+      font-size: 13px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    .status-badge.pass { background-color: #e6fcf5; color: #0ca678; }
+    .status-badge.fail { background-color: #fff5f5; color: #f03e3e; }
+    
+    /* Scorecard layout styling */
+    .scorecard-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 25px;
+    }
+    .scorecard-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 15px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.01);
+    }
+    .scorecard-card.gwt { border-left: 5px solid #2b6cb0; }
+    .scorecard-card.aggrid { border-left: 5px solid #4a5568; }
+    .scorecard-card.status.pass { border-left: 5px solid #0ca678; background-color: #e6fcf5; }
+    .scorecard-card.status.fail { border-left: 5px solid #f03e3e; background-color: #fff5f5; }
+    
+    .scorecard-lbl {
+      font-size: 11px;
+      font-weight: 700;
+      color: #718096;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 5px;
+    }
+    .scorecard-val {
+      font-size: 24px;
+      font-weight: 800;
+      color: #2d3748;
+    }
+    .scorecard-card.status.pass .scorecard-val { color: #0ca678; }
+    .scorecard-card.status.fail .scorecard-val { color: #f03e3e; }
+
+    /* Alert Banner Layout */
+    .alert-banner {
+      padding: 15px 20px;
+      border-radius: 6px;
+      font-size: 15px;
+      margin-bottom: 30px;
+      line-height: 1.5;
+    }
+    .alert-banner.pass { background-color: #e6fcf5; border: 1px solid #c3fae8; color: #099268; }
+    .alert-banner.fail { background-color: #fff5f5; border: 1px solid #ffe3e3; color: #c92a2a; }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #1a365d;
+      border-left: 4px solid #2b6cb0;
+      padding-left: 10px;
+      margin: 30px 0 15px 0;
+    }
+    
+    .gherkin-blockquote {
+      background: #f8f9fa;
+      border-left: 4px solid #1e3c72;
+      padding: 15px 20px;
+      margin-bottom: 30px;
+      font-family: Consolas, Monaco, monospace;
+      font-size: 14px;
+      line-height: 1.6;
+      border-radius: 0 4px 4px 0;
+      white-space: pre-wrap;
+      color: #2d3748;
+    }
+    
+    /* BDD Parameters styling */
+    .bdd-params-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    .bdd-param-card {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      padding: 12px 15px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.01);
+    }
+    .bdd-param-label {
+      font-size: 11px;
+      font-weight: 700;
+      color: #718096;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 4px;
+    }
+    .bdd-param-value {
+      font-size: 15px;
+      font-weight: 600;
+      color: #2b6cb0;
+    }
+    
+    .screenshot-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-bottom: 35px;
+    }
+    .screenshot-box {
+      border: 1px solid #e2e8f0;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    }
+    .screenshot-title {
+      background: #edf2f7;
+      padding: 10px 15px;
+      font-weight: 600;
+      font-size: 14px;
+      color: #4a5568;
+      text-align: center;
+    }
+    .screenshot-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+      cursor: zoom-in;
+    }
+    .screenshot-placeholder {
+      display: none;
+      align-items: center;
+      justify-content: center;
+      height: 250px;
+      background: #f7fafc;
+      color: #a0aec0;
+      font-size: 14px;
+      font-weight: 500;
+      text-align: center;
+      padding: 20px;
+      border-top: 1px dashed #e2e8f0;
+    }
+    
+    .audit-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+      margin-bottom: 40px;
+    }
+    .audit-table th, .audit-table td {
+      border: 1px solid #e2e8f0;
+      padding: 12px 15px;
+      text-align: left;
+    }
+    .audit-table th {
+      background-color: #f7fafc;
+      font-weight: 600;
+      color: #4a5568;
+    }
+    .audit-table tr.mismatch {
+      background-color: #fff5f5;
+    }
+    .audit-table tr.mismatch td {
+      border-color: #feb2b2;
+    }
+    .audit-status {
+      font-weight: bold;
+    }
+    .audit-status.match { color: #0ca678; }
+    .audit-status.mismatch { color: #f03e3e; }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation Back Bar -->
+  <div class="back-nav">
+    <a href="trade_comparison_report.html" class="back-link">← Back to Master Report</a>
+  </div>
+
+  <div class="container">
+    
+    <div class="header-row">
+      <h1>Scenario 5.1: EQO Comparative Parity Run</h1>
+      <span class="status-badge fail">FAIL</span>
+    </div>
+
+    <!-- ASSERTION PARITY SCORECARD PANEL -->
+    <div class="scorecard-container" style="grid-template-columns: 1fr;">
+      <div class="scorecard-card status fail">
+        <div class="scorecard-lbl">PARITY ASSERTION</div>
+        <div class="scorecard-val">FAIL</div>
+      </div>
+    </div>
+
+    <!-- DATABASE QUERY PARITY SCORECARD PANEL -->
+    <div class="scorecard-container" style="margin-top: -10px; margin-bottom: 25px; grid-template-columns: 1fr 1fr;">
+      <div class="scorecard-card gwt" style="border-left: 5px solid #2b6cb0;">
+        <div class="scorecard-lbl">GWT Header Trade Count (Total Matched)</div>
+        <div class="scorecard-val" style="font-size: 20px;">2237</div>
+      </div>
+      <div class="scorecard-card aggrid" style="border-left: 5px solid #4a5568;">
+        <div class="scorecard-lbl">ag-Grid Summary Trade Count (Total Matched)</div>
+        <div class="scorecard-val" style="font-size: 20px;">2237</div>
+      </div>
+    </div>
+
+    <!-- PARITY ASSERTION ALERT BANNER -->
+    <div class="alert-banner fail">
+      <strong>❌ Cell-Level Parity Mismatch!</strong> Both GWT and ag-Grid returned identical data rows (<strong>50 rows</strong>), but specific cells contain formatting or economic mismatches (detailed in the audit list below).
+    </div>
+
+    <div class="section-title">Plain English BDD Specification</div>
+    <div class="gherkin-blockquote">Scenario Outline: Product Tree Node Selection Parity on <FilterLabel>
+  Given the user has authenticated and loaded the OSTTRA Trade Blotter
+  And ensure all search criteria are completely reset and empty
+  When the user targets the dropdown selector "Product"
+  And selects the dropdown option value "<ProductNode>"
+  And clicks the "Apply" filter button
+  Then both legacy GWT and modern ag-Grid must render identical trade records
+  And the column "Product" must read "<ExpectedValue>" in all matched rows</div>
+
+    
+    <div class="section-title">BDD Parameter Values Applied (Runtime)</div>
+    <div class="bdd-params-grid">
+      <div class="bdd-param-card">
+        <div class="bdd-param-label">Scenario ID</div>
+        <div class="bdd-param-value">Scenario 5.1</div>
+      </div>
+      <div class="bdd-param-card">
+        <div class="bdd-param-label">ProductNode</div>
+        <div class="bdd-param-value">EQO</div>
+      </div>
+      <div class="bdd-param-card">
+        <div class="bdd-param-label">ExpectedValue</div>
+        <div class="bdd-param-value">EQO</div>
+      </div>
+    </div>
+
+    <!-- FOUR SCREENSHOTS TWO-FOLD AUDITING LAYOUT -->
+    <div class="section-title">1. Visual Inputs Auditing (Entered Values)</div>
+    <div class="screenshot-grid">
+      <div class="screenshot-box">
+        <div class="screenshot-title">Old UI (GWT) Input State</div>
+        <img src="Scenario_5_1_gwt_criteria.png" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" onclick="window.open(this.src)" title="Click to enlarge GWT criteria">
+        <div class="screenshot-placeholder">📸 Screenshot Bypassed (Bypass Fallback Active)</div>
+      </div>
+      <div class="screenshot-box">
+        <div class="screenshot-title">New UI (ag-Grid) Input State</div>
+        <img src="Scenario_5_1_new_ui_criteria.png" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" onclick="window.open(this.src)" title="Click to enlarge ag-Grid criteria">
+        <div class="screenshot-placeholder">📸 Screenshot Bypassed (Bypass Fallback Active)</div>
+      </div>
+    </div>
+
+    <div class="section-title">2. Visual Results Auditing (Scraped Grid Records)</div>
+    <div class="screenshot-grid">
+      <div class="screenshot-box">
+        <div class="screenshot-title">Old UI (GWT) Grid Results</div>
+        <img src="Scenario_5_1_gwt_results.png" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" onclick="window.open(this.src)" title="Click to enlarge GWT grid">
+        <div class="screenshot-placeholder">📸 Screenshot Bypassed (Bypass Fallback Active)</div>
+      </div>
+      <div class="screenshot-box">
+        <div class="screenshot-title">New UI (ag-Grid) Grid Results</div>
+        <img src="Scenario_5_1_new_ui_results.png" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" onclick="window.open(this.src)" title="Click to enlarge ag-Grid grid">
+        <div class="screenshot-placeholder">📸 Screenshot Bypassed (Bypass Fallback Active)</div>
+      </div>
+    </div>
+
+    <div class="section-title">3. Grid Data Row-by-Row Parity Audit</div>
+    
+        <table class="audit-table">
+          <thead>
+            <tr>
+              <th style="width: 8%;">Row</th>
+              <th style="width: 25%;">Trade / Row ID</th>
+              <th style="width: 52%;">Field-Level Comparison Diffs</th>
+              <th style="width: 15%;">Row Parity</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="mismatch">
+              <td><strong>1</strong></td>
+              <td><strong>TAUTO42127004_1</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>1</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CONFIRMED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Executed</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>TAUTO42127004_1</em></li><li><strong>Last Activity</strong>: <em>19-Aug-2026 05:01:26 AM</em></li><li><strong>Description</strong>: <em>Cap JPY 2028-08-10</em></li><li><strong>Notional / CCY</strong>: <em>303,258,020.00 JPY</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>CPFL</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>06-Aug-2026</em></li><li><strong>Fee</strong>: <em>JPY 0.00</em></li><li><strong>Direction</strong>: <em>S</em></li><li><strong>Cpty Deal ID</strong>: <em>42127004</em></li><li><strong>Deal ID</strong>: <em>TAUTO42127004_1</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>2</strong></td>
+              <td><strong>TAUTO42138922_1_PT</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>2</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>DISPUTED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Doc(s) Req'd</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>TAUTO42138922_1_PT</em></li><li><strong>Last Activity</strong>: <em>21-Aug-2026 10:44:40 AM</em></li><li><strong>Description</strong>: <em>IRS USD 2027-08-25</em></li><li><strong>Notional / CCY</strong>: <em>186,949,216.29 USD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>P.Term</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>21-Aug-2026</em></li><li><strong>Fee</strong>: <em>USD 0.00</em></li><li><strong>Direction</strong>: <em>Pay Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138922</em></li><li><strong>Deal ID</strong>: <em>TAUTO42138922_1</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>3</strong></td>
+              <td><strong>TAUTO42138922_1</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>1</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CONFIRMED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Executed</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>TAUTO42138922_1</em></li><li><strong>Last Activity</strong>: <em>21-Aug-2026 10:43:51 AM</em></li><li><strong>Description</strong>: <em>IRS USD 2027-08-25</em></li><li><strong>Notional / CCY</strong>: <em>623,164,055.00 USD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>21-Aug-2026</em></li><li><strong>Fee</strong>: <em>USD 1,000.00</em></li><li><strong>Direction</strong>: <em>Pay Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138922</em></li><li><strong>Deal ID</strong>: <em>TAUTO42138922_1</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>4</strong></td>
+              <td><strong>OIS_SC09_Patch_Sa...</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>3</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>DISPUTED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Doc(s) Req'd</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>OIS_SC09_Patch_Sa...</em></li><li><strong>Last Activity</strong>: <em>21-Aug-2026 06:53:59 AM</em></li><li><strong>Description</strong>: <em>OIS USD 2027-08-25</em></li><li><strong>Notional / CCY</strong>: <em>19,000,000.00 USD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>OIS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>21-Aug-2026</em></li><li><strong>Fee</strong>: <em>USD 0.00</em></li><li><strong>Direction</strong>: <em>Recv Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138832</em></li><li><strong>Deal ID</strong>: <em>OIS_SC09_Patch_Sanity</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>5</strong></td>
+              <td><strong>Row-5</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>3</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CPTY ALLEGED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Doc(s) Req'd</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>(empty)</em></li><li><strong>Last Activity</strong>: <em>21-Aug-2026 05:56:05 AM</em></li><li><strong>Description</strong>: <em>IRS CAD 1Y</em></li><li><strong>Notional / CCY</strong>: <em>350,292,796.00 CAD</em></li><li><strong>Cpty(s)</strong>: <em>BSAPISEL99</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>21-Aug-2026</em></li><li><strong>Fee</strong>: <em>CAD 1,000.00</em></li><li><strong>Direction</strong>: <em>Recv Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138766</em></li><li><strong>Deal ID</strong>: <em>(empty)</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>6</strong></td>
+              <td><strong>Row-6</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>6</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CPTY ALLEGED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Doc(s) Req'd</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>(empty)</em></li><li><strong>Last Activity</strong>: <em>21-Aug-2026 05:56:00 AM</em></li><li><strong>Description</strong>: <em>IRS CAD 1Y</em></li><li><strong>Notional / CCY</strong>: <em>350,292,796.00 CAD</em></li><li><strong>Cpty(s)</strong>: <em>BSAPISEL99</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>21-Aug-2026</em></li><li><strong>Fee</strong>: <em>CAD 1,000.00</em></li><li><strong>Direction</strong>: <em>Recv Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138759</em></li><li><strong>Deal ID</strong>: <em>(empty)</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>7</strong></td>
+              <td><strong>IRS_SC5_Patch_test</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>2</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>DISPUTED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Doc(s) Req'd</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>IRS_SC5_Patch_test</em></li><li><strong>Last Activity</strong>: <em>21-Aug-2026 05:46:19 AM</em></li><li><strong>Description</strong>: <em>IRS USD 2027-08-25</em></li><li><strong>Notional / CCY</strong>: <em>16,000,000.00 USD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>21-Aug-2026</em></li><li><strong>Fee</strong>: <em>USD 1,000.00</em></li><li><strong>Direction</strong>: <em>Pay Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138789</em></li><li><strong>Deal ID</strong>: <em>IRS_SC5_Patch_test</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>8</strong></td>
+              <td><strong>TAUTO42123102_1</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>5</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>ERROR</em></li><li><strong>Clr</strong>: <em>IFC-LCH</em></li><li><strong>Doc Status</strong>: <em>Doc(s) Req'd</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>TAUTO42123102_1</em></li><li><strong>Last Activity</strong>: <em>21-Aug-2026 05:26:42 AM</em></li><li><strong>Description</strong>: <em>IRS AUD 2041-08-04</em></li><li><strong>Notional / CCY</strong>: <em>172,823,290.00 AUD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1...</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>Block</em></li><li><strong>Trade Date</strong>: <em>03-Aug-2026</em></li><li><strong>Fee</strong>: <em>AUD 0.00</em></li><li><strong>Direction</strong>: <em>Pay Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42123102</em></li><li><strong>Deal ID</strong>: <em>TAUTO42123102_1</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>9</strong></td>
+              <td><strong>TAUTO42123225_1</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>5</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>ERROR</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Doc(s) Req'd</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>TAUTO42123225_1</em></li><li><strong>Last Activity</strong>: <em>21-Aug-2026 05:19:02 AM</em></li><li><strong>Description</strong>: <em>IRS CAD 2027-08-04</em></li><li><strong>Notional / CCY</strong>: <em>842,786,710.00 CAD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>Block</em></li><li><strong>Trade Date</strong>: <em>03-Aug-2026</em></li><li><strong>Fee</strong>: <em>CAD 1,000.00</em></li><li><strong>Direction</strong>: <em>Pay Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42123225</em></li><li><strong>Deal ID</strong>: <em>TAUTO42123225_1</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="">
+              <td><strong>10</strong></td>
+              <td><strong>Row-10</strong></td>
+              <td><div style="color: #0ca678; font-weight: 600; margin-bottom: 8px;">Perfect Row Match! (All 20 fields match perfectly)</div>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View All 20 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CPTY ALLEGED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Doc(s) Req'd</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Cmt</strong>: <em>.</em></li><li><strong>Trade ID</strong>: <em>(empty)</em></li><li><strong>Last Activity</strong>: <em>21-Aug-2026 05:09:47 AM</em></li><li><strong>Description</strong>: <em>IRS CAD 1Y</em></li><li><strong>Notional / CCY</strong>: <em>350,292,796.00 CAD</em></li><li><strong>Cpty(s)</strong>: <em>BSAPISEL99</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>21-Aug-2026</em></li><li><strong>Fee</strong>: <em>CAD 1,000.00</em></li><li><strong>Direction</strong>: <em>Recv Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138762</em></li><li><strong>Deal ID</strong>: <em>(empty)</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status match">✅ ROW MATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>11</strong></td>
+              <td><strong>TAUTO42123352_1</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>5</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>ERROR</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Doc(s) Req'd</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>TAUTO42123352_1</em></li><li><strong>Last Activity</strong>: <em>21-Aug-2026 05:09:32 AM</em></li><li><strong>Description</strong>: <em>IRS BRL 2028-03-01</em></li><li><strong>Notional / CCY</strong>: <em>171,596,360.00 BRL</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>Block</em></li><li><strong>Trade Date</strong>: <em>03-Aug-2026</em></li><li><strong>Fee</strong>: <em>BRL 0.00</em></li><li><strong>Direction</strong>: <em>Pay Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42123352</em></li><li><strong>Deal ID</strong>: <em>TAUTO42123352_1</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>12</strong></td>
+              <td><strong>TAUTO42129834_1_NS</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>1</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>REFUSED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Doc(s) Req'd</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>TAUTO42129834_1_NS</em></li><li><strong>Last Activity</strong>: <em>21-Aug-2026 03:44:22 AM</em></li><li><strong>Description</strong>: <em>IRS CAD 2027-08-10</em></li><li><strong>Notional / CCY</strong>: <em>519,056,004.00 CAD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1...</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>Asgm</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>11-Aug-2026</em></li><li><strong>Fee</strong>: <em>CAD 100.00</em></li><li><strong>Direction</strong>: <em>Pay Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>(empty)</em></li><li><strong>Deal ID</strong>: <em>TAUTO42129834_1</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>13</strong></td>
+              <td><strong>OIS_test_Patch_Sa...</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>1</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>DISPUTED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Doc(s) Req'd</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>OIS_test_Patch_Sa...</em></li><li><strong>Last Activity</strong>: <em>21-Aug-2026 03:22:47 AM</em></li><li><strong>Description</strong>: <em>OIS USD 2027-08-25</em></li><li><strong>Notional / CCY</strong>: <em>19,000,000.00 USD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>OIS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>21-Aug-2026</em></li><li><strong>Fee</strong>: <em>USD 0.00</em></li><li><strong>Direction</strong>: <em>Recv Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138707</em></li><li><strong>Deal ID</strong>: <em>OIS_test_Patch_Sanity</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="">
+              <td><strong>14</strong></td>
+              <td><strong>PA_24000_CAPI_T4_...</strong></td>
+              <td><div style="color: #0ca678; font-weight: 600; margin-bottom: 8px;">Perfect Row Match! (All 20 fields match perfectly)</div>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View All 20 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CONFIRMED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Executed</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Cmt</strong>: <em>.</em></li><li><strong>Trade ID</strong>: <em>PA_24000_CAPI_T4_...</em></li><li><strong>Last Activity</strong>: <em>21-Aug-2026 03:15:52 AM</em></li><li><strong>Description</strong>: <em>IRS CAD 1Y</em></li><li><strong>Notional / CCY</strong>: <em>836,669,160.00 CAD</em></li><li><strong>Cpty(s)</strong>: <em>BSAPISEL99</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>18-Aug-2026</em></li><li><strong>Fee</strong>: <em>CAD 1,000.00</em></li><li><strong>Direction</strong>: <em>Recv Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138705</em></li><li><strong>Deal ID</strong>: <em>(empty)</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status match">✅ ROW MATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>15</strong></td>
+              <td><strong>OIS_SC7_Patch_Sanity</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>7</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CONFIRMED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Executed</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>OIS_SC7_Patch_Sanity</em></li><li><strong>Last Activity</strong>: <em>21-Aug-2026 02:58:49 AM</em></li><li><strong>Description</strong>: <em>OIS USD 2027-08-25</em></li><li><strong>Notional / CCY</strong>: <em>16,000,000.00 USD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>OIS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>21-Aug-2026</em></li><li><strong>Fee</strong>: <em>USD 0.00</em></li><li><strong>Direction</strong>: <em>Recv Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138695</em></li><li><strong>Deal ID</strong>: <em>OIS_SC7_Patch_Sanity</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>16</strong></td>
+              <td><strong>Row-16</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>1</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CPTY ALLEGED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Doc(s) Req'd</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>(empty)</em></li><li><strong>Last Activity</strong>: <em>21-Aug-2026 02:53:23 AM</em></li><li><strong>Description</strong>: <em>IRS CAD 1Y</em></li><li><strong>Notional / CCY</strong>: <em>350,292,796.00 CAD</em></li><li><strong>Cpty(s)</strong>: <em>BSAPISEL99</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>21-Aug-2026</em></li><li><strong>Fee</strong>: <em>CAD 1,000.00</em></li><li><strong>Direction</strong>: <em>Recv Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138700</em></li><li><strong>Deal ID</strong>: <em>(empty)</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>17</strong></td>
+              <td><strong>TAUTO42123356_1</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>4</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>ERROR</em></li><li><strong>Clr</strong>: <em>IFC-LCH</em></li><li><strong>Doc Status</strong>: <em>Doc(s) Req'd</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>TAUTO42123356_1</em></li><li><strong>Last Activity</strong>: <em>21-Aug-2026 02:41:31 AM</em></li><li><strong>Description</strong>: <em>IRS AUD 2041-08-04</em></li><li><strong>Notional / CCY</strong>: <em>700,371,730.00 AUD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1...</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>Block</em></li><li><strong>Trade Date</strong>: <em>03-Aug-2026</em></li><li><strong>Fee</strong>: <em>AUD 0.00</em></li><li><strong>Direction</strong>: <em>Pay Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42123356</em></li><li><strong>Deal ID</strong>: <em>TAUTO42123356_1</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>18</strong></td>
+              <td><strong>OIS_SC07_Patch_Sa...</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>2</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>DISPUTED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Doc(s) Req'd</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>OIS_SC07_Patch_Sa...</em></li><li><strong>Last Activity</strong>: <em>21-Aug-2026 02:21:12 AM</em></li><li><strong>Description</strong>: <em>OIS USD 2027-08-25</em></li><li><strong>Notional / CCY</strong>: <em>17,000,000.00 USD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>OIS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>21-Aug-2026</em></li><li><strong>Fee</strong>: <em>USD 1,000.00</em></li><li><strong>Direction</strong>: <em>Recv Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138683</em></li><li><strong>Deal ID</strong>: <em>OIS_SC07_Patch_Sanity</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>19</strong></td>
+              <td><strong>IRS_SCN7_Patch_test</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>1</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>DISPUTED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Doc(s) Req'd</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>IRS_SCN7_Patch_test</em></li><li><strong>Last Activity</strong>: <em>21-Aug-2026 02:02:27 AM</em></li><li><strong>Description</strong>: <em>IRS USD 2027-08-25</em></li><li><strong>Notional / CCY</strong>: <em>18,000,000.00 USD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>21-Aug-2026</em></li><li><strong>Fee</strong>: <em>USD 1,000.00</em></li><li><strong>Direction</strong>: <em>Pay Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138681</em></li><li><strong>Deal ID</strong>: <em>IRS_SCN7_Patch_test</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>20</strong></td>
+              <td><strong>IRS_SC007_Patch_test</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>2</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>DISPUTED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Doc(s) Req'd</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>IRS_SC007_Patch_test</em></li><li><strong>Last Activity</strong>: <em>21-Aug-2026 01:40:53 AM</em></li><li><strong>Description</strong>: <em>IRS USD 2027-08-25</em></li><li><strong>Notional / CCY</strong>: <em>25,000,000.00 USD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>21-Aug-2026</em></li><li><strong>Fee</strong>: <em>USD 1,000.00</em></li><li><strong>Direction</strong>: <em>Pay Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138677</em></li><li><strong>Deal ID</strong>: <em>IRS_SC007_Patch_test</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>21</strong></td>
+              <td><strong>IRS_SC7_Patch_test</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>1</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>DISPUTED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Doc(s) Req'd</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>IRS_SC7_Patch_test</em></li><li><strong>Last Activity</strong>: <em>21-Aug-2026 01:28:48 AM</em></li><li><strong>Description</strong>: <em>IRS USD 2027-08-25</em></li><li><strong>Notional / CCY</strong>: <em>25,000,000.00 USD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>21-Aug-2026</em></li><li><strong>Fee</strong>: <em>USD 1,000.00</em></li><li><strong>Direction</strong>: <em>Pay Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138665</em></li><li><strong>Deal ID</strong>: <em>IRS_SC7_Patch_test</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>22</strong></td>
+              <td><strong>IRS_SC07_Patch_test</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>3</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>DISPUTED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Doc(s) Req'd</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>IRS_SC07_Patch_test</em></li><li><strong>Last Activity</strong>: <em>21-Aug-2026 01:26:52 AM</em></li><li><strong>Description</strong>: <em>IRS USD 2027-08-25</em></li><li><strong>Notional / CCY</strong>: <em>15,000,000.00 USD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>21-Aug-2026</em></li><li><strong>Fee</strong>: <em>USD 1,000.00</em></li><li><strong>Direction</strong>: <em>Pay Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138653</em></li><li><strong>Deal ID</strong>: <em>IRS_SC07_Patch_test</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>23</strong></td>
+              <td><strong>Row-23</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>3</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CPTY ALLEGED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Doc(s) Req'd</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>(empty)</em></li><li><strong>Last Activity</strong>: <em>21-Aug-2026 01:18:34 AM</em></li><li><strong>Description</strong>: <em>IRS CAD 1Y</em></li><li><strong>Notional / CCY</strong>: <em>350,292,796.00 CAD</em></li><li><strong>Cpty(s)</strong>: <em>BSAPISEL99</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>21-Aug-2026</em></li><li><strong>Fee</strong>: <em>CAD 1,000.00</em></li><li><strong>Direction</strong>: <em>Recv Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138602</em></li><li><strong>Deal ID</strong>: <em>(empty)</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>24</strong></td>
+              <td><strong>IRS_SC06_Patch_test</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>2</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>DISPUTED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Doc(s) Req'd</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>IRS_SC06_Patch_test</em></li><li><strong>Last Activity</strong>: <em>21-Aug-2026 01:07:50 AM</em></li><li><strong>Description</strong>: <em>IRS USD 2027-08-25</em></li><li><strong>Notional / CCY</strong>: <em>13,000,000.00 USD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>21-Aug-2026</em></li><li><strong>Fee</strong>: <em>USD 1,000.00</em></li><li><strong>Direction</strong>: <em>Pay Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138647</em></li><li><strong>Deal ID</strong>: <em>IRS_SC06_Patch_test</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>25</strong></td>
+              <td><strong>TAUTO42123779_1</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>5</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>ERROR</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Doc(s) Req'd</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>TAUTO42123779_1</em></li><li><strong>Last Activity</strong>: <em>20-Aug-2026 11:38:21 PM</em></li><li><strong>Description</strong>: <em>IRS CAD 2027-08-04</em></li><li><strong>Notional / CCY</strong>: <em>634,204,310.00 CAD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>Block</em></li><li><strong>Trade Date</strong>: <em>04-Aug-2026</em></li><li><strong>Fee</strong>: <em>CAD 1,000.00</em></li><li><strong>Direction</strong>: <em>Pay Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42123779</em></li><li><strong>Deal ID</strong>: <em>TAUTO42123779_1</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>26</strong></td>
+              <td><strong>Row-26</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>3</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CPTY ALLEGED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Doc(s) Req'd</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>(empty)</em></li><li><strong>Last Activity</strong>: <em>20-Aug-2026 11:27:41 PM</em></li><li><strong>Description</strong>: <em>IRS CAD 1Y</em></li><li><strong>Notional / CCY</strong>: <em>350,292,796.00 CAD</em></li><li><strong>Cpty(s)</strong>: <em>BSAPISEL99</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>21-Aug-2026</em></li><li><strong>Fee</strong>: <em>CAD 1,000.00</em></li><li><strong>Direction</strong>: <em>Recv Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138600</em></li><li><strong>Deal ID</strong>: <em>(empty)</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>27</strong></td>
+              <td><strong>TAUTO42123780_1</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>5</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>ERROR</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Doc(s) Req'd</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>TAUTO42123780_1</em></li><li><strong>Last Activity</strong>: <em>20-Aug-2026 11:22:41 PM</em></li><li><strong>Description</strong>: <em>IRS CAD 2027-08-06</em></li><li><strong>Notional / CCY</strong>: <em>619,678,630.00 CAD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>Block</em></li><li><strong>Trade Date</strong>: <em>04-Aug-2026</em></li><li><strong>Fee</strong>: <em>CAD 1,000.00</em></li><li><strong>Direction</strong>: <em>Pay Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42123780</em></li><li><strong>Deal ID</strong>: <em>TAUTO42123780_1</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>28</strong></td>
+              <td><strong>Row-28</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>1</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CPTY ALLEGED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Doc(s) Req'd</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>(empty)</em></li><li><strong>Last Activity</strong>: <em>20-Aug-2026 01:18:56 PM</em></li><li><strong>Description</strong>: <em>Inflation Swap USD 1Y</em></li><li><strong>Notional / CCY</strong>: <em>943,743,176.00 USD</em></li><li><strong>Cpty(s)</strong>: <em>BSAPISEL99</em></li><li><strong>Product</strong>: <em>IFS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>Block</em></li><li><strong>Trade Date</strong>: <em>20-Aug-2026</em></li><li><strong>Fee</strong>: <em>USD 1,000.00</em></li><li><strong>Direction</strong>: <em>Pay Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42137418</em></li><li><strong>Deal ID</strong>: <em>(empty)</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>29</strong></td>
+              <td><strong>jl_326SWD465</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>*</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CONFIRMED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Executed</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>jl_326SWD465</em></li><li><strong>Last Activity</strong>: <em>20-Aug-2026 08:53:36 AM</em></li><li><strong>Description</strong>: <em>OIS USD 2028-05-13</em></li><li><strong>Notional / CCY</strong>: <em>34,000,000.00 USD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>OIS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>VAM_VAMF1</em></li><li><strong>Trade Date</strong>: <em>11-May-2026</em></li><li><strong>Fee</strong>: <em>USD 0.00</em></li><li><strong>Direction</strong>: <em>Recv Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138208</em></li><li><strong>Deal ID</strong>: <em>jl_326SWD465</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>30</strong></td>
+              <td><strong>A142138186_NS</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>1</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CONFIRMED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Executed</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>A142138186_NS</em></li><li><strong>Last Activity</strong>: <em>20-Aug-2026 08:38:42 AM</em></li><li><strong>Description</strong>: <em>OIS USD 2027-08-24</em></li><li><strong>Notional / CCY</strong>: <em>306,759,288.00 USD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1...</em></li><li><strong>Product</strong>: <em>OIS</em></li><li><strong>Type</strong>: <em>Asgm</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>21-Aug-2026</em></li><li><strong>Fee</strong>: <em>USD 100.00</em></li><li><strong>Direction</strong>: <em>Pay Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138186</em></li><li><strong>Deal ID</strong>: <em>A142138186</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>31</strong></td>
+              <td><strong>A142138186_AMEND</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>1</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CONFIRMED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Executed</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>A142138186_AMEND</em></li><li><strong>Last Activity</strong>: <em>20-Aug-2026 08:37:15 AM</em></li><li><strong>Description</strong>: <em>OIS USD 2027-08-24</em></li><li><strong>Notional / CCY</strong>: <em>306,759,288.00 USD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>OIS</em></li><li><strong>Type</strong>: <em>Amend</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>20-Aug-2026</em></li><li><strong>Fee</strong>: <em>USD 600.00</em></li><li><strong>Direction</strong>: <em>Recv Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138186</em></li><li><strong>Deal ID</strong>: <em>A142138186</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>32</strong></td>
+              <td><strong>TAUTO42138186_1</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>2</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CONFIRMED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Executed</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>TAUTO42138186_1</em></li><li><strong>Last Activity</strong>: <em>20-Aug-2026 08:37:14 AM</em></li><li><strong>Description</strong>: <em>OIS USD 2027-08-24</em></li><li><strong>Notional / CCY</strong>: <em>511,265,480.00 USD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>OIS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>Block</em></li><li><strong>Trade Date</strong>: <em>20-Aug-2026</em></li><li><strong>Fee</strong>: <em>USD 1,000.00</em></li><li><strong>Direction</strong>: <em>Recv Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138186</em></li><li><strong>Deal ID</strong>: <em>TAUTO42138186_1</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>33</strong></td>
+              <td><strong>TAUTO42138177_1_NS</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>1</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CONFIRMED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Executed</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>TAUTO42138177_1_NS</em></li><li><strong>Last Activity</strong>: <em>20-Aug-2026 08:27:59 AM</em></li><li><strong>Description</strong>: <em>IRS CAD 2027-08-20</em></li><li><strong>Notional / CCY</strong>: <em>835,260,460.00 CAD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1...</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>Asgm</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>21-Aug-2026</em></li><li><strong>Fee</strong>: <em>CAD 100.00</em></li><li><strong>Direction</strong>: <em>Pay Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138177</em></li><li><strong>Deal ID</strong>: <em>TAUTO42138177_1</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>34</strong></td>
+              <td><strong>TAUTO42138177_1</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>4</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CONFIRMED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Executed</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>TAUTO42138177_1</em></li><li><strong>Last Activity</strong>: <em>20-Aug-2026 08:26:24 AM</em></li><li><strong>Description</strong>: <em>IRS CAD 2027-08-20</em></li><li><strong>Notional / CCY</strong>: <em>835,260,460.00 CAD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>20-Aug-2026</em></li><li><strong>Fee</strong>: <em>CAD 1,000.00</em></li><li><strong>Direction</strong>: <em>Pay Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138177</em></li><li><strong>Deal ID</strong>: <em>TAUTO42138177_1</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>35</strong></td>
+              <td><strong>TAUTO42138162_1</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>8</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CONFIRMED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Executed</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>TAUTO42138162_1</em></li><li><strong>Last Activity</strong>: <em>20-Aug-2026 08:17:48 AM</em></li><li><strong>Description</strong>: <em>IRS CAD 2027-08-20</em></li><li><strong>Notional / CCY</strong>: <em>212,586,310.00 CAD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>Block</em></li><li><strong>Trade Date</strong>: <em>20-Aug-2026</em></li><li><strong>Fee</strong>: <em>CAD 1,000.00</em></li><li><strong>Direction</strong>: <em>Pay Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138162</em></li><li><strong>Deal ID</strong>: <em>TAUTO42138162_1</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>36</strong></td>
+              <td><strong>A142138162_AMEND</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>1</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CONFIRMED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Executed</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>A142138162_AMEND</em></li><li><strong>Last Activity</strong>: <em>20-Aug-2026 08:17:16 AM</em></li><li><strong>Description</strong>: <em>IRS CAD 2027-08-20</em></li><li><strong>Notional / CCY</strong>: <em>127,551,786.00 CAD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>Amend</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>20-Aug-2026</em></li><li><strong>Fee</strong>: <em>CAD 600.00</em></li><li><strong>Direction</strong>: <em>Pay Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138162</em></li><li><strong>Deal ID</strong>: <em>A142138162</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>37</strong></td>
+              <td><strong>TAUTO42138154_1_NS</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>1</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CONFIRMED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Executed</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>TAUTO42138154_1_NS</em></li><li><strong>Last Activity</strong>: <em>20-Aug-2026 08:13:09 AM</em></li><li><strong>Description</strong>: <em>IRS CAD 2027-08-20</em></li><li><strong>Notional / CCY</strong>: <em>154,318,946.00 CAD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1...</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>Asgm</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>21-Aug-2026</em></li><li><strong>Fee</strong>: <em>CAD 100.00</em></li><li><strong>Direction</strong>: <em>Pay Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138154</em></li><li><strong>Deal ID</strong>: <em>TAUTO42138154_1</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>38</strong></td>
+              <td><strong>TAUTO42138154_1</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>1</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CONFIRMED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Executed</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>TAUTO42138154_1</em></li><li><strong>Last Activity</strong>: <em>20-Aug-2026 08:11:23 AM</em></li><li><strong>Description</strong>: <em>IRS CAD 2027-08-20</em></li><li><strong>Notional / CCY</strong>: <em>771,594,730.00 CAD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>20-Aug-2026</em></li><li><strong>Fee</strong>: <em>CAD 1,000.00</em></li><li><strong>Direction</strong>: <em>Pay Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138154</em></li><li><strong>Deal ID</strong>: <em>TAUTO42138154_1</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>39</strong></td>
+              <td><strong>TAUTO42138146_1_NS</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>1</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CONFIRMED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Executed</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>TAUTO42138146_1_NS</em></li><li><strong>Last Activity</strong>: <em>20-Aug-2026 08:09:59 AM</em></li><li><strong>Description</strong>: <em>IRS CAD 2027-08-20</em></li><li><strong>Notional / CCY</strong>: <em>187,070,394.00 CAD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1...</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>Asgm</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>21-Aug-2026</em></li><li><strong>Fee</strong>: <em>CAD 100.00</em></li><li><strong>Direction</strong>: <em>Pay Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138146</em></li><li><strong>Deal ID</strong>: <em>TAUTO42138146_1</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>40</strong></td>
+              <td><strong>TAUTO42138146_1_PT</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>1</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CONFIRMED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Executed</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>TAUTO42138146_1_PT</em></li><li><strong>Last Activity</strong>: <em>20-Aug-2026 08:08:04 AM</em></li><li><strong>Description</strong>: <em>IRS CAD 2027-08-20</em></li><li><strong>Notional / CCY</strong>: <em>80,173,026.00 CAD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>P.Term</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>20-Aug-2026</em></li><li><strong>Fee</strong>: <em>CAD 0.00</em></li><li><strong>Direction</strong>: <em>Pay Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138146</em></li><li><strong>Deal ID</strong>: <em>TAUTO42138146_1</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>41</strong></td>
+              <td><strong>TAUTO42138146_1</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>1</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CONFIRMED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Executed</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>TAUTO42138146_1</em></li><li><strong>Last Activity</strong>: <em>20-Aug-2026 08:07:12 AM</em></li><li><strong>Description</strong>: <em>IRS CAD 2027-08-20</em></li><li><strong>Notional / CCY</strong>: <em>267,243,420.00 CAD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>IRS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>20-Aug-2026</em></li><li><strong>Fee</strong>: <em>CAD 1,000.00</em></li><li><strong>Direction</strong>: <em>Pay Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138146</em></li><li><strong>Deal ID</strong>: <em>TAUTO42138146_1</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>42</strong></td>
+              <td><strong>TAUTO42138141_1_NS</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>1</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CONFIRMED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Executed</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>TAUTO42138141_1_NS</em></li><li><strong>Last Activity</strong>: <em>20-Aug-2026 08:05:48 AM</em></li><li><strong>Description</strong>: <em>OIS USD 2027-08-24</em></li><li><strong>Notional / CCY</strong>: <em>602,791,868.00 USD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1...</em></li><li><strong>Product</strong>: <em>OIS</em></li><li><strong>Type</strong>: <em>Asgm</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>21-Aug-2026</em></li><li><strong>Fee</strong>: <em>USD 100.00</em></li><li><strong>Direction</strong>: <em>Recv Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138141</em></li><li><strong>Deal ID</strong>: <em>TAUTO42138141_1</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>43</strong></td>
+              <td><strong>TAUTO42138141_1_PT</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>1</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CONFIRMED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Executed</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>TAUTO42138141_1_PT</em></li><li><strong>Last Activity</strong>: <em>20-Aug-2026 08:04:15 AM</em></li><li><strong>Description</strong>: <em>OIS USD 2027-08-24</em></li><li><strong>Notional / CCY</strong>: <em>258,339,372.00 USD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>OIS</em></li><li><strong>Type</strong>: <em>P.Term</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>20-Aug-2026</em></li><li><strong>Fee</strong>: <em>USD 0.00</em></li><li><strong>Direction</strong>: <em>Recv Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138141</em></li><li><strong>Deal ID</strong>: <em>TAUTO42138141_1</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>44</strong></td>
+              <td><strong>TAUTO42138141_1</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>1</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CONFIRMED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Executed</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>TAUTO42138141_1</em></li><li><strong>Last Activity</strong>: <em>20-Aug-2026 08:03:30 AM</em></li><li><strong>Description</strong>: <em>OIS USD 2027-08-24</em></li><li><strong>Notional / CCY</strong>: <em>861,131,240.00 USD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>OIS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>20-Aug-2026</em></li><li><strong>Fee</strong>: <em>USD 1,000.00</em></li><li><strong>Direction</strong>: <em>Recv Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138141</em></li><li><strong>Deal ID</strong>: <em>TAUTO42138141_1</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>45</strong></td>
+              <td><strong>TAUTO42138134_1_FT</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>1</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CONFIRMED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Executed</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>TAUTO42138134_1_FT</em></li><li><strong>Last Activity</strong>: <em>20-Aug-2026 07:59:11 AM</em></li><li><strong>Description</strong>: <em>CCBSWP USD 2036-08-24</em></li><li><strong>Notional / CCY</strong>: <em>676,324,807.00 USD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>CCBSWP</em></li><li><strong>Type</strong>: <em>F.Term</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>20-Aug-2026</em></li><li><strong>Fee</strong>: <em>USD 0.00</em></li><li><strong>Direction</strong>: <em>Recv</em></li><li><strong>Cpty Deal ID</strong>: <em>42138134</em></li><li><strong>Deal ID</strong>: <em>TAUTO42138134_1</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>46</strong></td>
+              <td><strong>TAUTO42138134_1</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>1</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CONFIRMED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Executed</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>TAUTO42138134_1</em></li><li><strong>Last Activity</strong>: <em>20-Aug-2026 07:58:17 AM</em></li><li><strong>Description</strong>: <em>CCBSWP USD 2036-08-24</em></li><li><strong>Notional / CCY</strong>: <em>676,324,807.00 USD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>CCBSWP</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>20-Aug-2026</em></li><li><strong>Fee</strong>: <em>USD 0.00</em></li><li><strong>Direction</strong>: <em>Recv</em></li><li><strong>Cpty Deal ID</strong>: <em>42138134</em></li><li><strong>Deal ID</strong>: <em>TAUTO42138134_1</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>47</strong></td>
+              <td><strong>TAUTO42138132_1_PT</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>1</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CONFIRMED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Executed</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>TAUTO42138132_1_PT</em></li><li><strong>Last Activity</strong>: <em>20-Aug-2026 07:57:16 AM</em></li><li><strong>Description</strong>: <em>IFS USD 2027-08-24</em></li><li><strong>Notional / CCY</strong>: <em>167,366,578.00 USD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>IFS</em></li><li><strong>Type</strong>: <em>P.Term</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>20-Aug-2026</em></li><li><strong>Fee</strong>: <em>USD 0.00</em></li><li><strong>Direction</strong>: <em>Recv Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138132</em></li><li><strong>Deal ID</strong>: <em>TAUTO42138132_1</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>48</strong></td>
+              <td><strong>TAUTO42138132_1</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>1</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CONFIRMED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Executed</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>TAUTO42138132_1</em></li><li><strong>Last Activity</strong>: <em>20-Aug-2026 07:56:12 AM</em></li><li><strong>Description</strong>: <em>IFS USD 2027-08-24</em></li><li><strong>Notional / CCY</strong>: <em>557,888,592.00 USD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>IFS</em></li><li><strong>Type</strong>: <em>New</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>20-Aug-2026</em></li><li><strong>Fee</strong>: <em>USD 1,000.00</em></li><li><strong>Direction</strong>: <em>Recv Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138132</em></li><li><strong>Deal ID</strong>: <em>TAUTO42138132_1</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>49</strong></td>
+              <td><strong>TAUTO42138124_1_NS</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>1</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CONFIRMED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Executed</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>TAUTO42138124_1_NS</em></li><li><strong>Last Activity</strong>: <em>20-Aug-2026 07:55:57 AM</em></li><li><strong>Description</strong>: <em>BSWP EUR 2027-08-24</em></li><li><strong>Notional / CCY</strong>: <em>713,983,150.00 EUR</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1...</em></li><li><strong>Product</strong>: <em>BSWP</em></li><li><strong>Type</strong>: <em>Asgm</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>21-Aug-2026</em></li><li><strong>Fee</strong>: <em>EUR 100.00</em></li><li><strong>Direction</strong>: <em>Pay</em></li><li><strong>Cpty Deal ID</strong>: <em>42138124</em></li><li><strong>Deal ID</strong>: <em>TAUTO42138124_1</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+            <tr class="mismatch">
+              <td><strong>50</strong></td>
+              <td><strong>TAUTO42138125_1_PT</strong></td>
+              <td><div style="margin-bottom: 5px; font-weight: 600; color: #e53e3e;">Mismatched Fields:</div><ul style="margin: 0 0 10px 0; padding-left: 20px;"><li><strong>Cmt</strong>: GWT="<em>.</em>" vs ag-Grid="<em>1</em>"</li></ul>
+                <details style="margin-top: 5px; font-size: 13px; color: #4a5568;">
+                  <summary style="cursor: pointer; font-weight: 600; outline: none; color: #319795; user-select: none;">📁 View 19 Matched Fields</summary>
+                  <ul style="margin: 5px 0 0 0; padding-left: 20px; color: #2d3748; list-style-type: square; line-height: 1.4;"><li><strong>Status</strong>: <em>CONFIRMED</em></li><li><strong>Clr</strong>: <em>N/A</em></li><li><strong>Doc Status</strong>: <em>Executed</em></li><li><strong>Pri</strong>: <em>(empty)</em></li><li><strong>Trade ID</strong>: <em>TAUTO42138125_1_PT</em></li><li><strong>Last Activity</strong>: <em>20-Aug-2026 07:55:05 AM</em></li><li><strong>Description</strong>: <em>FIXED AUD 2027-08-20</em></li><li><strong>Notional / CCY</strong>: <em>53,970,094.00 AUD</em></li><li><strong>Cpty(s)</strong>: <em>MWBANK1234</em></li><li><strong>Product</strong>: <em>FIXED</em></li><li><strong>Type</strong>: <em>F.Term</em></li><li><strong>Account</strong>: <em>VAM_VAMF2</em></li><li><strong>Trade Date</strong>: <em>20-Aug-2026</em></li><li><strong>Fee</strong>: <em>AUD 0.00</em></li><li><strong>Direction</strong>: <em>Recv Fixed</em></li><li><strong>Cpty Deal ID</strong>: <em>42138125</em></li><li><strong>Deal ID</strong>: <em>TAUTO42138125_1</em></li><li><strong>expand_detail</strong>: <em>(empty)</em></li><li><strong>ag-Grid-SelectionColumn</strong>: <em>(empty)</em></li>
+                  </ul>
+                </details></td>
+              <td><span class="audit-status mismatch">❌ ROW MISMATCH</span></td>
+            </tr>
+          </tbody>
+        </table>
+  </div>
+
+</body>
+</html>

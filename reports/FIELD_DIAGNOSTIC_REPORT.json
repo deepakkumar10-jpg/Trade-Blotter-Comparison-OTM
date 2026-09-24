@@ -1,0 +1,1828 @@
+{
+  "timestamp": "2026-08-18T17:49:17.736Z",
+  "gwt": {
+    "Account Number": {
+      "found": true,
+      "labelFound": "Account Number",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedcriteriaFields\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedfilterFieldsVP\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\">",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "extendedexactRangeDataLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"extendedexactRangeDataLabel\">"
+        }
+      ]
+    },
+    "Cancellable Option": {
+      "found": true,
+      "labelFound": "Cancellable Option",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><div class=\"extendedfilterPanel-Criteria-Header\">Cancellable Option</div></td>",
+      "elements": [
+        {
+          "tagName": "a",
+          "type": "",
+          "className": "editLink",
+          "text": "Edit",
+          "outerHTML": "<a class=\"editLink\" href=\"javascript:;\">Edit</a>"
+        },
+        {
+          "tagName": "a",
+          "type": "",
+          "className": "editLink",
+          "text": "Reset",
+          "outerHTML": "<a class=\"editLink\" href=\"javascript:;\">Reset</a>"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "gwt-TextBox placeholderText",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"gwt-TextBox placeholderText\">"
+        }
+      ]
+    },
+    "Comments": {
+      "found": true,
+      "labelFound": "Comments",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedcriteriaFields\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedfilterFieldsVP\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\">",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "extendedexactRangeDataLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"extendedexactRangeDataLabel\">"
+        }
+      ]
+    },
+    "Confirm Id": {
+      "found": true,
+      "labelFound": "Confirm Id",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedcriteriaFields\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedfilterFieldsVP\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\">",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "extendedexactRangeDataLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"extendedexactRangeDataLabel\">"
+        }
+      ]
+    },
+    "Currency": {
+      "found": true,
+      "labelFound": "Currency",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><div class=\"extendedfilterPanel-Criteria-Header\">Currency</div></td>",
+      "elements": [
+        {
+          "tagName": "a",
+          "type": "",
+          "className": "multiEditLink",
+          "text": "Edit",
+          "outerHTML": "<a class=\"multiEditLink\" href=\"javascript:;\">Edit</a>"
+        },
+        {
+          "tagName": "a",
+          "type": "",
+          "className": "multiEditLink",
+          "text": "Reset",
+          "outerHTML": "<a class=\"multiEditLink\" href=\"javascript:;\">Reset</a>"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "gwt-TextBox placeholderText",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"gwt-TextBox placeholderText\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-559\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-560\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-561\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-562\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-563\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-564\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-565\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-566\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-567\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-568\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-569\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-570\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-571\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-572\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-573\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-574\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-575\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-576\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-577\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-578\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-579\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-580\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-581\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-582\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-583\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-584\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-585\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-586\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-587\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-588\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-589\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-590\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-591\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-592\" tabindex=\"0\">"
+        }
+      ]
+    },
+    "Description": {
+      "found": true,
+      "labelFound": "Description",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedcriteriaFields\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedfilterFieldsVP\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\">",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-593\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "extendedexactRangeDataLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"extendedexactRangeDataLabel\">"
+        }
+      ]
+    },
+    "Direction": {
+      "found": true,
+      "labelFound": "Direction",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><div class=\"extendedfilterPanel-Criteria-Header\">Direction</div></td>",
+      "elements": [
+        {
+          "tagName": "a",
+          "type": "",
+          "className": "editLink",
+          "text": "Edit",
+          "outerHTML": "<a class=\"editLink\" href=\"javascript:;\">Edit</a>"
+        },
+        {
+          "tagName": "a",
+          "type": "",
+          "className": "editLink",
+          "text": "Reset",
+          "outerHTML": "<a class=\"editLink\" href=\"javascript:;\">Reset</a>"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "gwt-TextBox placeholderText",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"gwt-TextBox placeholderText\">"
+        }
+      ]
+    },
+    "Fee": {
+      "found": true,
+      "labelFound": "Fee To",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedcriteriaFields\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedfilterFieldsVP\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\">",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "dateLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"dateLabel\">"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "dateLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"dateLabel\">"
+        }
+      ]
+    },
+    "Fixed Rate": {
+      "found": true,
+      "labelFound": "Fixed Rate",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedcriteriaFields\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedfilterFieldsVP\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\">",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "extendedexactRangeDataLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"extendedexactRangeDataLabel\">"
+        }
+      ]
+    },
+    "Independent Amount": {
+      "found": true,
+      "labelFound": "Independent Amount To",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedcriteriaFields\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedfilterFieldsVP\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\">",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "dateLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"dateLabel\">"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "dateLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"dateLabel\">"
+        }
+      ]
+    },
+    "Initial Price": {
+      "found": true,
+      "labelFound": "Initial Price  To",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedcriteriaFields\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedfilterFieldsVP\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\">",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "dateLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"dateLabel\">"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "dateLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"dateLabel\">"
+        }
+      ]
+    },
+    "Notional": {
+      "found": true,
+      "labelFound": "Notional To",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedcriteriaFields\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedfilterFieldsVP\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\">",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "dateLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"dateLabel\">"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "dateLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"dateLabel\">"
+        }
+      ]
+    },
+    "# of Shares/Options": {
+      "found": true,
+      "labelFound": "# of Shares/Options To",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedcriteriaFields\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedfilterFieldsVP\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\">",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "dateLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"dateLabel\">"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "dateLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"dateLabel\">"
+        }
+      ]
+    },
+    "Primary Asset Class": {
+      "found": true,
+      "labelFound": "Primary Asset Class",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedcriteriaFields\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedfilterFieldsVP\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\">",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "extendedexactRangeDataLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"extendedexactRangeDataLabel\">"
+        }
+      ]
+    },
+    "Put/Call": {
+      "found": true,
+      "labelFound": "Put/Call",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><div class=\"extendedfilterPanel-Criteria-Header\">Put/Call</div></td>",
+      "elements": [
+        {
+          "tagName": "a",
+          "type": "",
+          "className": "editLink",
+          "text": "Edit",
+          "outerHTML": "<a class=\"editLink\" href=\"javascript:;\">Edit</a>"
+        },
+        {
+          "tagName": "a",
+          "type": "",
+          "className": "editLink",
+          "text": "Reset",
+          "outerHTML": "<a class=\"editLink\" href=\"javascript:;\">Reset</a>"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "gwt-TextBox placeholderText",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"gwt-TextBox placeholderText\">"
+        }
+      ]
+    },
+    "Strategy": {
+      "found": true,
+      "labelFound": "Strategy",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedcriteriaFields\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedfilterFieldsVP\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\">",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-594\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "extendedexactRangeDataLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"extendedexactRangeDataLabel\">"
+        }
+      ]
+    },
+    "Strike Price": {
+      "found": true,
+      "labelFound": "Strike Price To",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedcriteriaFields\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedfilterFieldsVP\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\">",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "dateLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"dateLabel\">"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "dateLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"dateLabel\">"
+        }
+      ]
+    },
+    "Trader Initials": {
+      "found": true,
+      "labelFound": "Trader Initials",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedcriteriaFields\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedfilterFieldsVP\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\">",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-595\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "extendedexactRangeDataLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"extendedexactRangeDataLabel\">"
+        }
+      ]
+    },
+    "Transaction Type": {
+      "found": true,
+      "labelFound": "Transaction Type",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><div class=\"extendedfilterPanel-Criteria-Header\">Transaction Type</div></td>",
+      "elements": [
+        {
+          "tagName": "a",
+          "type": "",
+          "className": "multiEditLink",
+          "text": "Edit",
+          "outerHTML": "<a class=\"multiEditLink\" href=\"javascript:;\">Edit</a>"
+        },
+        {
+          "tagName": "a",
+          "type": "",
+          "className": "multiEditLink",
+          "text": "Reset",
+          "outerHTML": "<a class=\"multiEditLink\" href=\"javascript:;\">Reset</a>"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "gwt-TextBox placeholderText",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"gwt-TextBox placeholderText\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-596\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-597\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-598\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-599\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-600\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-601\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-602\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-603\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-604\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-605\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-606\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-607\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-608\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-609\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-610\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-611\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-612\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-613\" tabindex=\"0\">"
+        }
+      ]
+    },
+    "Sub Account Number": {
+      "found": true,
+      "labelFound": "Sub Account Number",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedcriteriaFields\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedfilterFieldsVP\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\">",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "extendedexactRangeDataLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"extendedexactRangeDataLabel\">"
+        }
+      ]
+    },
+    "2nd leg (call) notional": {
+      "found": true,
+      "labelFound": "2nd leg (call) notional To",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedcriteriaFields\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedfilterFieldsVP\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\">",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "dateLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"dateLabel\">"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "dateLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"dateLabel\">"
+        }
+      ]
+    },
+    "2nd leg (call) currency": {
+      "found": true,
+      "labelFound": "2nd leg (call) currency",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><div class=\"extendedfilterPanel-Criteria-Header\">2nd leg (call) currency</div></td>",
+      "elements": [
+        {
+          "tagName": "a",
+          "type": "",
+          "className": "multiEditLink",
+          "text": "Edit",
+          "outerHTML": "<a class=\"multiEditLink\" href=\"javascript:;\">Edit</a>"
+        },
+        {
+          "tagName": "a",
+          "type": "",
+          "className": "multiEditLink",
+          "text": "Reset",
+          "outerHTML": "<a class=\"multiEditLink\" href=\"javascript:;\">Reset</a>"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "gwt-TextBox placeholderText",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"gwt-TextBox placeholderText\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-614\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-615\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-616\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-617\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-618\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-619\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-620\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-621\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-622\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-623\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-624\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-625\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-626\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-627\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-628\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-629\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-630\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-631\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-632\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-633\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-634\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-635\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-636\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-637\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-638\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-639\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-640\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-641\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-642\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-643\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-644\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-645\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-646\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-647\" tabindex=\"0\">"
+        }
+      ]
+    },
+    "Purchase Price": {
+      "found": true,
+      "labelFound": "Purchase Price To",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedcriteriaFields\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedfilterFieldsVP\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\">",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "dateLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"dateLabel\">"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "dateLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"dateLabel\">"
+        }
+      ]
+    },
+    "Repurchase Price": {
+      "found": true,
+      "labelFound": "Repurchase Price To",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedcriteriaFields\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedfilterFieldsVP\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\">",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "dateLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"dateLabel\">"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "dateLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"dateLabel\">"
+        }
+      ]
+    },
+    "Purchase Security Nominal": {
+      "found": true,
+      "labelFound": "Purchase Security Nominal To",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedcriteriaFields\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedfilterFieldsVP\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\">",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "dateLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"dateLabel\">"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "dateLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"dateLabel\">"
+        }
+      ]
+    },
+    "Purchase Security Quantity": {
+      "found": true,
+      "labelFound": "Purchase Security Quantity To",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedcriteriaFields\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedfilterFieldsVP\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\">",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "dateLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"dateLabel\">"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "dateLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"dateLabel\">"
+        }
+      ]
+    },
+    "Product Sub-Type": {
+      "found": true,
+      "labelFound": "Product Sub-Type",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedcriteriaFields\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedfilterFieldsVP\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\">",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-648\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "extendedexactRangeDataLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"extendedexactRangeDataLabel\">"
+        }
+      ]
+    },
+    "Fee/Premium Direction": {
+      "found": true,
+      "labelFound": "Fee/Premium Direction",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><div class=\"extendedfilterPanel-Criteria-Header\">Fee/Premium Direction</div></td>",
+      "elements": [
+        {
+          "tagName": "a",
+          "type": "",
+          "className": "editLink",
+          "text": "Edit",
+          "outerHTML": "<a class=\"editLink\" href=\"javascript:;\">Edit</a>"
+        },
+        {
+          "tagName": "a",
+          "type": "",
+          "className": "editLink",
+          "text": "Reset",
+          "outerHTML": "<a class=\"editLink\" href=\"javascript:;\">Reset</a>"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "gwt-TextBox placeholderText",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"gwt-TextBox placeholderText\">"
+        }
+      ]
+    },
+    "Straddle": {
+      "found": true,
+      "labelFound": "Straddle",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><div class=\"extendedfilterPanel-Criteria-Header\">Straddle</div></td>",
+      "elements": [
+        {
+          "tagName": "a",
+          "type": "",
+          "className": "editLink",
+          "text": "Edit",
+          "outerHTML": "<a class=\"editLink\" href=\"javascript:;\">Edit</a>"
+        },
+        {
+          "tagName": "a",
+          "type": "",
+          "className": "editLink",
+          "text": "Reset",
+          "outerHTML": "<a class=\"editLink\" href=\"javascript:;\">Reset</a>"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "gwt-TextBox placeholderText",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"gwt-TextBox placeholderText\">"
+        }
+      ]
+    },
+    "Settlement Currency": {
+      "found": true,
+      "labelFound": "Settlement Currency",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><div class=\"extendedfilterPanel-Criteria-Header\">Settlement Currency</div></td>",
+      "elements": [
+        {
+          "tagName": "a",
+          "type": "",
+          "className": "editLink",
+          "text": "Edit",
+          "outerHTML": "<a class=\"editLink\" href=\"javascript:;\">Edit</a>"
+        },
+        {
+          "tagName": "a",
+          "type": "",
+          "className": "editLink",
+          "text": "Reset",
+          "outerHTML": "<a class=\"editLink\" href=\"javascript:;\">Reset</a>"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "gwt-TextBox placeholderText",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"gwt-TextBox placeholderText\">"
+        }
+      ]
+    },
+    "Transaction Sub-Type / Amendment Type": {
+      "found": true,
+      "labelFound": "Transaction Sub-Type / Amendment Type",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedcriteriaFields\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedfilterFieldsVP\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\">",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" value=\"on\" id=\"gwt-uid-649\" tabindex=\"0\">"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "extendedexactRangeDataLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"extendedexactRangeDataLabel\">"
+        }
+      ]
+    },
+    "UPI": {
+      "found": true,
+      "labelFound": "UPI",
+      "outerHTML": "<td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedcriteriaFields\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\"><table cellspacing=\"0\" cellpadding=\"0\" class=\"extendedfilterFieldsVP\"><tbody><tr><td align=\"left\" style=\"vertical-align: top;\">",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "extendedexactRangeDataLabel",
+          "text": "",
+          "outerHTML": "<input type=\"text\" class=\"extendedexactRangeDataLabel\">"
+        }
+      ]
+    }
+  },
+  "newUi": {
+    "Account Number": {
+      "found": true,
+      "labelFound": "Account Number",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"Account Number\">Account Number</label>",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "text-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c2384262365=\"\" pinputtext=\"\" type=\"text\" class=\"text-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6640=\"\" data-pc-name=\"inputtext\" data-pc-section="
+        }
+      ]
+    },
+    "Cancellable Option": {
+      "found": true,
+      "labelFound": "Cancellable Option",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"Cancellable Option\">Cancellable Option</label>",
+      "elements": []
+    },
+    "Comments": {
+      "found": true,
+      "labelFound": "Comments",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"Comments\">Comments</label>",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "text-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c2384262365=\"\" pinputtext=\"\" type=\"text\" class=\"text-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6646=\"\" data-pc-name=\"inputtext\" data-pc-section="
+        }
+      ]
+    },
+    "Confirm Id": {
+      "found": true,
+      "labelFound": "Confirm Id",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"Confirm Id\">Confirm Id</label>",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "text-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c2384262365=\"\" pinputtext=\"\" type=\"text\" class=\"text-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6647=\"\" data-pc-name=\"inputtext\" data-pc-section="
+        }
+      ]
+    },
+    "Currency": {
+      "found": true,
+      "labelFound": "Currency",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"Currency\">Currency</label>",
+      "elements": [
+        {
+          "tagName": "p-multiselect",
+          "type": "",
+          "className": "full-width-dropdown p-component p-inputwrapper p-multiselect ng-untouched ng-pristine ng-valid",
+          "text": "Select options...",
+          "outerHTML": "<p-multiselect _ngcontent-ng-c1679770368=\"\" optionlabel=\"name\" optionvalue=\"code\" appendto=\"body\" panelstyleclass=\"osttra-style\" styleclass=\"full-width-dropdown\" class=\"full-width-dropdown p-component"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input role=\"combobox\" aria-disabled=\"false\" aria-haspopup=\"listbox\" aria-expanded=\"false\" tabindex=\"0\" data-pc-section=\"hiddeninput\" autofocus=\"true\" pc6649=\"\" pc6650=\"\" value=\"\">"
+        }
+      ]
+    },
+    "Description": {
+      "found": true,
+      "labelFound": "Description",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"Description\">Description</label>",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "text-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c2384262365=\"\" pinputtext=\"\" type=\"text\" class=\"text-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6654=\"\" data-pc-name=\"inputtext\" data-pc-section="
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "p-checkbox-input",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" class=\"p-checkbox-input\" id=\"contains_17\" data-pc-section=\"input\">"
+        }
+      ]
+    },
+    "Direction": {
+      "found": true,
+      "labelFound": "Direction",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"Direction\">Direction</label>",
+      "elements": []
+    },
+    "Fee": {
+      "found": true,
+      "labelFound": "Fee",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"Fee\">Fee</label>",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "range-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c729959128=\"\" pinputtext=\"\" type=\"text\" tooltipposition=\"top\" class=\"range-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6661=\"\" pc6662=\"\" data-pc-n"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "range-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c729959128=\"\" pinputtext=\"\" type=\"text\" tooltipposition=\"top\" class=\"range-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6663=\"\" pc6664=\"\" data-pc-n"
+        }
+      ]
+    },
+    "Fixed Rate": {
+      "found": true,
+      "labelFound": "Fixed Rate",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"Fixed Rate\">Fixed Rate</label>",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "text-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c2384262365=\"\" pinputtext=\"\" type=\"text\" class=\"text-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6665=\"\" data-pc-name=\"inputtext\" data-pc-section="
+        }
+      ]
+    },
+    "Independent Amount": {
+      "found": true,
+      "labelFound": "Independent Amount",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"Independent Amount\">Independent Amount</label>",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "range-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c729959128=\"\" pinputtext=\"\" type=\"text\" tooltipposition=\"top\" class=\"range-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6666=\"\" pc6667=\"\" data-pc-n"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "range-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c729959128=\"\" pinputtext=\"\" type=\"text\" tooltipposition=\"top\" class=\"range-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6668=\"\" pc6669=\"\" data-pc-n"
+        }
+      ]
+    },
+    "Initial Price": {
+      "found": true,
+      "labelFound": "Initial Price",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"Initial Price \">Initial Price </label>",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "range-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c729959128=\"\" pinputtext=\"\" type=\"text\" tooltipposition=\"top\" class=\"range-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6670=\"\" pc6671=\"\" data-pc-n"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "range-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c729959128=\"\" pinputtext=\"\" type=\"text\" tooltipposition=\"top\" class=\"range-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6672=\"\" pc6673=\"\" data-pc-n"
+        }
+      ]
+    },
+    "Notional": {
+      "found": true,
+      "labelFound": "Notional",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"Notional\">Notional</label>",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "range-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c729959128=\"\" pinputtext=\"\" type=\"text\" tooltipposition=\"top\" class=\"range-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6674=\"\" pc6675=\"\" data-pc-n"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "range-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c729959128=\"\" pinputtext=\"\" type=\"text\" tooltipposition=\"top\" class=\"range-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6676=\"\" pc6677=\"\" data-pc-n"
+        }
+      ]
+    },
+    "# of Shares/Options": {
+      "found": true,
+      "labelFound": "# of Shares/Options",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"# of Shares/Options\"># of Shares/Options</label>",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "range-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c729959128=\"\" pinputtext=\"\" type=\"text\" tooltipposition=\"top\" class=\"range-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6678=\"\" pc6679=\"\" data-pc-n"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "range-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c729959128=\"\" pinputtext=\"\" type=\"text\" tooltipposition=\"top\" class=\"range-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6680=\"\" pc6681=\"\" data-pc-n"
+        }
+      ]
+    },
+    "Primary Asset Class": {
+      "found": true,
+      "labelFound": "Primary Asset Class",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"Primary Asset Class\">Primary Asset Class</label>",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "text-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c2384262365=\"\" pinputtext=\"\" type=\"text\" class=\"text-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6682=\"\" data-pc-name=\"inputtext\" data-pc-section="
+        }
+      ]
+    },
+    "Put/Call": {
+      "found": true,
+      "labelFound": "Put/Call",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"Put/Call\">Put/Call</label>",
+      "elements": []
+    },
+    "Strategy": {
+      "found": true,
+      "labelFound": "Strategy",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"Strategy\">Strategy</label>",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "text-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c2384262365=\"\" pinputtext=\"\" type=\"text\" class=\"text-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6688=\"\" data-pc-name=\"inputtext\" data-pc-section="
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "p-checkbox-input",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" class=\"p-checkbox-input\" id=\"contains_13\" data-pc-section=\"input\">"
+        }
+      ]
+    },
+    "Strike Price": {
+      "found": true,
+      "labelFound": "Strike Price",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"Strike Price\">Strike Price</label>",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "range-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c729959128=\"\" pinputtext=\"\" type=\"text\" tooltipposition=\"top\" class=\"range-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6690=\"\" pc6691=\"\" data-pc-n"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "range-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c729959128=\"\" pinputtext=\"\" type=\"text\" tooltipposition=\"top\" class=\"range-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6692=\"\" pc6693=\"\" data-pc-n"
+        }
+      ]
+    },
+    "Trader Initials": {
+      "found": true,
+      "labelFound": "Trader Initials",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"Trader Initials\">Trader Initials</label>",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "text-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c2384262365=\"\" pinputtext=\"\" type=\"text\" class=\"text-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6694=\"\" data-pc-name=\"inputtext\" data-pc-section="
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "p-checkbox-input",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" class=\"p-checkbox-input\" id=\"contains_44\" data-pc-section=\"input\">"
+        }
+      ]
+    },
+    "Transaction Type": {
+      "found": true,
+      "labelFound": "Transaction Type",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"Transaction Type\">Transaction Type</label>",
+      "elements": [
+        {
+          "tagName": "p-treeselect",
+          "type": "",
+          "className": "full-width-dropdown p-component p-inputwrapper p-treeselect p-treeselect-clearable ng-untouched ng-pristine ng-valid",
+          "text": "Select options...",
+          "outerHTML": "<p-treeselect _ngcontent-ng-c1679770368=\"\" selectionmode=\"checkbox\" appendto=\"body\" panelstyleclass=\"osttra-style\" styleclass=\"full-width-dropdown\" class=\"full-width-dropdown p-component p-inputwrappe"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input type=\"text\" role=\"combobox\" readonly=\"\" tabindex=\"0\" aria-haspopup=\"tree\" aria-expanded=\"false\" aria-label=\"Select options...\" data-pc-section=\"hiddeninput\" autofocus=\"true\" pc6697=\"\">"
+        }
+      ]
+    },
+    "Sub Account Number": {
+      "found": true,
+      "labelFound": "Sub Account Number",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"Sub Account Number\">Sub Account Number</label>",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "text-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c2384262365=\"\" pinputtext=\"\" type=\"text\" class=\"text-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6700=\"\" data-pc-name=\"inputtext\" data-pc-section="
+        }
+      ]
+    },
+    "2nd leg (call) notional": {
+      "found": true,
+      "labelFound": "2nd leg (call) notional",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"2nd leg (call) notional\">2nd leg (call) notional</label>",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "range-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c729959128=\"\" pinputtext=\"\" type=\"text\" tooltipposition=\"top\" class=\"range-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6701=\"\" pc6702=\"\" data-pc-n"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "range-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c729959128=\"\" pinputtext=\"\" type=\"text\" tooltipposition=\"top\" class=\"range-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6703=\"\" pc6704=\"\" data-pc-n"
+        }
+      ]
+    },
+    "2nd leg (call) currency": {
+      "found": true,
+      "labelFound": "2nd leg (call) currency",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"2nd leg (call) currency\">2nd leg (call) currency</label>",
+      "elements": [
+        {
+          "tagName": "p-multiselect",
+          "type": "",
+          "className": "full-width-dropdown p-component p-inputwrapper p-multiselect ng-untouched ng-pristine ng-valid",
+          "text": "Select options...",
+          "outerHTML": "<p-multiselect _ngcontent-ng-c1679770368=\"\" optionlabel=\"name\" optionvalue=\"code\" appendto=\"body\" panelstyleclass=\"osttra-style\" styleclass=\"full-width-dropdown\" class=\"full-width-dropdown p-component"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "",
+          "text": "",
+          "outerHTML": "<input role=\"combobox\" aria-disabled=\"false\" aria-haspopup=\"listbox\" aria-expanded=\"false\" tabindex=\"0\" data-pc-section=\"hiddeninput\" autofocus=\"true\" pc6706=\"\" pc6707=\"\" value=\"\">"
+        }
+      ]
+    },
+    "Purchase Price": {
+      "found": true,
+      "labelFound": "Purchase Price",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"Purchase Price\">Purchase Price</label>",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "range-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c729959128=\"\" pinputtext=\"\" type=\"text\" tooltipposition=\"top\" class=\"range-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6711=\"\" pc6712=\"\" data-pc-n"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "range-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c729959128=\"\" pinputtext=\"\" type=\"text\" tooltipposition=\"top\" class=\"range-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6713=\"\" pc6714=\"\" data-pc-n"
+        }
+      ]
+    },
+    "Repurchase Price": {
+      "found": true,
+      "labelFound": "Repurchase Price",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"Repurchase Price\">Repurchase Price</label>",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "range-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c729959128=\"\" pinputtext=\"\" type=\"text\" tooltipposition=\"top\" class=\"range-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6715=\"\" pc6716=\"\" data-pc-n"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "range-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c729959128=\"\" pinputtext=\"\" type=\"text\" tooltipposition=\"top\" class=\"range-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6717=\"\" pc6718=\"\" data-pc-n"
+        }
+      ]
+    },
+    "Purchase Security Nominal": {
+      "found": true,
+      "labelFound": "Purchase Security Nominal",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"Purchase Security Nominal\">Purchase Security Nominal</label>",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "range-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c729959128=\"\" pinputtext=\"\" type=\"text\" tooltipposition=\"top\" class=\"range-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6719=\"\" pc6720=\"\" data-pc-n"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "range-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c729959128=\"\" pinputtext=\"\" type=\"text\" tooltipposition=\"top\" class=\"range-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6721=\"\" pc6722=\"\" data-pc-n"
+        }
+      ]
+    },
+    "Purchase Security Quantity": {
+      "found": true,
+      "labelFound": "Purchase Security Quantity",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"Purchase Security Quantity\">Purchase Security Quantity</label>",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "range-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c729959128=\"\" pinputtext=\"\" type=\"text\" tooltipposition=\"top\" class=\"range-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6723=\"\" pc6724=\"\" data-pc-n"
+        },
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "range-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c729959128=\"\" pinputtext=\"\" type=\"text\" tooltipposition=\"top\" class=\"range-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6725=\"\" pc6726=\"\" data-pc-n"
+        }
+      ]
+    },
+    "Product Sub-Type": {
+      "found": true,
+      "labelFound": "Product Sub-Type",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"Product Sub-Type\">Product Sub-Type</label>",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "text-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c2384262365=\"\" pinputtext=\"\" type=\"text\" class=\"text-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6727=\"\" data-pc-name=\"inputtext\" data-pc-section="
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "p-checkbox-input",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" class=\"p-checkbox-input\" id=\"contains_112\" data-pc-section=\"input\">"
+        }
+      ]
+    },
+    "Fee/Premium Direction": {
+      "found": true,
+      "labelFound": "Fee/Premium Direction",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"Fee/Premium Direction\">Fee/Premium Direction</label>",
+      "elements": []
+    },
+    "Straddle": {
+      "found": true,
+      "labelFound": "Straddle",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"Straddle\">Straddle</label>",
+      "elements": []
+    },
+    "Settlement Currency": {
+      "found": true,
+      "labelFound": "Settlement Currency",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"Settlement Currency\">Settlement Currency</label>",
+      "elements": []
+    },
+    "Transaction Sub-Type / Amendment Type": {
+      "found": true,
+      "labelFound": "Transaction Sub-Type / Amendment Type",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"Transaction Sub-Type / Amendment Type\">Transaction Sub-Type / Amendment Type</label>",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "text-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c2384262365=\"\" pinputtext=\"\" type=\"text\" class=\"text-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6744=\"\" data-pc-name=\"inputtext\" data-pc-section="
+        },
+        {
+          "tagName": "input",
+          "type": "checkbox",
+          "className": "p-checkbox-input",
+          "text": "",
+          "outerHTML": "<input type=\"checkbox\" class=\"p-checkbox-input\" id=\"contains_116\" data-pc-section=\"input\">"
+        }
+      ]
+    },
+    "UPI": {
+      "found": true,
+      "labelFound": "UPI",
+      "outerHTML": "<label _ngcontent-ng-c1066322559=\"\" class=\"field-label\" title=\"UPI\">UPI</label>",
+      "elements": [
+        {
+          "tagName": "input",
+          "type": "text",
+          "className": "text-input ng-untouched ng-pristine ng-valid p-component p-inputtext",
+          "text": "",
+          "outerHTML": "<input _ngcontent-ng-c2384262365=\"\" pinputtext=\"\" type=\"text\" class=\"text-input ng-untouched ng-pristine ng-valid p-component p-inputtext\" data-p=\"\" pc6746=\"\" data-pc-name=\"inputtext\" data-pc-section="
+        }
+      ]
+    }
+  }
+}

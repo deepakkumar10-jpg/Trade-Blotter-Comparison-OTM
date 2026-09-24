@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OSTTRA Trade Blotter Master Parity Checklist</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      color: white;
+      padding: 25px 20px;
+      text-align: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+    .container {
+      max-width: 950px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .checklist-table {
+      width: 100%;
+      background: white;
+      border-collapse: collapse;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .checklist-table th, .checklist-table td {
+      padding: 20px 25px;
+      text-align: left;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .checklist-table th {
+      background-color: #edf2f7;
+      font-weight: 600;
+      color: #4a5568;
+      text-transform: uppercase;
+      font-size: 13px;
+      letter-spacing: 0.5px;
+    }
+    .scenario-link {
+      font-size: 16px;
+      font-weight: 600;
+      color: #2b6cb0;
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+    .scenario-link:hover {
+      color: #1a365d;
+      text-decoration: underline;
+    }
+    .status-badge {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      text-align: center;
+      min-width: 100px;
+    }
+    .status-badge.pass { background-color: #e6fcf5; color: #0ca678; }
+    .status-badge.fail { background-color: #fff5f5; color: #f03e3e; }
+    .status-badge.not_executed { background-color: #f1f3f5; color: #495057; }
+    
+    .skip-reason {
+      margin-top: 5px;
+      font-size: 12px;
+      color: #718096;
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>OSTTRA Trade Blotter Master Parity Checklist</h1>
+    <p>Last Compiled: 8/18/2026, 12:36:56 PM | Folder: run_2026-08-18_07-05-32_DemoB</p>
+  </div>
+
+  <div class="container">
+    <table class="checklist-table">
+      <thead>
+        <tr>
+          <th style="width: 15%;">Scenario ID</th>
+          <th style="width: 60%;">Gherkin Scenario Title</th>
+          <th style="width: 25%;">Execution Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Scenario_2_4</strong></td>
+          <td><a href="Scenario_2_4_detail.html" class="scenario-link">Scenario 2.4: Last Activity Date Comparative Parity Run</a></td>
+          <td><span class="status-badge fail">FAIL</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
